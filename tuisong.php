@@ -1,3 +1,4 @@
+<?php
 $urls = array(
     'http://zrdsj.cc/2016/08/19/003/',
     'http://zrdsj.cc/about/',
@@ -15,3 +16,4 @@ $options =  array(
 curl_setopt_array($ch, $options);
 $result = curl_exec($ch);
 echo $result;
+?>
