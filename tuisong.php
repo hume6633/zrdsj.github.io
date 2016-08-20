@@ -1,10 +1,9 @@
 <?php
 $urls = array(
-    'http://zrdsj.cc/2016/08/19/003/',
-    'http://zrdsj.cc/about/',
-    'http://zrdsj.cc/categories/',
+    'http://zrdsj.cc/index.html',
+    'http://zrdsj.cc/archives/',
 );
-$api = 'http://data.zz.baidu.com/urls?site=zrdsj.cc&token=wllaL5drz4dAnhc5';
+$api = 'http://data.zz.baidu.com/urls?site=http://zrdsj.cc&token=KQJQNIU9e5ZJNhwq';
 $ch = curl_init();
 $options =  array(
     CURLOPT_URL => $api,
