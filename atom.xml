@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2016-08-29T14:39:56.981Z</updated>
+  <updated>2016-08-29T15:05:43.480Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -16,11 +16,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>普及Thomas Hobbes</title>
+    <link href="http://zrdsj.cc/2016/08/29/007/"/>
+    <id>http://zrdsj.cc/2016/08/29/007/</id>
+    <published>2016-08-29T15:02:35.230Z</published>
+    <updated>2016-08-29T15:05:43.480Z</updated>
+    
+    <content type="html"><![CDATA[<p>&#x4E0D;&#x8981;&#x8138;&#x4E86;2333</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;#x4E0D;&amp;#x8981;&amp;#x8138;&amp;#x4E86;2333&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
+    
+    
+      <category term="政治" scheme="http://zrdsj.cc/tags/%E6%94%BF%E6%B2%BB/"/>
+    
+      <category term="文化掰扯" scheme="http://zrdsj.cc/tags/%E6%96%87%E5%8C%96%E6%8E%B0%E6%89%AF/"/>
+    
+      <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
+    
+      <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>-编译原理-de故事</title>
     <link href="http://zrdsj.cc/2016/08/29/006/"/>
     <id>http://zrdsj.cc/2016/08/29/006/</id>
     <published>2016-08-29T14:35:21.893Z</published>
-    <updated>2016-08-29T14:39:56.981Z</updated>
+    <updated>2016-08-29T15:05:40.608Z</updated>
     
     <content type="html"><![CDATA[<p>&#x5148;&#x53D1;&#x8868;&#xFF0C;&#x968F;&#x540E;&#x518D;&#x8BF4;&#x3002;</p>
 ]]></content>
@@ -32,7 +62,7 @@
     
     </summary>
     
-      <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
+      <category term="season in the sun" scheme="http://zrdsj.cc/categories/season-in-the-sun/"/>
     
     
       <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
