@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://zrdsj.cc/2016/08/21/004/</loc>
-    <lastmod>2016-08-27T15:21:32.556Z</lastmod>
+    <lastmod>2016-08-29T14:40:38.978Z</lastmod>
     <data>
         <display>
         <title>Blog--Hexo_NexT搭建遇到的troubles</title>
@@ -19,6 +19,8 @@
          
         <tag>经验之谈</tag>
          
+        <tag>诉苦呻吟</tag>
+         
          
            
              
@@ -30,8 +32,32 @@
 
     
   <url>
+    <loc>http://zrdsj.cc/2016/08/29/006/</loc>
+    <lastmod>2016-08-29T14:39:56.981Z</lastmod>
+    <data>
+        <display>
+        <title>-编译原理-de故事</title>
+        <pubTime>2016-08-29T14:35:21.893Z</pubTime>
+        
+        <tag>回忆</tag>
+         
+        <tag>智障人生</tag>
+         
+        <tag>谶语少bb</tag>
+         
+         
+           
+             
+              <breadCrumb title="moon" url="http://zrdsj.cc/categories/moon/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zrdsj.cc/2016/08/25/005/</loc>
-    <lastmod>2016-08-25T15:59:27.902Z</lastmod>
+    <lastmod>2016-08-29T14:39:33.258Z</lastmod>
     <data>
         <display>
         <title>几点物联网及量子计算的感想</title>
