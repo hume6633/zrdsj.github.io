@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>http://zrdsj.cc/2016/08/25/005/</loc>
+    <lastmod>2016-09-15T10:31:19.399Z</lastmod>
+    <data>
+        <display>
+        <title>几点物联网及量子计算的感想</title>
+        <pubTime>2016-08-25T15:57:37.254Z</pubTime>
+        
+        <tag>物联网</tag>
+         
+        <tag>量子计算</tag>
+         
+        <tag>杂谈</tag>
+         
+         
+           
+             
+              <breadCrumb title="sixpence" url="http://zrdsj.cc/categories/sixpence/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zrdsj.cc/2016/08/29/006/</loc>
-    <lastmod>2016-09-15T02:43:30.787Z</lastmod>
+    <lastmod>2016-09-15T02:46:45.938Z</lastmod>
     <data>
         <display>
         <title>我的-编译原理-de故事</title>
@@ -102,28 +126,6 @@
            
              
               <breadCrumb title="moon" url="http://zrdsj.cc/categories/moon/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zrdsj.cc/2016/08/25/005/</loc>
-    <lastmod>2016-08-29T14:39:33.258Z</lastmod>
-    <data>
-        <display>
-        <title>几点物联网及量子计算的感想</title>
-        <pubTime>2016-08-25T15:57:37.254Z</pubTime>
-        
-        <tag>物联网</tag>
-         
-        <tag>量子计算</tag>
-         
-         
-           
-             
-              <breadCrumb title="sixpence" url="http://zrdsj.cc/categories/sixpence/"/>
           
         </display>
     </data>
