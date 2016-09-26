@@ -4,6 +4,67 @@
   
     
     <entry>
+      <title><![CDATA[关于node.js的几句话]]></title>
+      <url>http://zrdsj.cc/2016/09/26/012/</url>
+      <content type="html"><![CDATA[<p>&#x63A5;&#x4E0B;&#x6765;&#x7528;&#x2019;nj&#x2019;&#x6765;&#x8868;&#x793A;&#x2019;Node.Js&#x2019;.&#x5168;&#x90FD;&#x662F;&#x3002;&#x3002;&#x3002;</p>
+<h3 id="&#x57FA;&#x7840;">&#x57FA;&#x7840;</h3>
+<h4 id="nodejs&#x662F;&#x5565;">node.js&#x662F;&#x5565;</h4>
+<p><code>&#x662F;&#x4E00;&#x4E2A;&#x89E3;&#x6790;&#x5668;</code></p>
+<p>&#x524D;&#x5C55;&#x601D;&#x8003;&#xFF1A;</p>
+<ul>
+<li>&#x811A;&#x672C;&#x8BED;&#x8A00;&#x7684;&#x8FD0;&#x884C;&#x9700;&#x8981;&#x4EC0;&#x4E48;&#xFF1F;</li>
+<li>&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;js&#x53C8;&#x662F;&#x600E;&#x4E48;&#x6837;&#xFF1F;</li>
+</ul>
+<h4 id="nodejs&#x5E72;&#x5565;&#x7528;&#x7684;">node.js&#x5E72;&#x5565;&#x7528;&#x7684;</h4>
+<p><code>&#x5B9E;&#x73B0;&#x9AD8;&#x6027;&#x80FD;Web&#x670D;&#x52A1;&#x5668;</code></p>
+<p>&#x4E0D;&#x662F;&#x6211;&#x8BF4;&#x7684;&#xFF0C;&#x662F;nj&#x4F5C;&#x8005;&#x8BF4;&#x7684;&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x5173;&#x6CE8;&#x7684;&#x4E24;&#x4E2A;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x4E8B;&#x4EF6;&#x673A;&#x5236;</li>
+<li>&#x5F02;&#x6B65;IO&#x6A21;&#x578B;&#x7684;&#x4F18;&#x8D8A;&#x6027;&#xFF1F;</li>
+</ul>
+<p>&#x54EA;&#x79CD;&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#x4E0D;&#x81EA;&#x5E26;IO&#x529F;&#x80FD;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x826F;&#x597D;&#x652F;&#x6301;&#x4E8B;&#x4EF6;&#x673A;&#x5236;&#xFF1F;2333</p>
+<p>sth else:</p>
+<blockquote>
+<p>&#x5BF9;&#x4E8E;&#x524D;&#x7AEF;&#x800C;&#x8A00;&#xFF0C;&#x867D;&#x7136;&#x4E0D;&#x662F;&#x4EBA;&#x4EBA;&#x90FD;&#x8981;&#x62FF;NodeJS&#x5199;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x7B80;&#x5355;&#x53EF;&#x81F3;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#x8C03;&#x8BD5;JS&#x4EE3;&#x7801;&#x7247;&#x6BB5;&#xFF0C;&#x590D;&#x6742;&#x53EF;&#x81F3;&#x7F16;&#x5199;&#x5DE5;&#x5177;&#x63D0;&#x5347;&#x5DE5;&#x4F5C;&#x6548;&#x7387;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
+<p><a href="http://nodejs.cn/download/" target="_blank" rel="external">http://nodejs.cn/download/</a></p>
+<h4 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h4>
+<p>&#x6CD5;1&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/node_demo1.png" alt=""></p>
+<p>&#x6CD5;2&#xFF1A;</p>
+<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/node_demo2.png" alt=""></p>
+<p>then</p>
+<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/node_demo3.png" alt=""></p>
+<blockquote>
+<p>&#x4F60;&#x7528;&#x7684;Linux&#xFF1F;</p>
+</blockquote>
+<blockquote>
+<p>&#x54E6;&#xFF0C;&#x90A3;&#x6211;&#x4E0D;&#x4F1A;&#x3002;&#x3002;&#x3002;&#x1F612;</p>
+</blockquote>
+<h4 id="&#x6A21;&#x5757;">&#x6A21;&#x5757;</h4>
+<p>&#xFF08;&#x8FD9;&#x662F;&#x5F88;jb&#x5927;&#x7684;&#x4E00;&#x4E2A;&#x8BDD;&#x9898;&#x5176;&#x5B9E;&#xFF09;</p>
+<p><strong>&#x5C06;&#x4EE3;&#x7801;&#x5408;&#x7406;&#x62C6;&#x5206;&#x5230;&#x4E0D;&#x540C;&#x7684;JS&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x800C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5C31;&#x662F;&#x6A21;&#x5757;&#x540D;</strong>&#x3002;&#x5728;&#x7F16;&#x5199;&#x6BCF;&#x4E2A;&#x6A21;&#x5757;&#x65F6;&#xFF0C;&#x90FD;&#x6709;<a href="http://www.cnblogs.com/pigtail/archive/2013/01/14/2859929.html" target="_blank" rel="external">require</a>&#x3001;<a href="https://liuzhichao.com/p/1669.html" target="_blank" rel="external">exports</a>&#x3001;<a href="http://www.cnblogs.com/dolphinX/p/3485260.html" target="_blank" rel="external">module</a>&#x4E09;&#x4E2A;&#x9884;&#x5148;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x53D8;&#x91CF;&#x53EF;&#x4F9B;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x8FD8;&#x5E94;&#x8BE5;&#x6CE8;&#x610F;&#x7684;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x6A21;&#x5757;&#x521D;&#x59CB;&#x5316;</li>
+<li>&#x4E3B;&#x6A21;&#x5757;</li>
+</ul>
+<h4 id="&#x4E8C;&#x8FDB;&#x5236;&#x6A21;&#x5757;">&#x4E8C;&#x8FDB;&#x5236;&#x6A21;&#x5757;</h4>
+<p>&#x4E00;&#x822C;&#x4F7F;&#x7528;js&#x7F16;&#x5199;&#x6A21;&#x5757;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x4F46;nj&#x4E5F;&#x652F;&#x6301;&#x4F7F;&#x7528;C/C++&#x7F16;&#x5199;&#x4E8C;&#x8FDB;&#x5236;&#x6A21;&#x5757;&#x3002;</p>
+<p>&#x7F16;&#x8BD1;&#x597D;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6A21;&#x5757;&#x9664;&#x4E86;&#x6587;&#x4EF6;&#x6269;&#x5C55;&#x540D;&#x662F;.node&#x5916;&#xFF0C;&#x548C;js&#x6A21;&#x5757;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x76F8;&#x540C;&#x3002;</p>
+<blockquote>
+<p><code>&#x4E8C;&#x8FDB;&#x5236;&#x6A21;&#x5757;&#x80FD;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#xFF0C;&#x62E5;&#x6709;&#x65E0;&#x9650;&#x7684;&#x6F5C;&#x80FD;</code>&#x3002;</p>
+</blockquote>
+<blockquote>
+<p><code>&#x5BF9;&#x4E8E;&#x524D;&#x7AEF;&#x800C;&#x8A00;&#x5E76;&#x4E0D;&#x5BB9;&#x6613;&#xFF0C;&#x5E76;&#x4E14;&#x96BE;&#x4EE5;&#x8DE8;&#x5E73;&#x53F0;&#x4F7F;&#x7528;</code>&#x3002;</p>
+</blockquote>
+<p>so&#x4E0D;&#x518D;&#x591A;&#x8BF4;&#x3002;</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[圣经几个读经方法]]></title>
       <url>http://zrdsj.cc/2016/09/23/011/</url>
       <content type="html"><![CDATA[<p>&#x51E0;&#x79CD;&#x8BFB;&#x5723;&#x7ECF;&#x7684;&#x529E;&#x6CD5;&#x3002;&#x51C6;&#x786E;&#x70B9;&#x5E94;&#x8BE5;&#x8BF4;&#x662F;&#x8BA1;&#x5212;&#x3002;&#x5723;&#x7ECF;&#x7684;&#x901A;&#x8BFB;&#xFF0C;&#x5BF9;&#x57FA;&#x7763;&#x5F92;&#x6765;&#x8BF4;&#x5176;&#x610F;&#x4E49;&#x4E0D;&#x8A00;&#x800C;&#x55BB;&#x3002;</p>
