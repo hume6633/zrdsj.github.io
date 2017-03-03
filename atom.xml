@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-02T14:48:01.583Z</updated>
+  <updated>2017-03-03T07:53:52.476Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -16,9 +16,45 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue-learn-notes.0</title>
+    <link href="http://zrdsj.cc/2017/03/03/Vue-learn-notes/"/>
+    <id>http://zrdsj.cc/2017/03/03/Vue-learn-notes/</id>
+    <published>2017-03-03T07:51:19.000Z</published>
+    <updated>2017-03-03T07:53:52.476Z</updated>
+    
+    <content type="html"><![CDATA[<p>sgerherhe</p>
+<p>wegs</p>
+<p>dbhgwer</p>
+<p>hb</p>
+<p>wreh</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;sgerherhe&lt;/p&gt;
+&lt;p&gt;wegs&lt;/p&gt;
+&lt;p&gt;dbhgwer&lt;/p&gt;
+&lt;p&gt;hb&lt;/p&gt;
+&lt;p&gt;wreh&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
+    
+    
+      <category term="经验之谈" scheme="http://zrdsj.cc/tags/%E7%BB%8F%E9%AA%8C%E4%B9%8B%E8%B0%88/"/>
+    
+      <category term="用户故事" scheme="http://zrdsj.cc/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/"/>
+    
+      <category term="敏捷方法" scheme="http://zrdsj.cc/tags/%E6%95%8F%E6%8D%B7%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>扯不下去的读后感2</title>
-    <link href="http://zrdsj.cc/2017/03/02/025/"/>
-    <id>http://zrdsj.cc/2017/03/02/025/</id>
+    <link href="http://zrdsj.cc/2017/03/02/book-review2/"/>
+    <id>http://zrdsj.cc/2017/03/02/book-review2/</id>
     <published>2017-03-02T05:26:10.156Z</published>
     <updated>2017-03-02T14:48:01.583Z</updated>
     
@@ -90,7 +126,7 @@
     <link href="http://zrdsj.cc/2017/02/22/024/"/>
     <id>http://zrdsj.cc/2017/02/22/024/</id>
     <published>2017-02-22T10:57:24.336Z</published>
-    <updated>2017-03-01T16:01:58.138Z</updated>
+    <updated>2017-03-03T10:28:04.341Z</updated>
     
     <content type="html"><![CDATA[<p>&#x6765;&#x7ED9;&#x81EA;&#x5DF1;&#x666E;&#x53CA;&#x4E0B;&#x57FA;&#x672C;&#x7684;&#x51E0;&#x79CD;&#x5DE5;&#x5177;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
 <p>&#x5176;&#x5B9E;&#x4E5F;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x6709;&#x5FC5;&#x8981;po&#x51FA;&#x8FD9;&#x4E48;&#x4E00;&#x7BC7;&#xFF0C;&#x5B9E;&#x5728;&#x662F;&#xFF0C;&#xFF0C;&#xFF0C;po&#x4E3B;&#x662F;&#x592A;&#x5065;&#x5FD8;&#x3002;&#x8FC7;&#x4E0A;&#x4FE9;&#x6708;&#xFF0C;&#x57FA;&#x672C;&#x89C1;&#x9762;&#x8DDF;&#x65B0;&#x7684;&#x4E00;&#x6837;&#x3002;&#x3002;&#x3002;wc&#xFF0C;&#x4E0D;&#x6562;&#x60F3;&#x3002;</p>
@@ -144,6 +180,71 @@
 <li>&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x8BF4;&#x660E;&#x4E5F;&#x90FD;&#x662F;&#x56F4;&#x7ED5;&#x7740;<em>express</em>&#x6846;&#x67B6;&#x7684;&#x4F7F;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x7684;&#x3002;&#x6587;&#x6863;&#x3001;&#x793E;&#x533A;&#x3001;&#x5B89;&#x5168;&#x95EE;&#x9898;&#x3001;&#x5FEB;&#x901F;&#x4E0A;&#x624B;&#x3001;&#x539F;&#x7406;&#x3001;&#x793A;&#x4F8B;&#x3001;&#x6D4B;&#x8BD5;&#x7B49;&#x7B49;&#x4E00;&#x5E94;&#x4FF1;&#x5168;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;<strong>&#x6240;&#x6709;&#x4F60;&#x5728;</strong><a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a><strong>&#x627E;&#x5230;&#x7684;&#x5305;</strong>&#xFF0C;<strong>&#x90FD;&#x4F1A;&#x6709;&#x7C7B;&#x4F3C;&#x7684;&#x8BF4;&#x660E;&#x6307;&#x5BFC;&#x9875;&#x9762;</strong>&#x3002;</li>
 <li>&#x5176;&#x5B9E;&#x4F60;&#x82E5;&#x77E5;&#x9053;&#x4E00;&#x4E9B;&#x5305;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x76F4;&#x63A5;&#x8C37;&#x6B4C;&#x5F97;&#x5230;&#x7684;&#x5F80;&#x5F80;&#x5C31;&#x662F;&#x4F60;&#x8981;&#x7684;&#x3002;&#x3002;&#x3002;&#x6BD4;&#x5982;&#x8BF4;<em>express</em>&#x7684;google&#x7ED3;&#x679C;&#x5C31;&#x662F;<img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/express-google.png" alt="233"></li>
 </ol>
+<h3 id="nvm">nvm</h3>
+<p><a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>&#x662F;&#x5168;&#x79F0;Node Version Manager&#xFF0C;&#x662F;&#x4E13;&#x95E8;&#x7BA1;&#x7406;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684;nodejs&#x548C;npm&#x7684;&#x5DE5;&#x5177;&#x3002;&#x8FD9;&#x4E2A;&#x5DE5;&#x5177;&#x662F;Mac&#x4E0B;&#x7684;&#x4E13;&#x5C5E;&#x5DE5;&#x5177;&#xFF0C;Windows&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="https://github.com/hakobera/nvmw" target="_blank" rel="external">nvmw</a>&#x6216;&#x8005;<a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">nvm-windows</a>.</p>
+<p>&#x90A3;&#x4E48;&#x6211;&#x73B0;&#x5728;&#x9762;&#x4E34;&#x4E00;&#x4E2A;&#x9009;&#x62E9;------&#x6211;&#x662F;&#x7EE7;&#x7EED;&#x8BF4;nvm?&#x8FD8;&#x662F;&#x8BF4;Win&#x5E73;&#x53F0;&#x7684;nvmw&#x548C;nvm-windows?</p>
+<p>&#x6211;&#x4E5F;&#x4E0D;&#x77E5;&#x9053;&#x3002;</p>
+<p>&#x628A;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;&#x63D0;&#x4E00;&#x4E0B;&#x597D;&#x4E86;&#xFF0C;&#x6BD5;&#x7ADF;&#x81EA;&#x5DF1;&#x7684;&#x8BB0;&#x6027;&#x5728;&#x90A3;&#x6446;&#x7740;&#xFF0C;&#x591A;&#x5199;&#x70B9;&#x4E5F;&#x662F;&#x6709;&#x597D;&#x5904;&#x3002;</p>
+<p>233</p>
+<h4 id="nvm">nvm</h4>
+<p><strong>nvm &#x4E0D;&#x662F;&#x4E00;&#x4E2A; npm package&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x8F6F;&#x4EF6;&#x5305;&#x3002;</strong></p>
+<p>&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash</div></pre></td></tr></table></figure>
+<p>&#x6216;&#x8005;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash</div></pre></td></tr></table></figure>
+<p>&#x4EE5;&#x4E0A;&#x811A;&#x672C;&#x4F1A;&#x628A;<code>nvm</code>&#x5E93;clone&#x5230;<code>~/.nvm</code>&#xFF0C;&#x7136;&#x540E;&#x4F1A;&#x5728;<code>~/.bash_profile</code>,&#xA0;<code>~/.zshrc</code>&#x6216;<code>~/.profile</code>&#x672B;&#x5C3E;&#x6DFB;&#x52A0;source&#xFF0C;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5;node&#x2026;</p>
+<p><a href="https://github.com/creationix/nvm#usage" target="_blank" rel="external">https://github.com/creationix/nvm#usage</a></p>
+<p>&#xFF08;&#x9003;</p>
+<h4 id="n">n</h4>
+<blockquote>
+<p>&#x4F60;&#xFF1A;&#x8FD9;tm&#x54EA;&#x6765;&#x7684;&#xFF1F;&#x662F;&#x5565;&#xFF1F;</p>
+</blockquote>
+<blockquote>
+<p>&#x6211;&#xFF1A;&#x2026;</p>
+</blockquote>
+<p>&#x5176;&#x5B9E;&#x8BB2;&#x5230;nvm&#x5176;&#x5B9E;&#x662F;&#x60F3;&#x8BF4;&#x8BF4;node&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x5427;&#xFF0C;&#x54C8;&#x54C8;&#x3002;&#x3002;&#x3002;&#x65E2;&#x7136;nvm&#x53EA;&#x662F;&#x652F;&#x6301;Mac&#xFF0C;&#x90A3;&#x5C31;&#x8BF4;&#x4E00;&#x4E2A;&#x90FD;&#x652F;&#x6301;&#x90FD;&#x53EF;&#x7528;&#x7684;&#x2014;<a href="https://github.com/tj/n" target="_blank" rel="external">n</a>.</p>
+<p>&#x9996;&#x5148;n &#x662F;&#x4E00;&#x4E2A;&#x9700;&#x8981;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x7684; <strong>npm</strong> &#x5305;(package)&#x3002;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g n</div></pre></td></tr></table></figure>
+<p>&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528; n &#x7BA1;&#x7406; node &#x7248;&#x672C;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x4E00;&#x4E2A; node &#x73AF;&#x5883;&#x3002;</p>
+<p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; n &#x6765;&#x5B89;&#x88C5;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x7684; node&#x3002;</p>
+<p>&#x5728;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#xFF0C;n &#x4F1A;&#x5148;&#x5C06;&#x6307;&#x5B9A;&#x7248;&#x672C;&#x7684; node &#x5B58;&#x50A8;&#x4E0B;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x5176;&#x590D;&#x5236;&#x5230;&#x6211;&#x4EEC;&#x719F;&#x77E5;&#x7684;&#x8DEF;&#x5F84;&#xA0;<code>/usr/local/bin</code>&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x660E;&#x4E86;&#x3002;&#x5F53;&#x7136;&#x7531;&#x4E8E; n &#x4F1A;&#x64CD;&#x4F5C;&#x5230;&#x975E;&#x7528;&#x6237;&#x76EE;&#x5F55;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x52A0;&#xA0;<code>sudo</code>&#xA0;&#x6765;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#x8FD9;&#x6837;&#x770B;&#x6765;&#xFF0C;n &#x5728;&#x5176;&#x5B9E;&#x73B0;&#x4E0A;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5BB9;&#x6613;&#x7406;&#x89E3;&#x7684;&#x65B9;&#x6848;&#x3002;</p>
+<h4 id="n-or-nvm">n or nvm?</h4>
+<p>&#x8FD9;&#x6837;&#x770B;&#x4E0B;&#x6765;&#xFF0C;nvm &#x548C; n &#x7684;&#x5DEE;&#x5F02;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x5927;&#x7684;&#xFF0C;&#x5177;&#x4F53;&#x4F53;&#x73B0;&#x5728;&#xFF1A;</p>
+<ol>
+<li>&#x5B89;&#x88C5;&#x7B80;&#x6613;&#x5EA6;&#x3002;nvm &#x5B89;&#x88C5;&#x8D77;&#x6765;&#x663E;&#x7136;&#x662F;&#x8981;&#x9EBB;&#x70E6;&#x4E0D;&#x5C11;&#xFF1B;n &#x8FD9;&#x79CD;&#x5B89;&#x88C5;&#x65B9;&#x5F0F;&#x66F4;&#x7B26;&#x5408; node &#x7684;&#x60EF;&#x6027;&#x601D;&#x7EF4;&#x3002;&#x89C1;&#x4EC1;&#x89C1;&#x667A;&#x5427;&#x3002;</li>
+<li>&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#xA0;nvm &#x4E0D;&#x652F;&#x6301; <a href="https://zh.wikipedia.org/zh-cn/Microsoft_Windows" target="_blank" rel="external">Windows</a>.</li>
+<li>&#x5BF9;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x7684;&#x7BA1;&#x7406;&#x3002;n &#x5BF9;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x6BEB;&#x65E0;&#x4F5C;&#x4E3A;&#xFF0C;&#x56E0;&#x6B64;&#x6709;&#x53EF;&#x80FD;&#x5728;&#x5207;&#x6362;&#x4E86; node &#x7248;&#x672C;&#x540E;&#x53D1;&#x751F;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x6267;&#x884C;&#x51FA;&#x9519;&#x7684;&#x95EE;&#x9898;&#xFF1B;nvm &#x7684;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x5B58;&#x5728;&#x4E8E;&#x5404;&#x81EA;&#x7248;&#x672C;&#x7684;&#x6C99;&#x7BB1;&#x4E2D;&#xFF0C;&#x5207;&#x6362;&#x7248;&#x672C;&#x540E;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#xFF0C;&#x4E0D;&#x540C;&#x7248;&#x672C;&#x95F4;&#x4E5F;&#x4E0D;&#x5B58;&#x5728;&#x4EFB;&#x4F55;&#x51B2;&#x7A81;&#x3002;</li>
+<li>&#x5173;&#x4E8E; node &#x8DEF;&#x5F84;&#x3002;n &#x662F;&#x4E07;&#x5E74;&#x4E0D;&#x53D8;&#x7684;&#xA0;<code>/usr/local/bin</code>&#xFF1B;nvm &#x9700;&#x8981;&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x3002;</li>
+</ol>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x4F55;&#x9009;&#x62E9;&#xFF1F;&#x89C1;&#x4EC1;&#x89C1;&#x667A;&#x4E86;&#xFF0C;&#x4E0D;&#x8FC7;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x7ED9;&#x51FA;&#x5927;&#x4F53;&#x7684;&#x5EFA;&#x8BAE;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528; Windows&#xFF0C;&#x90A3;&#x6CA1;&#x5F97;&#x9009;&#x4E86;&#xFF0C;&#x4F7F;&#x7528; n&#xFF0C;&#x6216;&#x8005;&#x6362;&#x4E00;&#x53F0; Mac&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x4F1A;&#x9891;&#x7E41;&#x5207;&#x6362; node &#x7248;&#x672C;&#xFF08;&#x6BD4;&#x5982;&#x672C;&#x5730;&#x7ECF;&#x5E38;&#x6D4B;&#x8BD5;&#x6700;&#x65B0;&#x7248;&#x7684;&#x7279;&#x6027;&#xFF0C;&#x540C;&#x65F6;&#x53C8;&#x8981;&#x517C;&#x987E;&#x4EE3;&#x7801;&#x5728;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x4ECE;&#x5168;&#x5C40;&#x6A21;&#x5757;&#x517C;&#x5BB9;&#x6027;&#x7684;&#x89D2;&#x5EA6;&#x8003;&#x8651;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528; nvm&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x62C5;&#x5FC3;&#x517C;&#x5BB9;&#x6027;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x66F4;&#x5173;&#x5FC3; node &#x5B89;&#x88C5;&#x548C;&#x4F7F;&#x7528;&#x4E0A;&#x7684;&#x4F53;&#x9A8C;&#xFF0C;&#x90A3;&#x4E48;&#x9009;&#x62E9; n&#x3002;</li>
+</ol>
+<p>&#x53C2;&#x8003;&#x51FA;&#x5904;&#x2014;<a href="http://taobaofed.org/blog/2015/11/17/nvm-or-n/" target="_blank" rel="external">aaaaaaaaaa</a>.</p>
+<h4 id="nvmw">nvmw</h4>
+<p>&#x8FD9;&#x73A9;&#x610F;&#x76F8;&#x6BD4;nvm&#x591A;&#x4E86;&#x4E2A;w&#xFF0C;&#x5176;&#x5B9E;&#x5C31;&#x8868;&#x8FBE;&#x4E86;&#x8FD9;&#x662F;&#x5728;Windows&#x5E73;&#x53F0;&#x4F7F;&#x7528;&#x7684;&#x2014;Node.js&#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x73A9;&#x610F;&#x7684;&#x5B98;&#x7F51;&#x4E00;&#x822C;&#x6CA1;&#x4EC0;&#x4E48;&#x7528;&#xFF08;&#x6709;&#x6CA1;&#x6709;&#x90FD;&#x662F;&#x4E00;&#x56DE;&#x4E8B;2333&#xFF09;&#xFF0C;&#x76F4;&#x63A5;&#x5728;GitHub&#x4E0A;&#x770B;&#x770B;&#x53BB;&#x5427;&#x3002;&#x3002;&#x3002;<a href="https://github.com/hakobera/nvmw" target="_blank" rel="external">https://github.com/hakobera/nvmw</a></p>
+<p>&#x5F88;&#x4E0D;&#x5E78;&#xFF0C;&#x5728;&#x4E0B;&#x65B9;&#x7684;README.md&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;&#x8FD9;&#x6837;&#x4E00;&#x53E5;&#x8BDD;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">SORRY, nvmw is no longer maintained. If someone wants to keep maintained, contact me by email or twitter.</div></pre></td></tr></table></figure>
+<p>&#x4E0D;&#x518D;&#x7EF4;&#x62A4;&#x4E86;&#xFF0C;hehe.</p>
+<p>&#x4E0D;&#x8FC7;&#x5462;&#xFF0C;&#x4E0D;&#x7EF4;&#x62A4;&#x6709;&#x4E0D;&#x662F;&#x4E0D;&#x80FD;&#x7528;&#x4E86;&#x3002;&#x3002;&#x3002;&#x7EE7;&#x7EED;&#x770B;&#x770B;&#x5427;</p>
+<p>&#x597D;&#x7684;&#xFF0C;</p>
+<p>&#x5B89;&#x88C5;-&#x7528;&#x6CD5;-&#x652F;&#x6301;&#x5217;&#x8868;-&#x955C;&#x50CF;&#x5217;&#x8868;&#xFF08;&#x597D;&#x8BC4;&#x554A;&#xFF0C;&#x54C8;&#x54C8;&#x77E5;&#x9053;&#x5728;&#x74F7;&#x5668;&#x56FD;&#x4E0D;&#x80FD;&#x7528;2333&#xFF09;</p>
+<p>&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x5DF2;&#x7ECF;&#x662F;2&#x5E74;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x4F7F;&#x7528;&#x4E0A;&#x53EF;&#x4EE5;&#x9884;&#x89C1;&#x7684;&#x90FD;&#x662F;&#x95EE;&#x9898;&#xFF08;&#x4E3B;&#x8981;&#x662F;win&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x6211;&#x662F;&#x4E0D;&#x770B;&#x597D;&#x7684;&#xFF09;233</p>
+<p>&#x5728;<a href="https://segmentfault.com/" target="_blank" rel="external">Sf</a>&#x627E;&#x5230;&#x4E86;<a href="https://segmentfault.com/a/1190000004855835" target="_blank" rel="external">&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;</a>&#xFF0C;&#x4E5F;&#x8BB8;&#x662F;&#x6709;&#x4E9B;&#x5E2E;&#x52A9;&#x7684;&#x3002;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF0C;&#x5927;&#x5BB6;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x3002;</p>
+<h4 id="nvm-windows">nvm-windows</h4>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x822C;&#x8BF4;&#x7684;<code>nvm for windows</code>&#xFF0C;<a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">&#x94FE;&#x63A5;</a>.</p>
+<p>&#x8BF4;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x8BF4;&#x7528;&#x6CD5;&#x548C;&#x5185;&#x5BB9;&#x7684;&#x8BDD;&#xFF0C;&#x6CA1;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#x4E86;&#x3002;&#x3002;&#x3002;&#x4ECE;apm&#x8BB2;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6837;&#x5F0F;&#x7684;&#x7528;&#x6CD5;&#x5B89;&#x88C5;&#xFF08;&#x6211;&#x89C9;&#x5F97;&#x53EF;&#x4EE5;&#x8FD9;&#x4E48;&#x8BF4;&#xFF0C;&#x867D;&#x7136;&#x5F88;&#x4E0D;&#x4E25;&#x8C28;&#xFF09;&#x3002;</p>
+<p>&#x4E0D;&#x518D;&#x8D58;&#x8FF0;&#xFF0C;&#x672C;&#x5C0F;&#x8282;&#x7684;&#x94FE;&#x63A5;&#x5C31;&#x5F88;&#x8BE6;&#x7EC6;&#xFF08;&#x5168;&#x662F;&#x82F1;&#x6587;233&#xFF09;.</p>
+<h3 id="cnpm">cnpm</h3>
+<p>&#x4FD7;&#x79F0;&#x6DD8;&#x5B9D;&#x955C;&#x50CF;&#x3002;&#x8C37;&#x6B4C;&#x51FA;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7ED3;&#x679C;&#x662F;&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#xFF1A;<a href="https://npm.taobao.org/" target="_blank" rel="external">https://npm.taobao.org/</a> .</p>
+<p>&#x662F;&#x4E2A;&#x4E2D;&#x6587;&#x754C;&#x9762;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x4E0D;&#x518D;&#x8BF4;&#x4E86;&#x3002;</p>
+<p>&#x5176;&#x5B9E;&#x5C31;&#x662F;npm&#x5728;&#x56FD;&#x5185;&#x7684;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x4E0B;&#x7ECF;&#x5E38;&#x62BD;&#x98CE;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x642D;&#x68AF;&#x5B50;&#x4E5F;&#x662F;&#x4E0D;&#x597D;&#x4F7F;&#x3002;&#x7136;&#x540E;&#x56FD;&#x5185;&#x7684;&#x4E00;&#x4E9B;&#x7AD9;&#x70B9;&#x5C31;&#x5F15;&#x5165;&#x4E86;&#x56FD;&#x5916;npm&#x7AD9;&#x70B9;&#x7684;&#x5168;&#x90E8;&#x8D44;&#x6E90;&#xFF0C;&#x6574;&#x4E2A;&#x5168;&#x7ED9;&#x62F7;&#x8D1D;&#x8FC7;&#x6765;&#xFF0C;&#x7136;&#x540E;&#x5462;&#x8FD9;&#x4E9B;&#x56FD;&#x5185;&#x7AD9;&#x70B9;&#x5C31;&#x88AB;&#x79F0;&#x4E3A;<code>npm&#x955C;&#x50CF;&#x8D44;&#x6E90;</code>.</p>
+<p>&#x8FD9;&#x4E9B;&#x955C;&#x50CF;&#x8D44;&#x6E90;&#x7684;&#x4E3B;&#x9875;&#xFF0C;&#x5927;&#x90FD;&#x662F;&#x4E2D;&#x6587;&#xFF0C;&#x5F88;&#x597D;&#x7406;&#x89E3;&#x4E0E;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x7684;&#x51E0;&#x4E2A;&#x9875;&#x9762;&#xFF1A;<a href="http://yijiebuyi.com/blog/b12eac891cdc5f0dff127ae18dc386d4.html" target="_blank" rel="external">1111</a>&#xFF0C;<a href="http://riny.net/2014/cnpm/" target="_blank" rel="external">2222</a>&#x3002;</p>
 ]]></content>
     
     <summary type="html">
@@ -160,6 +261,10 @@
       <category term="Atom" scheme="http://zrdsj.cc/tags/Atom/"/>
     
       <category term="版本工具" scheme="http://zrdsj.cc/tags/%E7%89%88%E6%9C%AC%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="npm" scheme="http://zrdsj.cc/tags/npm/"/>
+    
+      <category term="nvm" scheme="http://zrdsj.cc/tags/nvm/"/>
     
   </entry>
   
@@ -2179,81 +2284,15 @@ C&#x3001;meta description&#x7F51;&#x9875;&#x63CF;&#x8FF0;&#xFF1A;&#x9AD8;&#x5EA6
       <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
     
     
-      <category term="文化掰扯" scheme="http://zrdsj.cc/tags/%E6%96%87%E5%8C%96%E6%8E%B0%E6%89%AF/"/>
-    
       <category term="政治" scheme="http://zrdsj.cc/tags/%E6%94%BF%E6%B2%BB/"/>
+    
+      <category term="文化掰扯" scheme="http://zrdsj.cc/tags/%E6%96%87%E5%8C%96%E6%8E%B0%E6%89%AF/"/>
     
       <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
     
       <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
     
       <category term="霍布斯" scheme="http://zrdsj.cc/tags/%E9%9C%8D%E5%B8%83%E6%96%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我的-编译原理-de故事</title>
-    <link href="http://zrdsj.cc/2016/08/29/006/"/>
-    <id>http://zrdsj.cc/2016/08/29/006/</id>
-    <published>2016-08-29T14:35:21.893Z</published>
-    <updated>2016-09-27T07:13:49.711Z</updated>
-    
-    <content type="html"><![CDATA[<p>&#x8FD9;&#x662F;&#x7BC7;&#x53D1;&#x8868;&#x5728;0829&#x7684;&#x6587;&#x7AE0;&#xFF0C;&#x4ECA;&#x5929;&#x662F;0915.&#x534A;&#x4E2A;&#x591A;&#x6708;&#x4E86;</p>
-<p>&#x6628;&#x5929;&#x662F;&#x4E5D;&#x6708;&#x5341;&#x4E09;&#x65E5;&#xFF0C;&#x7ED3;&#x675F;&#x4E86;&#x81EA;&#x5DF1;&#x7684;&#x2018;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x2019;&#x8865;&#x8003;&#x3002;&#x8FD9;&#x662F;&#x5927;&#x5B66;&#x6211;&#x7684;&#x6700;&#x540E;&#x7684;&#x8003;&#x8BD5;&#x4E86;&#xFF0C;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x3002;</p>
-<p>&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x7684;&#x51E0;&#x4E2A;&#x6807;&#x7B7E;&#xFF0C;&#x770B;&#x4E0A;&#x53BB;&#x4F3C;&#x4E4E;&#x662F;&#x6709;&#x6545;&#x4E8B;&#x7684;&#x3002;&#x6B63;&#x5982;&#x535A;&#x5927;&#x7CBE;&#x6DF1;&#x7684;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x5176;&#x53D1;&#x5C55;&#x5386;&#x53F2;&#x4E2D;&#x79BB;&#x4E0D;&#x5F00;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x8FD9;&#x5B66;&#x79D1;&#xFF08;&#x5176;&#x5B9E;&#x6211;&#x66F4;&#x613F;&#x610F;&#x5C06;&#x4E4B;&#x79F0;&#x4E3A;&#x79D1;&#x5B66;&#xFF09;&#x4E00;&#x6837;&#x3002;&#x3002;&#x3002;&#x6211;&#x7684;&#x5B66;&#x4E1A;&#x8FDB;&#x5C55;&#x8FC7;&#x7A0B;&#x4E2D;&#x9047;&#x5230;&#x4E86;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#xFF0C;&#x4E5F;&#x9887;&#x6709;&#x4E86;&#x4E00;&#x756A;&#x6E0A;&#x6E90;&#x3002;</p>
-<h3 id="that-winter">that winter</h3>
-<p>2015&#x7ED3;&#x675F;2016&#x5C31;&#x6765;&#x4E86;&#xFF0C;&#x5317;&#x65B9;&#x8FD9;&#x65F6;&#x95F4;&#x81EA;&#x7136;&#x662F;&#x51AC;&#x5929;&#x3002;&#x7D27;&#x63A5;&#x7740;&#x7684;&#x4E00;&#x4E2A;&#x5B66;&#x671F;&#x662F;&#x5927;&#x4E09;&#x7684;&#x4E0B;&#x5B66;&#x671F;&#xFF0C;&#x6211;&#x5F88;&#x96BE;&#x53D7;&#x3002;</p>
-<p>&#x56E0;&#x4E3A;&#x5927;&#x5B66;&#x7684;&#x5927;&#x591A;&#x6570;&#x540C;&#x5B66;&#x90FD;&#x51FA;&#x53BB;&#x5B9E;&#x8BAD;&#x4E86;&#xFF0C;&#x6211;&#x51B3;&#x5B9A;&#x7559;&#x5728;&#x5B66;&#x6821;&#x8FD8;&#x4E0D;&#x60F3;&#x51FA;&#x53BB;&#x3002;&#x51FA;&#x7684;&#x4EBA;&#x591A;&#x4E86;&#xFF0C;&#x81EA;&#x7136;&#x4F1A;&#x6709;&#x7231;&#x7684;&#x4EBA;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#x96BE;&#x53D7;&#x3002;</p>
-<p>&#x5728;&#x8FD9;&#x4E2A;&#x96BE;&#x53D7;&#x7684;&#x5B66;&#x671F;&#x4E2D;&#xFF0C;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x5230;&#x6765;&#x4E86;&#x3002;&#x539F;&#x4EE5;&#x4E3A;&#x662F;&#x4E00;&#x95E8;&#x6709;&#x610F;&#x601D;&#x7684;&#x5B66;&#x79D1;&#xFF0C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x5F88;&#x591A;&#x7406;&#x8BBA;&#x5F88;&#x591A;&#x5B66;&#x8BC6;&#x3002;&#x7136;&#x800C;&#x4E8B;&#x5B9E;&#x4E0D;&#x9042;&#x4EBA;&#x613F;&#xFF0C;&#x4E00;&#x5207;&#x6D3B;&#x52A8;&#x5145;&#x6EE1;&#x4E86;&#x65E0;&#x804A;&#xFF0C;&#x778C;&#x7761;&#x8FD8;&#x90FD;&#x5815;&#x843D;&#x3002;</p>
-<p>&#x56DE;&#x5FC6;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x8DB3;&#x591F;&#x4E86;&#x3002;&#x518D;&#x5199;&#x7684;&#x8BDD;&#x81EA;&#x7136;&#x5570;&#x55E6;&#x4E86;&#x66F4;&#x65E0;&#x610F;&#x4E49;&#x4E86;&#x3002;</p>
-<p>&#x6211;&#x60F3;&#x8BF4;&#x5173;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x6545;&#x4E8B;&#xFF0C;&#x4E5F;&#x5C31;&#x4ECE;&#x6B64;&#x5904;&#x5F15;&#x8FDB;&#x6765;&#x4E86;&#x3002;</p>
-<h3 id="why-why-why">why why why</h3>
-<p>&#x4EBA;&#x6D3B;&#x7740;&#xFF0C;&#x505A;&#x4E8B;&#x60C5;&#xFF0C;&#x5230;&#x4E86;&#x6211;&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x5373;&#x4F7F;&#x597D;&#x591A;&#x4E8B;&#x60C5;&#x8FD8;&#x4F1A;&#x51FA;&#x95EE;&#x9898;&#x3002;&#x4E5F;&#x4E0D;&#x8981;&#x518D;&#x627E;&#x501F;&#x53E3;&#x5BFB;&#x7406;&#x7531;&#x4E86;&#xFF0C;&#x8138;&#x4E0A;&#x6302;&#x4E0D;&#x4F4F;&#x81EA;&#x7136;&#x96BE;&#x582A;so&#x53EF;&#x4EE5;&#x5634;&#x786C;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x8981;&#x603B;&#x662F;&#x627E;&#x501F;&#x53E3;&#x5BFB;&#x7406;&#x7531;&#x4E86;&#x3002;</p>
-<p>&#x4ECE;&#x4E0A;&#x4E2A;&#x7AE0;&#x8282;&#x4F60;&#x4EEC;&#x77E5;&#x9053;&#x4E86;&#xFF0C;&#x5728;&#x65E0;&#x804A;&#x778C;&#x7761;&#x5815;&#x843D;&#x4E2D;&#xFF0C;&#x6211;&#x7EC8;&#x4E8E;&#x5316;&#x8EAB;&#x667A;&#x969C;&#xFF0C;&#x6302;&#x6389;&#x4E86;&#x300A;&#x7F16;&#x8BD1;&#x539F;&#x7406;&#x300B;&#x3002;&#x6211;&#x65E0;&#x5948;&#xFF0C;&#x4F46;&#x662F;&#x81EA;&#x5DF1;&#x5728;&#x7761;&#x89C9;&#x65F6;&#x5019;&#x786E;&#x5B9E;&#x6CA1;&#x60F3;&#x8FC7;&#x5F80;&#x540E;&#x7684;&#x65E5;&#x5B50;&#xFF0C;&#x6302;&#x79D1;&#x5012;&#x4E5F;&#x662F;&#x4E0D;&#x8D1F;&#x6211;&#x5FC3;&#x4E86;&#x3002;</p>
-<blockquote class="blockquote-center"><p>why why why</p>
-</blockquote>
-<p>&#x4E3B;&#x8981;&#x95EE;&#x7684;&#x662F;&#x5728;&#x590D;&#x4E60;&#x65F6;&#x5019;&#x53D1;&#x751F;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5728;&#x8FC7;&#x53BB;&#x7684;&#x534A;&#x4E2A;&#x6708;&#x5427;&#x3002;&#x90FD;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
-<p>&#x201C;&#x8FD9;&#x4E00;&#x7AE0;&#x8BB2;&#x7684;&#x4EC0;&#x4E48;&#x554A;&#xFF1F;&#x201D;</p>
-<p>&#x201C;&#x8FD9;&#x4E00;&#x9053;&#x4F8B;&#x9898;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x554A;&#xFF1F;&#x201D;</p>
-<p>&#x201C;&#x8FD9;&#x4E2A;&#x662F;&#x4E0D;&#x662F;&#x91CD;&#x70B9;&#xFF1F;&#x201D;</p>
-<p>&#x4E5F;&#x8BB8;&#x4F60;&#x89C9;&#x5F97;&#x6211;&#x6CA1;&#x90A3;&#x4E48;&#x7CDF;&#x7CD5;,&#x7136;&#x800C;&#xFF0C;&#x5C31;&#x6709;&#x90A3;&#x4E48;&#x7CDF;&#x7CD5;&#x3002;&#x3002;&#x3002;&#x7B2C;&#x4E00;&#x6B21;&#x8003;&#x8BD5;&#x51E0;&#x4E4E;&#x662F;&#x4F1A;&#x7684;&#x9898;&#x578B;&#x7B54;&#x5728;&#x54EA;&#x513F;&#x90FD;&#x4E0D;&#x77E5;&#x9053;233&#x1F602;</p>
-<p>&#x89C1;&#x7B11;&#x4E86;&#x3002;&#x6211;&#x79F0;&#x4E4B;&#x4E3A;&#x81EA;&#x5DF1;&#x7684;<code>&#x667A;&#x969C;&#x4EBA;&#x751F;</code>&#x3002;</p>
-<blockquote>
-<p>&#x4E0D;&#x53BB;&#x5B66;&#xFF0C;&#x4E0D;&#x597D;&#x597D;&#x5B66;&#xFF0C;&#x7B49;&#x6B7B;&#x3002;
-&#x6B7B;&#x4E86;&#x4E4B;&#x540E;&#x624D;&#x77E5;&#x9053;&#x5F97;&#x641E;&#x6E05;&#x695A;&#x3002;</p>
-</blockquote>
-<p>&#x540D;&#x526F;&#x5176;&#x5B9E;&#xFF0C;&#x6CA1;&#x95EE;&#x9898;&#xFF01;</p>
-<h3 id="&#x5915;&#x9633;&#x4E0B;&#x7684;&#x7EFC;&#x5408;&#x697C;">&#x5915;&#x9633;&#x4E0B;&#x7684;&#x7EFC;&#x5408;&#x697C;</h3>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/0914heda.JPG" alt="beauty"></p>
-<p>&#x5148;&#x6765;&#x8BF4;&#x8BF4;&#x8C36;&#x8BED;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x770B;&#x4E0B;&#x9762;&#x7684;&#x622A;&#x56FE;&#x5148;</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/667830.jpg" alt="mdzz"></p>
-<p>&#x8003;&#x8BD5;&#x65F6;&#x95F4;&#x662F;6&#x6708;25&#x65E5;&#x7684;&#x8BDD;&#xFF0C;&#x8FD9;&#x53E5;&#x8BDD;&#x5E94;&#x8BE5;&#x662F;&#x600E;&#x4E48;&#x7406;&#x89E3;&#xFF1F;</p>
-<p>&#x4E00;&#x79CD;&#x8000;&#x6B66;&#x626C;&#x5A01;&#x7684;mdzz&#xFF1F;&#x8FD8;&#x662F;&#x53D1;&#x81EA;&#x5185;&#x5FC3;&#x7684;mdzz&#xFF1F;</p>
-<p>2333</p>
-<p>&#x53CD;&#x6B63;&#x90FD;&#x4E00;&#x6837;&#xFF0C;mdzz&#x3002;&#x4E00;&#x8BED;&#x6210;&#x8C36;&#xFF0C;&#x6302;&#x4E86;&#x79D1;&#x6CA1;&#x901A;&#x8FC7;&#x8003;&#x8BD5;&#x3002;&#x5176;&#x4ED6;&#x7684;&#x5B66;&#x79D1;&#xFF0C;&#x6216;&#x591A;&#x6216;&#x5C11;&#x90FD;&#x662F;&#x6709;&#x96BE;&#x5EA6;&#x7684;&#xFF0C;&#x4F46;&#x6211;&#x90FD;&#x633A;&#x8FC7;&#x6765;&#x4E86;&#xFF0C;&#x8FD9;&#x4E00;&#x95E8;&#x504F;&#x504F;&#x6574;&#x4E2A;&#x8FD9;&#x51FA;&#x3002;</p>
-<blockquote>
-<p>&#x6000;&#x7591;&#x5947;&#x602A;&#x7684;&#x4E8B;&#x60C5;&#x4E45;&#x4E86;&#xFF0C;&#x81EA;&#x5DF1;&#x4E5F;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x5947;&#x602A;&#x3002;</p>
-</blockquote>
-<p>&#x6211;&#x89C9;&#x5F97;&#x81EA;&#x5DF1;&#x5DEE;&#x4E0D;&#x591A;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#xFF0C;&#x795E;&#x7ECF;&#x516E;&#x516E;&#x7684;&#x3002;&#x8FC7;&#x53BB;&#x7684;&#x534A;&#x4E2A;&#x6708;&#xFF0C;&#x5404;&#x79CD;&#x535A;&#x5BA2;&#xFF0C;&#x4E66;&#x4E0A;&#x7684;&#x6BCF;&#x4E2A;&#x7AE0;&#x8282;&#xFF0C;&#x6BCF;&#x9053;&#x8BFE;&#x540E;&#x9898;&#xFF0C;&#x6211;&#x90FD;&#x904D;&#x590D;&#x4E00;&#x904D;&#x7684;&#x590D;&#x76D8;&#x7740;&#x3002;&#x5982;&#x4ECA;&#x8FD9;&#x6BB5;<code>&#x5F80;&#x4E8B;</code>&#xFF0C;&#x5DF2;&#x7ECF;&#x8FC7;&#x53BB;&#x3002;</p>
-<p>&#x6211;&#x60F3;&#xFF0C;&#x5931;&#x610F;&#x7684;&#x65E5;&#x5B50;&#x5E26;&#x7ED9;&#x6211;&#x7684;&#x4E0D;&#x4EC5;&#x4EC5;&#x662F;&#x5931;&#x610F;&#xFF0C;&#x66F4;&#x662F;&#x6000;&#x604B;&#x7F8E;&#x597D;&#x7684;&#x611F;&#x89C9;&#x3002;&#x8BF4;&#x6DF1;&#x4E86;&#x662F;&#x201C;&#x65AF;&#x5FB7;&#x54E5;&#x5C14;&#x6469;&#x7EFC;&#x5408;&#x5F81;&#x201D;&#xFF0C;&#x8BF4;&#x7B80;&#x5355;&#x4E86;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x751F;&#x6D3B;&#x5427;&#x3002;&#x3002;&#x3002;</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&amp;id=116337&amp;auto=0&amp;height=66"></iframe>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&amp;#x8FD9;&amp;#x662F;&amp;#x7BC7;&amp;#x53D1;&amp;#x8868;&amp;#x5728;0829&amp;#x7684;&amp;#x6587;&amp;#x7AE0;&amp;#xFF0C;&amp;#x4ECA;&amp;#x5929;&amp;#x662F;0915.&amp;#x534A;&amp;#x4E2A;&amp;#x591A;
-    
-    </summary>
-    
-      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
-    
-    
-      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
-    
-      <category term="智障人生" scheme="http://zrdsj.cc/tags/%E6%99%BA%E9%9A%9C%E4%BA%BA%E7%94%9F/"/>
-    
-      <category term="谶语少bb" scheme="http://zrdsj.cc/tags/%E8%B0%B6%E8%AF%AD%E5%B0%91bb/"/>
     
   </entry>
   

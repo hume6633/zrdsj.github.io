@@ -4,12 +4,40 @@
 
     
   <url>
-    <loc>http://zrdsj.cc/2017/03/02/025/</loc>
-    <lastmod>2017-03-02T14:48:01.583Z</lastmod>
+    <loc>http://zrdsj.cc/2017/02/22/024/</loc>
+    <lastmod>2017-03-03T10:28:04.341Z</lastmod>
     <data>
         <display>
-        <title>扯不下去的读后感2</title>
-        <pubTime>2017-03-02T05:26:10.156Z</pubTime>
+        <title>apm npm nvm cnpm都是什么鬼?</title>
+        <pubTime>2017-02-22T10:57:24.336Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>Atom</tag>
+         
+        <tag>版本工具</tag>
+         
+        <tag>npm</tag>
+         
+        <tag>nvm</tag>
+         
+         
+           
+             
+              <breadCrumb title="sixpence" url="http://zrdsj.cc/categories/sixpence/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://zrdsj.cc/2017/03/03/Vue-learn-notes/</loc>
+    <lastmod>2017-03-03T07:53:52.476Z</lastmod>
+    <data>
+        <display>
+        <title>Vue-learn-notes.0</title>
+        <pubTime>2017-03-03T07:51:19.000Z</pubTime>
         
         <tag>经验之谈</tag>
          
@@ -28,18 +56,18 @@
 
     
   <url>
-    <loc>http://zrdsj.cc/2017/02/22/024/</loc>
-    <lastmod>2017-03-01T16:01:58.138Z</lastmod>
+    <loc>http://zrdsj.cc/2017/03/02/book-review2/</loc>
+    <lastmod>2017-03-02T14:48:01.583Z</lastmod>
     <data>
         <display>
-        <title>apm npm nvm cnpm都是什么鬼?</title>
-        <pubTime>2017-02-22T10:57:24.336Z</pubTime>
+        <title>扯不下去的读后感2</title>
+        <pubTime>2017-03-02T05:26:10.156Z</pubTime>
         
-        <tag>node</tag>
+        <tag>经验之谈</tag>
          
-        <tag>Atom</tag>
+        <tag>用户故事</tag>
          
-        <tag>版本工具</tag>
+        <tag>敏捷方法</tag>
          
          
            
@@ -498,9 +526,9 @@
         <title>吆喝几句Thomas Hobbes托马斯·霍布斯</title>
         <pubTime>2016-08-29T15:02:35.230Z</pubTime>
         
-        <tag>文化掰扯</tag>
-         
         <tag>政治</tag>
+         
+        <tag>文化掰扯</tag>
          
         <tag>基督教</tag>
          
