@@ -4,8 +4,32 @@
 
     
   <url>
+    <loc>http://zrdsj.cc/2016/09/30/Fe-http/</loc>
+    <lastmod>2017-03-05T15:59:35.544Z</lastmod>
+    <data>
+        <display>
+        <title>前端该了解的'http'故事</title>
+        <pubTime>2016-09-30T15:12:12.242Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>http</tag>
+         
+        <tag>https</tag>
+         
+         
+           
+             
+              <breadCrumb title="sixpence" url="http://zrdsj.cc/categories/sixpence/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://zrdsj.cc/2017/02/22/apm_npm_nvm_cnpm/</loc>
-    <lastmod>2017-03-03T10:28:04.341Z</lastmod>
+    <lastmod>2017-03-05T12:19:59.517Z</lastmod>
     <data>
         <display>
         <title>apm npm nvm cnpm都是什么鬼?</title>
@@ -32,18 +56,20 @@
 
     
   <url>
-    <loc>http://zrdsj.cc/2017/03/03/Vue-learn-notes/</loc>
-    <lastmod>2017-03-03T07:53:52.476Z</lastmod>
+    <loc>http://zrdsj.cc/2017/03/02/book-review2/</loc>
+    <lastmod>2017-03-04T14:01:34.493Z</lastmod>
     <data>
         <display>
-        <title>Vue-learn-notes.0</title>
-        <pubTime>2017-03-03T07:51:19.000Z</pubTime>
+        <title>扯不下去的读后感2</title>
+        <pubTime>2017-03-02T05:26:10.156Z</pubTime>
         
         <tag>经验之谈</tag>
          
         <tag>用户故事</tag>
          
         <tag>敏捷方法</tag>
+         
+        <tag>测试</tag>
          
          
            
@@ -56,12 +82,12 @@
 
     
   <url>
-    <loc>http://zrdsj.cc/2017/03/02/book-review2/</loc>
-    <lastmod>2017-03-02T14:48:01.583Z</lastmod>
+    <loc>http://zrdsj.cc/2017/03/03/Vue-learn-notes/</loc>
+    <lastmod>2017-03-03T07:53:52.476Z</lastmod>
     <data>
         <display>
-        <title>扯不下去的读后感2</title>
-        <pubTime>2017-03-02T05:26:10.156Z</pubTime>
+        <title>Vue-learn-notes.0</title>
+        <pubTime>2017-03-03T07:51:19.000Z</pubTime>
         
         <tag>经验之谈</tag>
          
@@ -358,30 +384,6 @@
            
              
               <breadCrumb title="moon" url="http://zrdsj.cc/categories/moon/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://zrdsj.cc/2016/09/30/Fe-http/</loc>
-    <lastmod>2016-10-21T08:15:08.459Z</lastmod>
-    <data>
-        <display>
-        <title>前端该了解的'http'故事</title>
-        <pubTime>2016-09-30T15:12:12.242Z</pubTime>
-        
-        <tag>在路上</tag>
-         
-        <tag>前端</tag>
-         
-        <tag>http</tag>
-         
-         
-           
-             
-              <breadCrumb title="sixpence" url="http://zrdsj.cc/categories/sixpence/"/>
           
         </display>
     </data>
