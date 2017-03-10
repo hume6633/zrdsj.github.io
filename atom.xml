@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-10T10:54:42.197Z</updated>
+  <updated>2017-03-10T14:43:57.307Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -14,6 +14,79 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Less.js的若干记录</title>
+    <link href="http://zrdsj.cc/2017/03/10/less/"/>
+    <id>http://zrdsj.cc/2017/03/10/less/</id>
+    <published>2017-03-10T13:05:41.831Z</published>
+    <updated>2017-03-10T14:43:57.307Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
+<p>一门CSS预处理语言，一切都为CSS更好使。</p>
+<p><u><strong>什么是 CSS 预处理语言？</strong></u></p>
+<p>CSS <a href="https://zh.wikipedia.org/wiki/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8" target="_blank" rel="external">预处理器</a>定义了一种新的语言，其基本思想是，用一种专门的编程语言，为 CSS 增加了一些编程的特性，将 CSS 作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。</p>
+<p>通俗来讲，“CSS 预处理器用一种专门的编程语言，进行 Web 页面样式设计，然后再编译成正常的 CSS 文件，以供项目使用。CSS 预处理器为 CSS 增加一些编程的特性，无需考虑浏览器的兼容性问题”。</p>
+<p>So你可以在 CSS预处理语言中使用<strong>变量</strong>、<strong>简单的逻辑程序</strong>、<strong>函数</strong>等等编程语言中的一些基本特性，可以让其生成的的 CSS <strong>更加简洁</strong>、<strong>适应性更强</strong>、<strong>可读性更佳</strong>，<strong>更易于代码的维护</strong>。</p>
+<p>一些 CSS 预处理语言：</p>
+<p>CSS 预处理器技术已经非常的成熟，而且也涌现出了很多种不同的 <strong>CSS 预处理器语言</strong>，比如说：</p>
+<ul>
+<li>Sass（SCSS）</li>
+<li>LESS    — ⭐️</li>
+<li>Stylus</li>
+<li>Turbine</li>
+<li>Swithch CSS</li>
+<li>CSS Cacheer</li>
+<li>DT CSS</li>
+</ul>
+<h3 id="起步">起步</h3>
+<p>Less的使用，在不同平台上（服务器端、客户端和集成的第三方环境等等）也不太一样，但一样的是都可以使用。</p>
+<h4 id="服务器">服务器</h4>
+<p>在服务器上安装Less的最简单的方法是通过npm，node.js包管理器，即：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g less</div></pre></td></tr></table></figure>
+<p>之后是用命令行使用我们的这个CSS编译器了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lessc styles.less</div></pre></td></tr></table></figure>
+<p>这将输出编译之后的 CSS 代码到 <code>stdout</code>，将输出重定向到一个文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lessc styles.less &gt; styles.css</div></pre></td></tr></table></figure>
+<p>若要输出压缩过的 CSS，只需添加 <code>-x</code> 选项。如果希望获得更好的压缩效果，还可以通过 <code>--clean-css</code> 选项启用 <a href="https://github.com/GoalSmashers/clean-css" target="_blank" rel="external">Clean CSS</a> 进行压缩。</p>
+<p>执行 lessc 且不带任何参数，就会在命令行上输出所有可用选项的列表。</p>
+<h4 id="代码生成">代码生成</h4>
+<p>Nodejs的用法，写调用模块的JavaScript即可。例子（来自<a href="http://lesscss.org/" target="_blank" rel="external">官网</a>）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var less = require(&apos;less&apos;);</div><div class="line"></div><div class="line">less.render(&apos;.class &#123; width: (1 + 1) &#125;&apos;, function (e, css) &#123;</div><div class="line">  console.log(css);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>其实结果就是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.class &#123;</div><div class="line">  width: 2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>手动调用分析器（paser）和编译器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var parser = new(less.Parser);</div><div class="line"></div><div class="line">parser.parse(&apos;.class &#123; width: (1 + 1) &#125;&apos;, function (err, tree) &#123;</div><div class="line">  if (err) &#123;</div><div class="line">    return console.error(err)</div><div class="line">  &#125;</div><div class="line">  console.log(tree.toCSS());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>这里（官方文档）其实提到了一些工具，第三方的命令行工具，基本没什么必要说。po出在<a href="http://www.runoob.com/manual/lessguide/#using-less-third-party-tools" target="_blank" rel="external">这里</a>。</p>
+<h4 id="浏览器">浏览器</h4>
+<p>在客户端使用 Less.js 是最容易的方式，并且在开发阶段很方便，但是，在生产环境中，性能和可靠性非常重要， 建议最好使用 node.js 或其它第三方工具进行预编译。</p>
+<p>在页面中加入 <code>.less</code> 样式表的链接，并将 <code>rel</code> 属性设置为 “<code>stylesheet/less</code>”：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet/less&quot; type=&quot;text/css&quot; href=&quot;styles.less&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>接下来，下载 <a href="https://github.com/less/less.js/archive/master.zip" target="_blank" rel="external">less.js</a> 并通过 <code>&lt;script&gt;&lt;/script&gt;</code> 标签将其引入，放置于页面的<code>&lt;head&gt;</code> 元素内：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;less.js&quot; type=&quot;text/javascript&quot;&gt;  -content-  &lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>也可以使用一些网站的CDN，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h5 id="浏览器选项">浏览器选项</h5>
+<p>在 <code>&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</code> 之前 定义全局的 <code>less</code> 对象就可以为 <code>Less.js</code> 设置参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;!-- set options before less.js script --&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  less = &#123;</div><div class="line">    env: &quot;development&quot;,</div><div class="line">    async: false,</div><div class="line">    fileAsync: false,</div><div class="line">    poll: 1000,</div><div class="line">    functions: &#123;&#125;,</div><div class="line">    dumpLineNumbers: &quot;comments&quot;,</div><div class="line">    relativeUrls: false,</div><div class="line">    rootpath: &quot;:/a.com/&quot;</div><div class="line">  &#125;;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="使用">使用</h3>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;&lt;u&gt;什么是&lt;a href=&quot;https://github.com/less/less.js&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Less&lt;/a&gt;？&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一门CSS预处理语言，一切都为CSS更好
+    
+    </summary>
+    
+      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
+    
+    
+      <category term="Less" scheme="http://zrdsj.cc/tags/Less/"/>
+    
+      <category term="CSS" scheme="http://zrdsj.cc/tags/CSS/"/>
+    
+  </entry>
   
   <entry>
     <title>响应式设计笔记01</title>
@@ -2358,167 +2431,6 @@
       <category term="用户故事" scheme="http://zrdsj.cc/tags/%E7%94%A8%E6%88%B7%E6%95%85%E4%BA%8B/"/>
     
       <category term="敏捷方法" scheme="http://zrdsj.cc/tags/%E6%95%8F%E6%8D%B7%E6%96%B9%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SEO的一些理解</title>
-    <link href="http://zrdsj.cc/2016/09/23/seo/"/>
-    <id>http://zrdsj.cc/2016/09/23/seo/</id>
-    <published>2016-09-23T06:50:59.647Z</published>
-    <updated>2016-09-27T07:10:28.129Z</updated>
-    
-    <content type="html"><![CDATA[<p>简单说明，是来写一些关于搜索引擎搜索的事情。与算法优化、数据服务器什么的没太大的交集（才不告诉你是博主不怎么精通2333）。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=18794244&auto=0&height=66"></iframe>
-<h3 id="seo的基本介绍">SEO的基本介绍</h3>
-<p>搜索引擎优化（<code>Search Engine Optimization</code>）即是通常所说的SEO，在说这个之前先来过一遍各大搜索引擎的工作原理。</p>
-<p><img src="http://p9.qhimg.com/t0148b997530eefc9a7.jpg" alt="seo"></p>
-<h4 id="搜索引擎的工作原理白话文">搜索引擎的工作原理（白话文）</h4>
-<p>无论是国内的百度还是国际上的谷歌，在工作原理上，两家的搜索引擎原理是基本相通的。接下来的几乎全是大白话，哈哈。</p>
-<p>搜索引擎供应商会在互联网上放出自己的特殊程序（一般称为蜘蛛Spider或者Bot），这些程序的作用就是在网络上发现新的网站并加以收录，收录进自家的数据服务器里面。在经过了足够多的<code>爬行抓取</code>之后，便可以攒取很多网站的网址及其信息。</p>
-<p>有了以上所说的数据，搜索引擎便可以<code>建立索引</code>。在之后用户的搜索操作中，搜索引擎会根据用户给出的关键词关键字进行<code>搜索词处理</code>，这个过程会进行判断等处理，然后再进行<code>排序</code>，之后便可以将结果按照<strong>最准群—&gt;最不准确</strong>的顺序输出作为搜索结果。</p>
-<h4 id="">???</h4>
-<p>所以呢，我们当然希望百度谷歌收录我们想要的精准网站而不是不准确的网站以及一些无用的垃圾网站。这所谓的优化学问便是<code>SEO，是指为了增加网页在搜索引擎自然搜索结果中的收录数量以及提升排序位置而做的优化行为</code>。</p>
-<p><em>SEO的技术大体分为两种，白帽SEO和黑帽SEO</em>。</p>
-<p>前者是合理优化网站，提高用户体验，合理与其他网站互联。从而使站点在搜索引擎排名提升。白帽SEO关注的是长远利益，需要的时间长，但效果稳定。这一种是我们支持和提倡的。</p>
-<p>后者黑帽SEO则是利用相关的技术漏洞去‘欺骗’引擎与消费者。不太明白？我给你举个栗子。</p>
-<blockquote>
-<p>前天0921晚上腾讯发布了<code>微信小程序</code>的相关通知说明，随后呢就在昨天许多相关的工具与破解方法甚至教程都是铺天盖地的全网一搜就是。</p>
-<blockquote></blockquote>
-<p>现在呢我假想自己有一个与此内容(微信小程序)不相干的网站（比如说是个图书批发网站），我利用黑帽SEO这时候就可以做点事情了。我可以在我的网站上散步许多的与微信小程序的关键词关键字，而事实上这些东西只是假象，对我的网站来说也许会影响访问者的阅读。</p>
-<blockquote></blockquote>
-<p>但是！总的来说我的网站会因此在这几天被许多想要访问想要知道<code>微信小程序</code>的人看到,对我来说访问量和知名度都是在提升,也不失为是一种手段。</p>
-</blockquote>
-<h4 id="作用效果">作用效果</h4>
-<p>看了上面一小节所说的东西，估计你明白了。黑帽SEO的效果来得快，去的也快！因为黑帽SEO技术只能获取短暂的排名，被搜索引擎发现就会K掉，也许是得不偿失。而白帽SEO才是正确的公平的合理的优化方式。。</p>
-<p>白帽SEO的作用效果：
--网站标题、关键字、描述（精心设计，反映网站定位）
--网站内容（增加关键字密度。增加长尾关键字）
--合理设置robot.txt文件
--网站地图
--增加外链引用
-前端工程师可以进行网站结构布局优化，网页代码优化。</p>
-<h3 id="seo与前端的关系">SEO与前端的关系</h3>
-<p>在上一小节的末端，我引出了前端与白帽SEO的关系。做为一名前端，基本上了解SEO就可以了，而不需要精通。接下来就说一说两者的一些故事。。。</p>
-<p>前端的工作主要是负责页面的HTML+CSS+JS，优化好这几个方面会为SEO工作打好一个坚实的基础。突出重要内容可以让搜索引擎判断当前页面的重点是什么，提升网站访问速度可以让搜索引擎的蜘蛛顺利、快速、大量的抓取网页内容。</p>
-<p>仅仅是<strong>网站布局优化</strong>，<strong>网页代码优化</strong>这两方面么？</p>
-<blockquote>
-<p>我们要清楚，这世界上的很多技能同一些道理奥义一样。因为它永远都在变，没有一成不变的优化方案可供套用。</p>
-</blockquote>
-<p>那这两个方面可以做到的事情我们来说一下。。。</p>
-<h4 id="网站布局优化">网站布局优化</h4>
-<p>以下几个方面：</p>
-<ul>
-<li>
-<p>结构布局优化：用扁平化结构（简单简洁的层次结构，超过三层小蜘蛛就不愿意爬了）</p>
-</li>
-<li>
-<p>控制首页链接数量（中小网站100以内，包括页面导航、底部导航、锚文字链接等）</p>
-</li>
-<li>
-<p>扁平化的目录层次（尽量使小蜘蛛跳转3次可以到达网站内任何一个内页，网站的设计主页、栏目、内容页，不要用纵线性的结构）</p>
-</li>
-</ul>
-<p>看看下面的图片，从植物开始访问直到香蕉的话，就得走4步。这对于SEO小蜘蛛优化是不友好的。</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/zhiwu1.png" alt="其一"></p>
-<p>但是，如果同样的内容我们将目录层次做成下面这样，就会好很多！</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/zhiwu.png" alt="其二"></p>
-<ul>
-<li>
-<p>导航SEO优化（头部、底部、内容部分，主导航、副导航、分类导航，尽量用文字。）</p>
-</li>
-<li>
-<p><a href="http://baike.baidu.com/link?url=IxYqLFXaoyk0_JYfG_YlWWtRE5gxLpwX_sgiUqHiWB3XSCD1TK5wVtHKUvRkuKMSbrPGIUnrIX-agO8Kulp4dK" target="_blank" rel="external">面包屑导航</a>（在每个网页上留下面包屑，使用户可以了解网站组织形式，放于正文的左上方）</p>
-</li>
-<li>
-<p>内容页面的布局细节</p>
-</li>
-</ul>
-<p>比如说在底部的分页栏，下面三种就是依次增强优化的三种设计。</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/enene.jpg" alt="如下"></p>
-<ul>
-<li>网站的加载速度会影响小蜘蛛的爬行，页面最好不要超过100k</li>
-</ul>
-<h4 id="网页代码优化">网页代码优化</h4>
-<p>A、title标题：强调重点
-B、meta keywords关键词：列举几个关键词
-C、meta description网页描述：高度概括网页的内容
-以上信息不要堆积、重复</p>
-<p>语义化代码（HTML 标签有自己的意义，在适当的位置用适当的标签）
-1、h1~h6 多用于标题
-2、ul 多用于无序列表
-3、ol 多用于有序列表
-4、dl 用于定义数据列表
-5、em、strong 表示强调</p>
-<p><em>div、span 是 html 标签中最没有语义的！</em></p>
-<p>有利搜索引擎</p>
-<ol>
-<li>a：访问外部链接时要加上 rel=“nofollow”，告诉搜索引擎外部链接无需追踪，加上 title 说明</li>
-<li>h1：搜索引擎外认为 h1 最重要，使用 css 调整，网页正文标题用 h1，副标题用 h2，其他不要乱用 h 标签</li>
-<li>br用于文本间的换行，用在p标签内，也可以在一对p标签中插入&lt; br/ &gt;表示空行</li>
-<li>caption：表格标题</li>
-<li>img：使用 title、alt 说明</li>
-</ol>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/hahap.png" alt="like this"></p>
-<p>当网络速度很慢，或者图片地址失效的时候，就可以体现出alt属性的作用，他可以让用户在图片没有显示的时候知道这个图片的作用。</p>
-<ol start="6">
-<li>strong、em表示强调，em的权重仅次于strong,如果只想表示加粗斜体，建议使用b、i,表示强调则使用strong、i</li>
-<li>重要内容 HTML 代码放在最前面（使用 css 改变布局）</li>
-<li>重要内容不要用 JS 输出（<strong>搜索引擎看不懂 JS</strong>）</li>
-<li>尽量少使用 iframe 框架（搜索引擎不喜欢）</li>
-<li>谨慎使用 display:none（搜索引擎会过滤掉其内容，设置 z-index 代替）</li>
-<li>尽量外链css和js，保证网页代码的整洁，也利于日后的维护。</li>
-<li>css放在头部，js在尾部，可使用工具分别对其进行压缩！</li>
-<li>为了减少http请求而使用<a href="http://baike.baidu.com/link?url=kS9KkFi_pOULzuJQTbml5w7SBkQJc30tJKO81OAO-U4E0x1EvS9zeo2fTLqrcd3Wk9YKt9SZZ9tWGTWRqwzz0a" target="_blank" rel="external">CSS Sprites</a>技术。</li>
-</ol>
-<p>就像下面这样</p>
-<p><img src="http://p4.qhimg.com/t01dc2e2bb8a3ffd4ab.png" alt=""></p>
-<p><img src="http://p3.qhimg.com/t01b0212a745da3af2e.png" alt=""></p>
-<h3 id="再说几句">再说几句？</h3>
-<p>好吧，再说几句！😮</p>
-<h4 id="合理的title-description和keywords">合理的title、description和keywords</h4>
-<p>对于SEO，一般从的宏观的角度来说，<code>SEO有三条最重要的规律---&gt;原创的内容、高质量的外部链接和持之以恒适度的优化</code>。</p>
-<p>先看下面两张图:</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/google_douban.png" alt="豆瓣"></p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/google_360.png" alt="360"></p>
-<p>合理的<code>title</code>、<code>description</code>和<code>keywords</code>。我们逐条来分析说明。。。</p>
-<p>先说<code>title</code>，前者的风格可以说是清新脱俗简洁明了，网站就是豆瓣！后者针对关键字&quot;360&quot;做出了搜索，结果的<code>title</code>竟然有5个&quot;360&quot;！总结下：<em>一般情况下只强调重点即可，重要关键词出现不要超过3次，而且要靠前，每个页面title要有所不同</em>。</p>
-<p>再说<code>description</code>，两者的差别又来了。豆瓣一句话说清楚了自己的things，360很有话说都tm没说完😓同样总结下<code>description</code>:<em>把网页内容高度概括到这里，长度要合理，不可过分堆砌关键词，每个页面description要有所不同</em>。</p>
-<p>最后是简单提一下<code>keywords</code>,主要拿360说了，描述中出现了5次keywords！实际上<em>列举出几个重要关键词即可，也不可过分堆砌</em>。</p>
-<h4 id="语义化书写html代码符合w3c标准">语义化书写HTML代码，符合W3C标准</h4>
-<p>对于搜索引擎来说，最直接面对的就是网页HTML代码，如果代码写的语义化，搜索引擎就会很容易的读懂该网页要表达的意思。例如文本模块要有大标题，合理利用h1-h6，列表形式的代码使用ul或ol，重要的文字使用strong等等。总之就是要充分利用各种HTML标签完成他们本职的工作，当然要兼容Chrome、IE等主流浏览器。</p>
-<p>看看著名的禅意花园网站（<a href="http://www.csszengarden.com/" target="_blank" rel="external">http://www.csszengarden.com/</a>），在没有样式的情况下，代码非常语义化，看起来很工整，加载不同的样式之后可以随心所欲的改变页面外观。</p>
-<p>无样式时候:</p>
-<p><img src="http://p3.qhimg.com/t01b092401c7e1db43f.png" alt=""></p>
-<p>换个样式：</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/ccc1.png" alt=""></p>
-<p>再换个样式（33%的比例）：</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/ccc.png" alt=""></p>
-<h4 id="利用布局把重要内容html代码放在最前">利用布局，把重要内容HTML代码放在最前</h4>
-<p>搜索引擎抓取HTML内容是从上到下，利用这一特点，可以让主要代码优先读取，广告等不重要代码放在下边。例如，在左栏和右栏的代码不变的情况下，只需改一下样式，利用float:left;和float:right;就可以随意让两栏在展现上位置互换，这样就可以保证重要代码在最前，让爬虫最先抓取。同样也适用于多栏的情况</p>
-<p><img src="http://p4.qhimg.com/t015fe3481879a32091.jpg" alt=""></p>
-<h3 id="写在最最后">写在最最后</h3>
-<p>能力有限，不详细的地方不完美的地方还有许多。以后的日子还请多多关照233😬</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/faladi.jpg" alt="faladi"></p>
-<blockquote class="blockquote-center"><p>1831.09.23 法拉第发明发电机。</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;简单说明，是来写一些关于搜索引擎搜索的事情。与算法优化、数据服务器什么的没太大的交集（才不告诉你是博主不怎么精通2333）。&lt;/p&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; w
-    
-    </summary>
-    
-      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
-    
-    
-      <category term="前端" scheme="http://zrdsj.cc/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
-    
-      <category term="SEO" scheme="http://zrdsj.cc/tags/SEO/"/>
     
   </entry>
   

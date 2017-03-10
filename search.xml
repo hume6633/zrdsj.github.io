@@ -4,6 +4,76 @@
   
     
     <entry>
+      <title><![CDATA[Less.js的若干记录]]></title>
+      <url>http://zrdsj.cc/2017/03/10/less/</url>
+      <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
+<p>一门CSS预处理语言，一切都为CSS更好使。</p>
+<p><u><strong>什么是 CSS 预处理语言？</strong></u></p>
+<p>CSS <a href="https://zh.wikipedia.org/wiki/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8" target="_blank" rel="external">预处理器</a>定义了一种新的语言，其基本思想是，用一种专门的编程语言，为 CSS 增加了一些编程的特性，将 CSS 作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。</p>
+<p>通俗来讲，“CSS 预处理器用一种专门的编程语言，进行 Web 页面样式设计，然后再编译成正常的 CSS 文件，以供项目使用。CSS 预处理器为 CSS 增加一些编程的特性，无需考虑浏览器的兼容性问题”。</p>
+<p>So你可以在 CSS预处理语言中使用<strong>变量</strong>、<strong>简单的逻辑程序</strong>、<strong>函数</strong>等等编程语言中的一些基本特性，可以让其生成的的 CSS <strong>更加简洁</strong>、<strong>适应性更强</strong>、<strong>可读性更佳</strong>，<strong>更易于代码的维护</strong>。</p>
+<p>一些 CSS 预处理语言：</p>
+<p>CSS 预处理器技术已经非常的成熟，而且也涌现出了很多种不同的 <strong>CSS 预处理器语言</strong>，比如说：</p>
+<ul>
+<li>Sass（SCSS）</li>
+<li>LESS    — ⭐️</li>
+<li>Stylus</li>
+<li>Turbine</li>
+<li>Swithch CSS</li>
+<li>CSS Cacheer</li>
+<li>DT CSS</li>
+</ul>
+<h3 id="起步">起步</h3>
+<p>Less的使用，在不同平台上（服务器端、客户端和集成的第三方环境等等）也不太一样，但一样的是都可以使用。</p>
+<h4 id="服务器">服务器</h4>
+<p>在服务器上安装Less的最简单的方法是通过npm，node.js包管理器，即：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g less</div></pre></td></tr></table></figure>
+<p>之后是用命令行使用我们的这个CSS编译器了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lessc styles.less</div></pre></td></tr></table></figure>
+<p>这将输出编译之后的 CSS 代码到 <code>stdout</code>，将输出重定向到一个文件：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lessc styles.less &gt; styles.css</div></pre></td></tr></table></figure>
+<p>若要输出压缩过的 CSS，只需添加 <code>-x</code> 选项。如果希望获得更好的压缩效果，还可以通过 <code>--clean-css</code> 选项启用 <a href="https://github.com/GoalSmashers/clean-css" target="_blank" rel="external">Clean CSS</a> 进行压缩。</p>
+<p>执行 lessc 且不带任何参数，就会在命令行上输出所有可用选项的列表。</p>
+<h4 id="代码生成">代码生成</h4>
+<p>Nodejs的用法，写调用模块的JavaScript即可。例子（来自<a href="http://lesscss.org/" target="_blank" rel="external">官网</a>）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var less = require(&apos;less&apos;);</div><div class="line"></div><div class="line">less.render(&apos;.class &#123; width: (1 + 1) &#125;&apos;, function (e, css) &#123;</div><div class="line">  console.log(css);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>其实结果就是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.class &#123;</div><div class="line">  width: 2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>手动调用分析器（paser）和编译器：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var parser = new(less.Parser);</div><div class="line"></div><div class="line">parser.parse(&apos;.class &#123; width: (1 + 1) &#125;&apos;, function (err, tree) &#123;</div><div class="line">  if (err) &#123;</div><div class="line">    return console.error(err)</div><div class="line">  &#125;</div><div class="line">  console.log(tree.toCSS());</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>这里（官方文档）其实提到了一些工具，第三方的命令行工具，基本没什么必要说。po出在<a href="http://www.runoob.com/manual/lessguide/#using-less-third-party-tools" target="_blank" rel="external">这里</a>。</p>
+<h4 id="浏览器">浏览器</h4>
+<p>在客户端使用 Less.js 是最容易的方式，并且在开发阶段很方便，但是，在生产环境中，性能和可靠性非常重要， 建议最好使用 node.js 或其它第三方工具进行预编译。</p>
+<p>在页面中加入 <code>.less</code> 样式表的链接，并将 <code>rel</code> 属性设置为 “<code>stylesheet/less</code>”：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet/less&quot; type=&quot;text/css&quot; href=&quot;styles.less&quot; /&gt;</div></pre></td></tr></table></figure>
+<p>接下来，下载 <a href="https://github.com/less/less.js/archive/master.zip" target="_blank" rel="external">less.js</a> 并通过 <code>&lt;script&gt;&lt;/script&gt;</code> 标签将其引入，放置于页面的<code>&lt;head&gt;</code> 元素内：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;less.js&quot; type=&quot;text/javascript&quot;&gt;  -content-  &lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>也可以使用一些网站的CDN，比如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h5 id="浏览器选项">浏览器选项</h5>
+<p>在 <code>&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</code> 之前 定义全局的 <code>less</code> 对象就可以为 <code>Less.js</code> 设置参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;!-- set options before less.js script --&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  less = &#123;</div><div class="line">    env: &quot;development&quot;,</div><div class="line">    async: false,</div><div class="line">    fileAsync: false,</div><div class="line">    poll: 1000,</div><div class="line">    functions: &#123;&#125;,</div><div class="line">    dumpLineNumbers: &quot;comments&quot;,</div><div class="line">    relativeUrls: false,</div><div class="line">    rootpath: &quot;:/a.com/&quot;</div><div class="line">  &#125;;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="使用">使用</h3>
+]]></content>
+      
+        <categories>
+            
+            <category> sixpence </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Less </tag>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[响应式设计笔记01]]></title>
       <url>http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/</url>
       <content type="html"><![CDATA[<p>主要是针对一些学习中</p>
