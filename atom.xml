@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-10T14:43:57.307Z</updated>
+  <updated>2017-03-10T15:04:45.541Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://zrdsj.cc/2017/03/10/less/"/>
     <id>http://zrdsj.cc/2017/03/10/less/</id>
     <published>2017-03-10T13:05:41.831Z</published>
-    <updated>2017-03-10T14:43:57.307Z</updated>
+    <updated>2017-03-10T15:04:45.541Z</updated>
     
     <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
 <p>一门CSS预处理语言，一切都为CSS更好使。</p>
+<a id="more"></a>
 <p><u><strong>什么是 CSS 预处理语言？</strong></u></p>
 <p>CSS <a href="https://zh.wikipedia.org/wiki/%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8" target="_blank" rel="external">预处理器</a>定义了一种新的语言，其基本思想是，用一种专门的编程语言，为 CSS 增加了一些编程的特性，将 CSS 作为目标生成文件，然后开发者就只要使用这种语言进行编码工作。</p>
 <p>通俗来讲，“CSS 预处理器用一种专门的编程语言，进行 Web 页面样式设计，然后再编译成正常的 CSS 文件，以供项目使用。CSS 预处理器为 CSS 增加一些编程的特性，无需考虑浏览器的兼容性问题”。</p>
@@ -74,8 +75,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;&lt;u&gt;什么是&lt;a href=&quot;https://github.com/less/less.js&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Less&lt;/a&gt;？&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;一门CSS预处理语言，一切都为CSS更好
+      &lt;p&gt;&lt;strong&gt;&lt;u&gt;什么是&lt;a href=&quot;https://github.com/less/less.js&quot;&gt;Less&lt;/a&gt;？&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一门CSS预处理语言，一切都为CSS更好使。&lt;/p&gt;
     
     </summary>
     
