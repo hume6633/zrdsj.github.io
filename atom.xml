@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-07T17:48:53.730Z</updated>
+  <updated>2017-03-10T10:54:42.197Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>响应式设计笔记01</title>
+    <link href="http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/"/>
+    <id>http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/</id>
+    <published>2017-03-10T09:44:43.434Z</published>
+    <updated>2017-03-10T10:54:42.197Z</updated>
+    
+    <content type="html"><![CDATA[<p>主要是针对一些学习中</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;主要是针对一些学习中&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
+    
+    
+      <category term="前端" scheme="http://zrdsj.cc/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="响应式" scheme="http://zrdsj.cc/tags/%E5%93%8D%E5%BA%94%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>上帝的名字</title>
@@ -139,9 +165,9 @@
       <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
     
     
-      <category term="圣经" scheme="http://zrdsj.cc/tags/%E5%9C%A3%E7%BB%8F/"/>
-    
       <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
+    
+      <category term="圣经" scheme="http://zrdsj.cc/tags/%E5%9C%A3%E7%BB%8F/"/>
     
       <category term="以色列" scheme="http://zrdsj.cc/tags/%E4%BB%A5%E8%89%B2%E5%88%97/"/>
     
@@ -501,9 +527,9 @@
     
       <category term="情感" scheme="http://zrdsj.cc/tags/%E6%83%85%E6%84%9F/"/>
     
-      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
-    
       <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
     
       <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
     
@@ -551,9 +577,9 @@
     
       <category term="情感" scheme="http://zrdsj.cc/tags/%E6%83%85%E6%84%9F/"/>
     
-      <category term="谶语少bb" scheme="http://zrdsj.cc/tags/%E8%B0%B6%E8%AF%AD%E5%B0%91bb/"/>
-    
       <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+      <category term="谶语少bb" scheme="http://zrdsj.cc/tags/%E8%B0%B6%E8%AF%AD%E5%B0%91bb/"/>
     
       <category term="love" scheme="http://zrdsj.cc/tags/love/"/>
     
@@ -785,13 +811,13 @@
     
       <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
     
-      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
-    
-      <category term="智障人生" scheme="http://zrdsj.cc/tags/%E6%99%BA%E9%9A%9C%E4%BA%BA%E7%94%9F/"/>
-    
       <category term="辞旧迎新" scheme="http://zrdsj.cc/tags/%E8%BE%9E%E6%97%A7%E8%BF%8E%E6%96%B0/"/>
     
       <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="智障人生" scheme="http://zrdsj.cc/tags/%E6%99%BA%E9%9A%9C%E4%BA%BA%E7%94%9F/"/>
+    
+      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
     
   </entry>
   
@@ -905,9 +931,9 @@
     
       <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
     
-      <category term="智障人生" scheme="http://zrdsj.cc/tags/%E6%99%BA%E9%9A%9C%E4%BA%BA%E7%94%9F/"/>
-    
       <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
+    
+      <category term="智障人生" scheme="http://zrdsj.cc/tags/%E6%99%BA%E9%9A%9C%E4%BA%BA%E7%94%9F/"/>
     
       <category term="骄傲与道德主义" scheme="http://zrdsj.cc/tags/%E9%AA%84%E5%82%B2%E4%B8%8E%E9%81%93%E5%BE%B7%E4%B8%BB%E4%B9%89/"/>
     
@@ -990,11 +1016,11 @@
       <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
     
     
-      <category term="圣经" scheme="http://zrdsj.cc/tags/%E5%9C%A3%E7%BB%8F/"/>
-    
       <category term="基督教" scheme="http://zrdsj.cc/tags/%E5%9F%BA%E7%9D%A3%E6%95%99/"/>
     
       <category term="情感" scheme="http://zrdsj.cc/tags/%E6%83%85%E6%84%9F/"/>
+    
+      <category term="圣经" scheme="http://zrdsj.cc/tags/%E5%9C%A3%E7%BB%8F/"/>
     
       <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
     
@@ -2488,100 +2514,11 @@ C、meta description网页描述：高度概括网页的内容
       <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
     
     
-      <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
-    
       <category term="前端" scheme="http://zrdsj.cc/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="SEO" scheme="http://zrdsj.cc/tags/SEO/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>三位班主任，几个熊孩子</title>
-    <link href="http://zrdsj.cc/2016/09/10/old-faces/"/>
-    <id>http://zrdsj.cc/2016/09/10/old-faces/</id>
-    <published>2016-09-10T13:17:19.016Z</published>
-    <updated>2016-09-27T07:12:01.979Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>献给曾经我爱过的几个人，，，，，，，，，，三位班主任几个熊孩子。😄</p>
-</blockquote>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=18127640&auto=0&height=66"></iframe>
-<p>久违的节日，教师节。</p>
-<p>“啊，好久不见”</p>
-<p>“不是也一年么，至于么？”</p>
-<pre><code>maybe现在不至于，以后就没机会了。。。
-</code></pre>
-<h3 id="一如既往地sao下去">一如既往地sao下去</h3>
-<p>应该是北京奥运会前的那个学期，不！是学年。那一年发生了许多事情，其中有几个熊孩子在那一年认识了。和地球上许多角落发生的故事一样，他们也没啥惊奇的地方。在外人眼中，太平常了。</p>
-<p>应该说，对于其中的一部分人，包括我，这群人的存在在八年后的2016看来，注定是记忆中抹不去的一片色彩。</p>
-<p>当年sao的不可救药的孩子们，如今都是走向学业尽头的老年轻了。南方，家乡，魔都，闽南，都有过你们的影子，不会抒情，也没啥通气的话语，有的话算是有个小愿望。。。“希望在这一天，你也想起你曾经的恩师和伴你成长的熊孩子们”</p>
-<blockquote>
-<p>人是感情动物，而且很怕动了情。</p>
-</blockquote>
-<p>不管现在过得如不如意，我总会想到过去。过去有很长一段时间，都觉得这是毛病。事实上，在确认自己的嬉皮梦想与分裂人格之前，内心也是默认了一个事实—“自己作为复杂情感载体（人？）的话，并不具备一般大众的特性（至少长时间肯定不具备）”</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/saozhu.gif" alt="骚猪"></p>
-<p>我若是外人，了解自己的情况下，会不会喜欢上自己？</p>
-<p>对我来说，上面那个问题还是蛮有意义的。平平常常的自我认可，若是不被自己讨厌，都会让自己倍感温暖，，，这样的情况发生在一个喜欢黑色幽默+轻度精分+轻度斯德哥尔摩的人身上，，，本身也算是顶级黑色幽默了吧2333😂</p>
-<blockquote class="blockquote-center"><p>sao下去，不计代价！hahaha，你们也是哦</p>
-</blockquote>
-<h3 id="几位班主任">几位班主任</h3>
-<p>扯完了熊孩子，今天也是想到了几位老师。是我曾经的几位班主任，一样是我过去22年里值得留恋的魅力光景。</p>
-<p>一个原则：因为鄙人不会抒情不会叙事更不会讲故事。。。so，<code>这里基本上只搬事实</code>。</p>
-<h4 id="zsh老师">Zsh老师</h4>
-<p>身量苗条、体格风骚的少妇老师，我小学中有四年的光景拜此班主任所赐。</p>
-<p><code>爱一年恨两年最后又爱一年</code>，就是这样。在张老师保佑的这四年里，健康成长得到了光大&amp;发扬。</p>
-<p>在那些年里，我已经见识了与“人之初性本善”很相悖的画面，不必说拖鞋背心口哨，也不必说揪头发掏jj挠脸，单是男厕所的墙上的“武林风”几个大字，就算是宣告了吧。。。宣告了汝阳男儿的气魄与胆识。😒:</p>
-<p>上面所描述的画面中叱咤风云的几个扛把子的，后来的生活我不得而知，但听说了，，，听说都洗白了！</p>
-<blockquote>
-<p>？？？</p>
-</blockquote>
-<p>和我一样白的时候，他们还没变黑，后来不见他们的日子我也懒得去知道发生了什么。‘洗白’听上去仿佛是一段段的故事，而不是个人生历程。</p>
-<p>张老师也许没有教会我很多，但我知道，是因为我太小了233.</p>
-<p>最近的一次见面，是去年的暑假，一个人走过县城防洪渠的过道上（那里也是老师家）。一干人在老师家们口说笑。我，又看到了十年的故人，hh，除了嘴唇的淡粉色口红替代了十年前的大红口红，似乎就只剩我的变化了。。。</p>
-<p>四目相觑，大眼瞪小眼。我都屏住呼吸了，tm的像是在演戏？</p>
-<p>哦，她看起来好像不记得我了。我的脸型圆圆的还是没变，却也没什么卵用。last,我走过路口，嘴角微扬，忍不住回了下头，，，</p>
-<h4 id="zlr老师">Zlr老师</h4>
-<p>初三，八年前的生活。奥运会结束后的那个学年，那一学年还有件事情，火箭打进了西部半决赛和湖人拼到了抢七2333.我无意搞什么大事情，😂老提奥运会这锅我背了233.</p>
-<p>赵老师，最初记得的印象是听说的。。。只记得大家程其为“NB班主任”。语数英三门学科的问题都可以指导，作为班主任出色的带班成绩，中青年女教师特有的和蔼，，，可以了，这确实很NB!</p>
-<p>这位似乎看透了我的心，一开始就是。整整一年对我都是爱理不理爱管不管的，我的成绩出现过明显的变化而且一度在班里我是成绩考前的人群中唯一一个座位在最后的（最后座位的孩子们也都很帅，但不是在学业上）？</p>
-<p>影不影响只有自己知道。赵老师掌控下的那个班级，那一年，对我学习方法和性格的影响—shi 深远 de.</p>
-<pre><code>评价好坏这件事从来都带了情感，灵魂的权衡中，失败成功也许都是一样的
-</code></pre>
-<p>日后我明白了这个道理，也因此我尤为怀念赵老师，还有那一年的时光。为何她能看透我的心？呵呵，还不是被自己人给卖了，是吧@妈。</p>
-<h4 id="zkf老师">Zkf老师</h4>
-<p>基基基基哈哈哈哈</p>
-<p>终于是个男的了！这位对我影响最大的老师，高中教了我三年的物理，当了一年半的班主任。。。所能提及的事情太多，不说了。</p>
-<blockquote class="blockquote-center"><p><code>江东儿郎多才俊,闻君入吴夜不啼</code></p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/zhangliao.png" alt="zkf"></p>
-<p>不知道怎么结尾了，特别想对老师说一声：“莫愁前路无知己”。。。哎:happy:</p>
-<p>好了，说了了。</p>
-<blockquote class="blockquote-center"><p>L</p>
-<p>A</p>
-<p>S</p>
-<p>T</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1608-1609/zuisaode.jpg" alt="memeda"></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;献给曾经我爱过的几个人，，，，，，，，，，三位班主任几个熊孩子。😄&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidt
-    
-    </summary>
-    
-      <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
-    
-    
-      <category term="回忆" scheme="http://zrdsj.cc/tags/%E5%9B%9E%E5%BF%86/"/>
-    
       <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
     
-      <category term="黑色幽默" scheme="http://zrdsj.cc/tags/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/"/>
-    
-      <category term="sunshine" scheme="http://zrdsj.cc/tags/sunshine/"/>
+      <category term="SEO" scheme="http://zrdsj.cc/tags/SEO/"/>
     
   </entry>
   
