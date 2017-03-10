@@ -86,12 +86,18 @@
 
 
 
-<meta name="description" content="&amp;#x7B97;&amp;#x662F;&amp;#x804A;&amp;#x4E00;&amp;#x804A;&amp;#x6280;&amp;#x672F;&amp;#xFF0C;&amp;#x987A;&amp;#x4FBF;&amp;#x8C08;&amp;#x8C08;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#x8BE5;&amp;#x77E5;&amp;#x9053;&amp;#x7684;http&amp;#x6545;&amp;#x4E8B;&amp;#x3002;&amp;#x3002;&amp;#x3">
+<meta name="description" content="算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。
+时间已经过了很长了，都没写几个字。。。也是不好意思。。哈哈最初想到写篇这样的博客是因为物联网还不是因为自己是个前端。
+在之前的那篇物联网博客里面，有提到物联网的核心是联网，当然了在那个时候才发觉了一些互联网的协议或者说是科学研究的协议等的存在感，比如说http协议。
+这次是想说一些一个前端该懂得的http知识，该说多少我也拿捏不好。一度我">
 <meta property="og:type" content="article">
 <meta property="og:title" content="前端该了解的'http'故事">
 <meta property="og:url" content="http://zrdsj.cc/2016/09/30/Fe-http/index.html">
 <meta property="og:site_name" content="♀昨日的世界♂">
-<meta property="og:description" content="&amp;#x7B97;&amp;#x662F;&amp;#x804A;&amp;#x4E00;&amp;#x804A;&amp;#x6280;&amp;#x672F;&amp;#xFF0C;&amp;#x987A;&amp;#x4FBF;&amp;#x8C08;&amp;#x8C08;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#x8BE5;&amp;#x77E5;&amp;#x9053;&amp;#x7684;http&amp;#x6545;&amp;#x4E8B;&amp;#x3002;&amp;#x3002;&amp;#x3">
+<meta property="og:description" content="算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。
+时间已经过了很长了，都没写几个字。。。也是不好意思。。哈哈最初想到写篇这样的博客是因为物联网还不是因为自己是个前端。
+在之前的那篇物联网博客里面，有提到物联网的核心是联网，当然了在那个时候才发觉了一些互联网的协议或者说是科学研究的协议等的存在感，比如说http协议。
+这次是想说一些一个前端该懂得的http知识，该说多少我也拿捏不好。一度我">
 <meta property="og:image" content="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get-resp.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/atomio.png">
@@ -99,7 +105,10 @@
 <meta property="og:updated_time" content="2017-03-06T17:43:15.484Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端该了解的'http'故事">
-<meta name="twitter:description" content="&amp;#x7B97;&amp;#x662F;&amp;#x804A;&amp;#x4E00;&amp;#x804A;&amp;#x6280;&amp;#x672F;&amp;#xFF0C;&amp;#x987A;&amp;#x4FBF;&amp;#x8C08;&amp;#x8C08;&amp;#x4E00;&amp;#x4E2A;&amp;#x524D;&amp;#x7AEF;&amp;#x8BE5;&amp;#x77E5;&amp;#x9053;&amp;#x7684;http&amp;#x6545;&amp;#x4E8B;&amp;#x3002;&amp;#x3002;&amp;#x3">
+<meta name="twitter:description" content="算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。
+时间已经过了很长了，都没写几个字。。。也是不好意思。。哈哈最初想到写篇这样的博客是因为物联网还不是因为自己是个前端。
+在之前的那篇物联网博客里面，有提到物联网的核心是联网，当然了在那个时候才发觉了一些互联网的协议或者说是科学研究的协议等的存在感，比如说http协议。
+这次是想说一些一个前端该懂得的http知识，该说多少我也拿捏不好。一度我">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get.png">
 
 
@@ -373,43 +382,43 @@
       
 
       
-        <p>&#x7B97;&#x662F;&#x804A;&#x4E00;&#x804A;&#x6280;&#x672F;&#xFF0C;&#x987A;&#x4FBF;&#x8C08;&#x8C08;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#x8BE5;&#x77E5;&#x9053;&#x7684;http&#x6545;&#x4E8B;&#x3002;&#x3002;&#x3002;</p>
-<p>&#x65F6;&#x95F4;&#x5DF2;&#x7ECF;&#x8FC7;&#x4E86;&#x5F88;&#x957F;&#x4E86;&#xFF0C;&#x90FD;&#x6CA1;&#x5199;&#x51E0;&#x4E2A;&#x5B57;&#x3002;&#x3002;&#x3002;&#x4E5F;&#x662F;&#x4E0D;&#x597D;&#x610F;&#x601D;&#x3002;&#x3002;&#x54C8;&#x54C8;&#x6700;&#x521D;&#x60F3;&#x5230;&#x5199;&#x7BC7;&#x8FD9;&#x6837;&#x7684;&#x535A;&#x5BA2;&#x662F;&#x56E0;&#x4E3A;&#x7269;&#x8054;&#x7F51;&#x8FD8;&#x4E0D;&#x662F;&#x56E0;&#x4E3A;&#x81EA;&#x5DF1;&#x662F;&#x4E2A;&#x524D;&#x7AEF;&#x3002;</p>
-<p>&#x5728;&#x4E4B;&#x524D;&#x7684;&#x90A3;&#x7BC7;&#x7269;&#x8054;&#x7F51;&#x535A;&#x5BA2;&#x91CC;&#x9762;&#xFF0C;&#x6709;&#x63D0;&#x5230;&#x7269;&#x8054;&#x7F51;&#x7684;&#x6838;&#x5FC3;&#x662F;&#x8054;&#x7F51;&#xFF0C;&#x5F53;&#x7136;&#x4E86;&#x5728;&#x90A3;&#x4E2A;&#x65F6;&#x5019;&#x624D;&#x53D1;&#x89C9;&#x4E86;&#x4E00;&#x4E9B;&#x4E92;&#x8054;&#x7F51;&#x7684;&#x534F;&#x8BAE;&#x6216;&#x8005;&#x8BF4;&#x662F;&#x79D1;&#x5B66;&#x7814;&#x7A76;&#x7684;&#x534F;&#x8BAE;&#x7B49;&#x7684;&#x5B58;&#x5728;&#x611F;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;<code>http&#x534F;&#x8BAE;</code>&#x3002;</p>
-<p>&#x8FD9;&#x6B21;&#x662F;&#x60F3;&#x8BF4;&#x4E00;&#x4E9B;&#x4E00;&#x4E2A;&#x524D;&#x7AEF;&#x8BE5;&#x61C2;&#x5F97;&#x7684;http&#x77E5;&#x8BC6;&#xFF0C;&#x8BE5;&#x8BF4;&#x591A;&#x5C11;&#x6211;&#x4E5F;&#x62FF;&#x634F;&#x4E0D;&#x597D;&#x3002;&#x4E00;&#x5EA6;&#x6211;&#x662F;&#x8FD9;&#x6837;&#x60F3;&#x7684;&#x2014;&gt;&#x627E;&#x51E0;&#x4E2A;&#x77E5;&#x4E4E;&#x94FE;&#x63A5;+&#x535A;&#x5BA2;&#x5730;&#x5740;&#xFF0C;&#x8D34;&#x51FA;&#x6765;over2333</p>
-<p>&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x597D;&#x5427;&#x3002;&#x3002;&#x3002;&#x8FD8;&#x662F;&#x81EA;&#x5DF1;&#x5199;&#x51E0;&#x53E5;&#x5427;&#x3002;</p>
-<h3 id="&#x524D;&#x594F;">&#x524D;&#x594F;</h3>
-<p>&#x5148;&#x8BF4;&#x8BF4;<em>&#x4E3A;&#x4EC0;&#x4E48;</em>&#x8FD9;&#x6B21;&#x4F1A;&#x8BF4;<code>&#x524D;&#x7AEF;&#x7684;http&#x6545;</code>&#x4E8B;&#xFF0C;&#x76F4;&#x63A5;&#x8BF4;http&#x4E0D;&#x884C;&#x4E48;&#xFF1F;&#x4E3A;&#x4EC0;&#x4E48;&#x73B0;&#x5728;&#x8BF4;http&#xFF1F;</p>
-<p>OK&#xFF0C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x3002;</p>
+        <p>算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。</p>
+<p>时间已经过了很长了，都没写几个字。。。也是不好意思。。哈哈最初想到写篇这样的博客是因为物联网还不是因为自己是个前端。</p>
+<p>在之前的那篇物联网博客里面，有提到物联网的核心是联网，当然了在那个时候才发觉了一些互联网的协议或者说是科学研究的协议等的存在感，比如说<code>http协议</code>。</p>
+<p>这次是想说一些一个前端该懂得的http知识，该说多少我也拿捏不好。一度我是这样想的—&gt;找几个知乎链接+博客地址，贴出来over2333</p>
+<p>哈哈哈，好吧。。。还是自己写几句吧。</p>
+<h3 id="前奏">前奏</h3>
+<p>先说说<em>为什么</em>这次会说<code>前端的http故</code>事，直接说http不行么？为什么现在说http？</p>
+<p>OK，是这样的。</p>
 <blockquote>
-<p>&#x5982;&#x4ECA;&#x6211;&#x81EA;&#x5DF1;&#x5728;&#x5B9E;&#x4E60;&#x5E76;&#x4E14;&#x5728;&#x5B66;&#x4E60;&#x65B0;&#x7684;&#x6280;&#x672F;&#xFF08;&#x60F3;&#x5BF9;&#x81EA;&#x5DF1;&#x800C;&#x8A00;2333&#xFF09;&#xFF0C;&#x4E0D;&#x7BA1;&#x4EE5;&#x540E;&#x7684;&#x8BDD;&#x662F;&#x505A;&#x4EC0;&#x4E48;&#xFF0C;&#x73B0;&#x5728;&#x7684;&#x5B66;&#x4E60;&#x60C5;&#x51B5;&#x8868;&#x660E;&#x4E86;&#x5C31;&#x662F;&#x524D;&#x7AEF;&#x4E4B;&#x8DEF;&#x3002;&#x672A;&#x6765;&#x524D;&#x7AEF;&#x7684;&#x8D8B;&#x52BF;&#x6211;&#x8BF4;&#x4E0D;&#x592A;&#x597D;&#xFF0C;&#x4F46;&#x6211;&#x77E5;&#x9053;&#x3002;&#x3002;&#x3002;<code>&#x65E0;&#x8BBA;web&#x6280;&#x672F;&#x518D;&#x5982;&#x4F55;&#x53D1;&#x5C55;&#xFF0C;&#x7406;&#x89E3;web&#x7A0B;&#x5E8F;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x57FA;&#x672C;&#x534F;&#x8BAE;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x7406;&#x89E3;web&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x5185;&#x90E8;&#x5DE5;&#x4F5C;&#x5C31;&#x5FC5;&#x7136;&#x4F1A;&#x6709;http&#x7684;&#x4E8B;&#x60C5;&#x3002;</code>&#x5173;&#x4E8E;http&#x524D;&#x7AEF;&#x4E4B;&#x5916;&#x7684;&#x66F4;&#x591A;&#x4E8B;&#x60C5;&#xFF0C;&#x4E5F;&#x8BB8;&#x4EE5;&#x540E;&#x6211;&#x4F1A;&#x4EE5;<code>&#x8BA1;&#x7B97;&#x673A;&#x7F51;&#x7EDC;</code>&#x7684;&#x89C6;&#x89D2;&#x518D;&#x5199;&#x4E00;&#x7BC7;http&#xFF1F;2333</p>
+<p>如今我自己在实习并且在学习新的技术（想对自己而言2333），不管以后的话是做什么，现在的学习情况表明了就是前端之路。未来前端的趋势我说不太好，但我知道。。。<code>无论web技术再如何发展，理解web程序间通信的基本协议很重要，理解web应用程序的内部工作就必然会有http的事情。</code>关于http前端之外的更多事情，也许以后我会以<code>计算机网络</code>的视角再写一篇http？2333</p>
 </blockquote>
 <blockquote>
-<p>&#x73B0;&#x5728;&#x8BF4;http&#x662F;&#x56E0;&#x4E3A;&#xFF1A;&#x5728;&#x4E86;&#x89E3;&#x4E86;&#x4E00;&#x4E2A;web&#x4E16;&#x754C;&#x7684;&#x591A;&#x4E2A;&#x89D2;&#x843D;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x67D0;&#x4E00;&#x5929;&#x603B;&#x4F1A;&#x6709;&#x4E9B;&#x539F;&#x56E0;&#x9A71;&#x52A8;&#x7740;&#x4F60;&#x53BB;&#x505A;&#x4E9B;&#x4E0D;&#x540C;&#x5F80;&#x65E5;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x6BD4;&#x5982;&#x8054;&#x901A;&#x5F7C;&#x6B64;&#x4EA7;&#x751F;&#x4FE1;&#x606F;&#x7684;&#x4EA4;&#x6D41;&#x3002;&#x3002;&#x3002;so,it&#x2019;s the Time.</p>
+<p>现在说http是因为：在了解了一个web世界的多个角落之后，在某一天总会有些原因驱动着你去做些不同往日的事情，比如联通彼此产生信息的交流。。。so,it’s the Time.</p>
 </blockquote>
-<p>&#x8BF4;&#x5B8C;&#x4E86;&#x524D;&#x594F;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x662F;&#x4E3B;&#x8981;&#x7684;&#x5185;&#x5BB9;&#x4E86;&#x3002;&#x8BB2;&#x9053;&#x7406;&#xFF0C;<code>http&#x57FA;&#x7840;&#x5185;&#x5BB9;</code>&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5728;&#x767E;&#x79D1;&#x4E0A;&#x3001;&#x5728;&#x67D0;&#x4E2A;&#x786C;&#x76D8;&#x4E0A;&#x7684;&#x6587;&#x6863;&#x91CC;&#x3001;&#x5728;&#x67D0;&#x7BC7;&#x535A;&#x5BA2;&#x91CC;&#x3001;&#x5728;&#x4E92;&#x8054;&#x7F51;&#x4E0A;&#x7684;&#x4E0D;&#x660E;&#x5947;&#x5999;&#x7684;&#x89D2;&#x843D;&#x91CC;&#x5B66;&#x4E60;&#x5230;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#xB7;&#x6211;&#x6240;&#x603B;&#x7ED3;&#x7684;&#x70B9;&#x5E76;&#x4E0D;&#x5168;&#x9762;&#xFF0C;&#x53EA;&#x662F;&#x5E38;&#x7528;&#x5230;&#x7684;&#x51E0;&#x4E2A;&#x70B9;&#x3002;&#x1F609;</p>
-<p><strong>&#x987A;&#x5E94;&#x535A;&#x5BA2;&#x7684;&#x6807;&#x9898;&#xFF0C;&#x4EC5;&#x4EC5;&#x8BF4;&#x4E0B;&#x524D;&#x7AEF;&#x5E94;&#x8BE5;&#x77E5;&#x9053;&#x7684;&#x638C;&#x63E1;&#x7684;&#x57FA;&#x672C;&#x539F;&#x7406;&#xFF0C;&#x66F4;&#x6DF1;&#x5C42;&#x6B21;&#x4E0D;&#x518D;&#x8FDB;&#x884C;&#x63A2;&#x8BA8;&#x3002;</strong></p>
-<p>&#x8D5B;&#x9AD8;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&#x8FD9;&#x7BC7;&#x535A;&#x6587;&#x4E2D;&#x7684;&#x8BF8;&#x5982;&#x662F;http&#x6216;&#x8005;https&#x6216;&#x8005;&#x662F;HTTP&#x7B49;&#x5927;&#x5C0F;&#x5199;&#x62FC;&#x5199;&#x95EE;&#x9898;&#xFF0C;&#x8BF7;&#x7406;&#x89E3;&#x7CBE;&#x795E;&#xFF01;</div></pre></td></tr></table></figure>
-<p>3&#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<p>说完了前奏，接下来就是主要的内容了。讲道理，<code>http基础内容</code>完全可以在百科上、在某个硬盘上的文档里、在某篇博客里、在互联网上的不明奇妙的角落里学习到······我所总结的点并不全面，只是常用到的几个点。😉</p>
+<p><strong>顺应博客的标题，仅仅说下前端应该知道的掌握的基本原理，更深层次不再进行探讨。</strong></p>
+<p>赛高：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这篇博文中的诸如是http或者https或者是HTTP等大小写拼写问题，请理解精神！</div></pre></td></tr></table></figure>
+<p>3个部分：</p>
 <ol>
-<li>&#x521D;&#x7EA7;
+<li>初级
 <ul>
-<li>&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;</li>
-<li>&#x72B6;&#x6001;&#x7801;</li>
-<li>post&#x8BF7;&#x6C42;&#x53D1;&#x9001;</li>
+<li>请求/响应</li>
+<li>状态码</li>
+<li>post请求发送</li>
 </ul>
 </li>
-<li>&#x4E2D;&#x7EA7;
+<li>中级
 <ul>
 <li>how?</li>
 <li>Session</li>
-<li>Ajax&#x4E0E;&#x540C;&#x6E90;&#x7B56;&#x7565;</li>
+<li>Ajax与同源策略</li>
 </ul>
 </li>
 </ol>
 <ol start="3">
-<li>&#x9AD8;&#x7EA7;
+<li>高级
 <ul>
 <li>https</li>
 <li>Web Sockets</li>
@@ -418,233 +427,233 @@
 </li>
 </ol>
 <h3 id="1111111">1111111</h3>
-<h4 id="&#x8BF7;&#x6C42;&#x54CD;&#x5E94;">&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;</h4>
-<h5 id="http&#x662F;&#x5565;">http&#x662F;&#x5565;</h5>
-<p>HTTP &#xFF0C;&#x662F;<strong>&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x534F;&#x8BAE;</strong> &#xFF08;Hypertext Transfer Protocol &#xFF09;&#x7684;&#x7F29;&#x5199;&#x3002;</p>
-<p>&#x7F51;&#x4E0A;&#x90FD;&#x6709;&#x5927;&#x91CF;&#x7684;&#x56FE;&#x7247;&#xFF0C;&#x89C6;&#x9891;&#xFF0C;HTML &#x9875;&#x9762;&#x7B49;&#x7B49;&#x8FD9;&#x4E9B;&#x4E1C;&#x897F;&#x98DE;&#x6765;&#x98DE;&#x53BB;&#xFF0C;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x9001;&#x5230;&#x6211;&#x4EEC;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x90FD;&#x662F;&#x5B9E;&#x7528; HTTP &#x534F;&#x8BAE;&#x6765;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x7406;&#x89E3; HTTP &#xFF0C;&#x4E0D;&#x7BA1;&#x662F;&#x5BF9;&#x4E8E;&#x505A;&#x7F51;&#x7AD9;&#xFF0C;&#x8FD8;&#x662F;&#x505A; Web App &#xFF0C;&#x90FD;&#x662F;&#x5F00;&#x53D1;&#x8005;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x57FA;&#x672C;&#x529F;&#x3002;</p>
-<p>Web &#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;</p>
-<p>Web &#x5185;&#x5BB9;&#x90FD;&#x662F;&#x5B58;&#x50A8;&#x5728; Web &#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#xFF0C;Web &#x670D;&#x52A1;&#x5668;&#x90FD;&#x662F;&#x4F7F;&#x7528; HTTP &#x534F;&#x8BAE;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x88AB;&#x79F0;&#x4E3A; HTTP &#x670D;&#x52A1;&#x5668;&#x3002;HTTP &#x670D;&#x52A1;&#x5668;&#x5B58;&#x50A8;&#x4E86;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C; HTTP &#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#xFF09;&#x53D1;&#x51FA;<strong>&#x8BF7;&#x6C42;</strong>&#x7684;&#x8BDD;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x53EB;&#x505A;<strong>&#x54CD;&#x5E94;</strong>&#x3002;<strong>&#x8BF7;&#x6C42;&#xFF08; request )&#x548C;&#x54CD;&#x5E94;&#xFF08; response &#xFF09;&#x90FD;&#x662F;&#x91CD;&#x8981;&#x7684;&#x672F;&#x8BED;&#x3002;</strong></p>
-<p>HTTP &#x7684;&#x670D;&#x52A1;&#x5668;&#x548C;&#x5BA2;&#x6237;&#x7AEF;&#x662F;<a href="https://zh.wikipedia.org/zh-cn/%E4%B8%87%E7%BB%B4%E7%BD%91" target="_blank" rel="external">&#x4E07;&#x7EF4;&#x7F51;</a>&#xFF08; World Wide Web &#xFF09;&#x7684;&#x57FA;&#x672C;&#x5355;&#x5143;&#x3002;&#x5176;&#x5B9E;&#x6211;&#x4EEC;&#x6BCF;&#x5929;&#x90FD;&#x5728;&#x4F7F;&#x7528; HTTP &#x7684;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x6D4F;&#x89C8;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x5411;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x51FA;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x3002;&#x7B49;&#x5230;&#x670D;&#x52A1;&#x5668;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x4E4B;&#x540E;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x518D;&#x53BB;&#x5904;&#x7406;&#x54CD;&#x5E94;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x7F8E;&#x89C2;&#x7684;&#x5F62;&#x5F0F;&#x5C55;&#x793A;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
-<h5 id="&#x8BF7;&#x6C42;&#x54CD;&#x5E94;">&#x8BF7;&#x6C42;/&#x54CD;&#x5E94;</h5>
-<p>HTTP &#x7684;&#x5F00;&#x59CB;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x3002;&#x4F46;&#x662F;&#x8BF7;&#x6C42;&#x7684;&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;<strong>&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x8D44;&#x6E90;&#xFF0C;&#x82F1;&#x6587;&#x53EB; Resource &#x3002;</strong></p>
-<p>&#x5BF9;&#x5E94;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x8D44;&#x6E90;&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A; URL &#xFF0C;&#x4E5F;&#x5C31;&#x662F;<strong>&#x7EDF;&#x4E00;&#x8D44;&#x6E90;&#x5B9A;&#x4F4D;&#x5730;&#x5740;</strong>&#xFF0C;&#x6307;&#x5411;&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x3002;&#x4E0D;&#x8FC7;&#x8D44;&#x6E90;&#x5206;&#x4E24;&#x79CD;&#xFF1A;&#x4E00;&#x79CD;&#x662F;&#x9759;&#x6001; &#x8D44;&#x6E90;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5404;&#x79CD;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x5C31;&#x662F;&#x9759;&#x6001; HTML &#xFF0C;&#x4F46;&#x662F;&#x4E5F;&#x53EF;&#x4EE5;&#x662F; PDF &#xFF0C;json&#xFF0C;MP4 &#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#xFF0C;&#x5C31;&#x662F;&#x52A8;&#x6001; &#x8D44;&#x6E90;&#xFF0C;&#x4E5F;&#x5C31;&#x662F; URL &#x6307;&#x5411;&#x7684;&#x5730;&#x65B9;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x800C;&#x662F;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7ECF;&#x8FC7;&#x8FD0;&#x7B97;&#x540E;&#xFF0C;&#x624D;&#x8FD4;&#x56DE;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#xFF0C; &#x6211;&#x4EEC;&#x6709; <a href="http://xxxxx.com/23333.txt" target="_blank" rel="external">http://xxxxx.com/2333.txt</a> (&#x96F7;&#x540C;&#x7EAF;&#x5C5E;&#x5DE7;&#x5408;)&#xFF0C;&#x8FD9;&#x4E2A; URL &#x5C31;&#x662F;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x7684;&#x3002;&#x5982;&#x679C;&#x662F; <a href="http://xxxxx.com/username" target="_blank" rel="external">http://xxxxx.com/username</a> &#x8FD9;&#x4E2A;&#x53EF;&#x80FD;&#x5C31;&#x662F;&#x6307;&#x5411;&#x52A8;&#x6001;&#x8D44;&#x6E90;&#x7684;&#xFF0C;&#x540E;&#x53F0;&#x5BF9;&#x5E94;&#x7684;&#x53EF;&#x80FD;&#x5C31;&#x662F;&#x4E00;&#x4E2A; API &#x3002;</p>
-<p>&#x53D1;&#x8D77;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x5F88;&#x5BB9;&#x6613;&#x3002;&#x6BD4;&#x5982;&#x4F60;&#x8BF4;&#x4F60;&#x60F3;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE; <a href="http://zrdsj.cc">zrdsj.cc</a> &#x3002;&#x4F60;&#x6240;&#x9700;&#x8981;&#x505A;&#x7684;&#x4EC5;&#x4EC5;&#x662F;&#x542F;&#x52A8;&#x6D4F;&#x89C8;&#x5668;&#x7136;&#x540E;&#x5728;&#x5730;&#x5740;&#x680F;&#x8F93;&#x5165; <a href="http://zrdsj.cc/">http://zrdsj.cc/</a> &#xFF0C;&#x7136;&#x540E;&#x4F60;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x9875;&#x9762;&#x4E2D;&#x770B;&#x5230;&#x672C;&#x7AD9;&#x7684;&#x9996;&#x9875;&#x4E86;&#x3002;</p>
-<p>&#x90A3;&#x4E48;&#x5E95;&#x5C42;&#x53D1;&#x751F;&#x4E86;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x9996;&#x5148;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F5C;&#x4E3A; <strong>HTTP Client</strong> &#xFF0C;&#x53D1;&#x51FA;&#x4E86;&#x4E00;&#x4E2A;<strong>&#x8BF7;&#x6C42;</strong>&#x7ED9;&#x670D;&#x52A1;&#x5668;</p>
+<h4 id="请求响应">请求/响应</h4>
+<h5 id="http是啥">http是啥</h5>
+<p>HTTP ，是<strong>超文本传输协议</strong> （Hypertext Transfer Protocol ）的缩写。</p>
+<p>网上都有大量的图片，视频，HTML 页面等等这些东西飞来飞去，从服务器上送到我们的浏览器里，这个过程都是实用 HTTP 协议来传输数据的。所以理解 HTTP ，不管是对于做网站，还是做 Web App ，都是开发者非常重要的基本功。</p>
+<p>Web 客户端和服务器端</p>
+<p>Web 内容都是存储在 Web 服务器上的，Web 服务器都是使用 HTTP 协议的，因此也被称为 HTTP 服务器。HTTP 服务器存储了各种类型的数据，如果 HTTP 的客户端（浏览器）发出<strong>请求</strong>的话，服务器就会返回数据给客户端，叫做<strong>响应</strong>。<strong>请求（ request )和响应（ response ）都是重要的术语。</strong></p>
+<p>HTTP 的服务器和客户端是<a href="https://zh.wikipedia.org/zh-cn/%E4%B8%87%E7%BB%B4%E7%BD%91" target="_blank" rel="external">万维网</a>（ World Wide Web ）的基本单元。其实我们每天都在使用 HTTP 的客户端，最常见的客户端就是浏览器。浏览一个页面的时候，浏览器会向服务器发出一个 HTTP 请求。等到服务器响应返回之后，浏览器再去处理响应数据，以美观的形式展示给用户。</p>
+<h5 id="请求响应">请求/响应</h5>
+<p>HTTP 的开始是浏览器发出请求。但是请求的是什么呢？<strong>是服务器上的资源，英文叫 Resource 。</strong></p>
+<p>对应的每一个资源，都有一个 URL ，也就是<strong>统一资源定位地址</strong>，指向这个资源。不过资源分两种：一种是静态 资源，也就是各种文件了，最常见的就是静态 HTML ，但是也可以是 PDF ，json，MP4 文件等等。另外一种，就是动态 资源，也就是 URL 指向的地方不是一个文件，而是一段代码的入口，服务器经过运算后，才返回运算结果给客户端。</p>
+<p>所以， 我们有 <a href="http://xxxxx.com/23333.txt" target="_blank" rel="external">http://xxxxx.com/2333.txt</a> (雷同纯属巧合)，这个 URL 就是指向一个静态资源的。如果是 <a href="http://xxxxx.com/username" target="_blank" rel="external">http://xxxxx.com/username</a> 这个可能就是指向动态资源的，后台对应的可能就是一个 API 。</p>
+<p>发起一个 HTTP 请求很容易。比如你说你想用浏览器访问 <a href="http://zrdsj.cc">zrdsj.cc</a> 。你所需要做的仅仅是启动浏览器然后在地址栏输入 <a href="http://zrdsj.cc/">http://zrdsj.cc/</a> ，然后你就可以在页面中看到本站的首页了。</p>
+<p>那么底层发生了什么呢？首先，浏览器作为 <strong>HTTP Client</strong> ，发出了一个<strong>请求</strong>给服务器</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET http://zdsj.cc/</div></pre></td></tr></table></figure>
-<p>&#x4E0A;&#x9762;&#x7684; GET &#x662F; HTTP &#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x540E;&#x9762;&#x8FD8;&#x4F1A;&#x4ECB;&#x7ECD;&#x3002;</p>
-<p><a href="http://zrdsj.cc">zrdsj.cc</a> &#x7684;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x7ED9;&#x51FA;<strong>&#x54CD;&#x5E94;</strong>&#x3002;&#x54CD;&#x5E94;&#x4E2D;&#x5E26;&#x6709;&#x5404;&#x79CD;&#x6570;&#x636E;&#xFF0C;html/css/&#x56FE;&#x7247; &#x7B49;&#x7B49;&#xFF0C;&#x8FD4;&#x56DE;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x3002; &#x6D4F;&#x89C8;&#x5668;&#x662F;&#x7406;&#x89E3;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x683C;&#x5F0F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6700;&#x7EC8;&#x5C55;&#x793A;&#x4E00;&#x4E2A;&#x7F8E;&#x89C2;&#x7684;&#x7F51;&#x9875;&#x7ED9;&#x7528;&#x6237;&#x3002;</p>
-<p>&#x7528;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#xFF0C;&#x53EF;&#x4EE5;&#x6E05;&#x695A;&#x770B;&#x51FA;&#x8FD9;&#x4E9B;&#x53D8;&#x5316;&#x3002;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x63D2;&#x4EF6;&#xFF0C;&#x4E5F;&#x6709;&#x4E13;&#x95E8;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x8FD8;&#x6709;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x3002;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x7B80;&#x4FBF;&#x8D77;&#x89C1;&#xFF0C;&#x8FBE;&#x5230;&#x76EE;&#x7684;&#x5373;&#x53EF;&#xFF0C;&#x4F7F;&#x7528;Chrome&#x7684;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x5C31;&#x53EF;&#x4EE5;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x8BBF;&#x95EE;&#x8FD9;&#x4E2A;&#x7F51;&#x7AD9; <a href="https://office.qq.com/" target="_blank" rel="external">https://office.qq.com/</a> &#x4F5C;&#x4E3A;&#x4E3E;&#x4F8B;&#x3002;</p>
-<p>&#x5728;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x4E86;&#x4E0B;&#x5217;&#x7684;&#x6570;&#x636E;&#xFF1A;</p>
+<p>上面的 GET 是 HTTP 方法，这个后面还会介绍。</p>
+<p><a href="http://zrdsj.cc">zrdsj.cc</a> 的服务器收到请求后，给出<strong>响应</strong>。响应中带有各种数据，html/css/图片 等等，返回到浏览器。 浏览器是理解这些文件格式的，所以可以最终展示一个美观的网页给用户。</p>
+<p>用一些工具，可以清楚看出这些变化。有浏览器的插件，也有专门的软件，还有命令行工具。这里我们简便起见，达到目的即可，使用Chrome的开发者工具就可以。</p>
+<p>我们访问这个网站 <a href="https://office.qq.com/" target="_blank" rel="external">https://office.qq.com/</a> 作为举例。</p>
+<p>在控制器中我们看到了下列的数据：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Request URL:https://office.qq.com/</div><div class="line">Request Method:GET</div><div class="line">Status Code:200 </div><div class="line">Remote Address:127.0.0.1:8888</div></pre></td></tr></table></figure>
-<p>&#x8FD9;&#x90FD;&#x662F;&#x6781;&#x4E3A;&#x91CD;&#x8981;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5148;&#x4E0D;&#x505A;&#x9648;&#x8FF0;&#x3002;&#x6211;&#x4EEC;&#x770B;&#x4E0B;<code>&#x8BF7;&#x6C42;&#x90E8;&#x5206;</code>&#x548C;<code>&#x54CD;&#x5E94;&#x90E8;&#x5206;</code>&#x7684;&#x622A;&#x56FE;&#x3002;</p>
-<p>&#x8BF7;&#x6C42;&#x90E8;&#x5206;&#x7684;&#x622A;&#x56FE;&#xFF1A;</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get.png" alt="&#x8BF7;&#x6C42;&#x4FE1;&#x606F;"></p>
-<p>&#x4E0B;&#x9762;&#x662F;&#x54CD;&#x5E94;&#x4FE1;&#x606F;&#xFF1A;</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get-resp.png" alt="&#x54CD;&#x5E94;&#x4FE1;&#x606F;"></p>
+<p>这都是极为重要的信息，先不做陈述。我们看下<code>请求部分</code>和<code>响应部分</code>的截图。</p>
+<p>请求部分的截图：</p>
+<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get.png" alt="请求信息"></p>
+<p>下面是响应信息：</p>
+<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get-resp.png" alt="响应信息"></p>
 <ol>
 <li>
-<p>&#x6211;&#x4EEC;&#x8FD9;&#x6B21;&#x7684;&#x8BF7;&#x6C42;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;<u>GET</u><strong>&#x8BF7;&#x6C42;</strong>&#xFF0C;&#x5C31;&#x662F;&#x60F3;&#x8981;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A; GET &#xFF08;&#x62FF;&#x5230;&#xFF09;&#x4E00;&#x4E9B;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x60F3;&#x53BB;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x5668;&#x6570;&#x636E;&#x3002;&#x5230;&#x5E95;&#x8981; GET &#x54EA;&#x4E9B;&#x8D44;&#x6E90;&#xFF0C;&#x5C31;&#x662F;&#x540E;&#x9762;&#x7684; URL &#x8FD9;&#x4E00;&#x9879;&#x6765;&#x6307;&#x5B9A;&#x4E86;&#x3002;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x6211;&#x4EEC;&#x7684;<strong>HTTP &#x65B9;&#x6CD5;</strong>&#xFF08; <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank" rel="external">HTTP Method</a> &#xFF09;&#x662F; GET &#x65B9;&#x6CD5;&#xFF0C;&#x5F53;&#x7136;&#x8FD8;&#x6709;&#x5176;&#x4ED6;&#x79CD;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x89C1;&#x770B;&#x51FA;&#x5728;Request Headers&#xFF08;&#x8BF7;&#x6C42;&#x5934;&#xFF09;&#x4E2D;&#xFF0C;&#x6709;&#x8BB8;&#x591A;&#x9879;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x7684;&#x5217;&#x8868;&#x5728;<a href="https://zh.wikipedia.org/wiki/HTTP%E5%A4%B4%E5%AD%97%E6%AE%B5%E5%88%97%E8%A1%A8#.E5.B8.B8.E8.A7.81.E7.9A.84.E9.9D.9E.E6.A0.87.E5.87.86.E8.AF.B7.E6.B1.82.E5.AD.97.E6.AE.B5" target="_blank" rel="external">&#x8FD9;&#x91CC;</a>&#x3002;</p>
+<p>我们这次的请求实际上，是一个<u>GET</u><strong>请求</strong>，就是想要从服务器上 GET （拿到）一些内容，而不是想去修改服务器数据。到底要 GET 哪些资源，就是后面的 URL 这一项来指定了。也可以说我们的<strong>HTTP 方法</strong>（ <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank" rel="external">HTTP Method</a> ）是 GET 方法，当然还有其他种类的方法。</p>
+<p>我们可见看出在Request Headers（请求头）中，有许多项，可以参考的列表在<a href="https://zh.wikipedia.org/wiki/HTTP%E5%A4%B4%E5%AD%97%E6%AE%B5%E5%88%97%E8%A1%A8#.E5.B8.B8.E8.A7.81.E7.9A.84.E9.9D.9E.E6.A0.87.E5.87.86.E8.AF.B7.E6.B1.82.E5.AD.97.E6.AE.B5" target="_blank" rel="external">这里</a>。</p>
 </li>
 <li>
-<p>&#x54CD;&#x5E94;&#x4E5F;&#x6709;&#x5BF9;&#x5E94;&#x7684;&#x4FE1;&#x606F;&#xFF0C;<strong>&#x54CD;&#x5E94;&#x5934;&#x90E8;</strong>&#x3001;<strong>&#x72B6;&#x6001;&#x884C;</strong>&#x3001;<strong>&#x54CD;&#x5E94;&#x4E3B;&#x4F53;</strong>&#xFF08;response body/payload&#xFF09;&#x7B49;&#x3002;&#x57FA;&#x672C;&#x7684;&#x683C;&#x5F0F;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x622A;&#x56FE;&#x4E5F;&#x6709;&#x4E86;&#xFF1A;</p>
+<p>响应也有对应的信息，<strong>响应头部</strong>、<strong>状态行</strong>、<strong>响应主体</strong>（response body/payload）等。基本的格式在上面的截图也有了：</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[ header &#x540D;]: [ header &#x503C;]</div></pre></td></tr></table></figure>
-<p>&#x200B;	&#x5728;&#x4E00;&#x4E9B;&#x4E13;&#x95E8;&#x7684;&#x5DE5;&#x5177;&#x4E2D;&#xFF08;&#x9664;Chrome&#x63A7;&#x5236;&#x53F0;&#x4E4B;&#x5916;&#xFF09;&#xFF0C;&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x663E;&#x793A;&#x51FA;<strong>&#x72B6;&#x6001;&#x884C;</strong> &#xFF08; status line &#xFF09;&#x3002;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">HTTP[&#x7248;&#x672C;&#x53F7;] [&#x72B6;&#x6001;&#x7801;] [&#x72B6;&#x6001;&#x4FE1;&#x606F;]</div><div class="line"></div><div class="line">&#x6BD4;&#x5982;</div><div class="line">HTTP/1.1 200 ok</div></pre></td></tr></table></figure>
-<p>&#x200B;	&#x5176;&#x4E2D;&#x542B;&#x6709;&#x7684;&#x6570;&#x636E;&#x6709;&#x4E00;&#x9879;&#x4E3A;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5728;&#x7A0D;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x8BB2;&#x9053;&#x3002;</p>
-<p>&#x200B;	<strong>&#x54CD;&#x5E94;&#x4E3B;&#x4F53;</strong>&#x5F88;&#x597D;&#x7406;&#x89E3;&#x4E86;&#xFF0C;&#x5C31;&#x662F;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x4E86;&#xFF0C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x663E;&#x793A;&#x6210;&#x76F8;&#x5E94;&#x7684;&#x9875;&#x9762;&#x3002;</p>
-<h5 id="&#x65E0;&#x72B6;&#x6001;&#x534F;&#x8BAE;">&#x65E0;&#x72B6;&#x6001;&#x534F;&#x8BAE;</h5>
-<p>&#x524D;&#x9762; HTTP &#x7684;&#x57FA;&#x672C;&#x683C;&#x5F0F;&#x4ECB;&#x7ECD;&#x5B8C;&#x4E86;&#xFF0C;&#x518D;&#x8865;&#x5145;&#x4E00;&#x4E2A;&#x5C0F;&#x70B9;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[ header 名]: [ header 值]</div></pre></td></tr></table></figure>
+<p>​	在一些专门的工具中（除Chrome控制台之外），一般可以直接显示出<strong>状态行</strong> （ status line ）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">HTTP[版本号] [状态码] [状态信息]</div><div class="line"></div><div class="line">比如</div><div class="line">HTTP/1.1 200 ok</div></pre></td></tr></table></figure>
+<p>​	其中含有的数据有一项为状态码，在稍后我们会讲道。</p>
+<p>​	<strong>响应主体</strong>很好理解了，就是代码文件了，在浏览器会显示成相应的页面。</p>
+<h5 id="无状态协议">无状态协议</h5>
+<p>前面 HTTP 的基本格式介绍完了，再补充一个小点：</p>
 <blockquote>
-<p>HTTP &#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x72B6;&#x6001;&#x7684;&#x534F;&#x8BAE;</p>
+<p>HTTP 是一个无状态的协议</p>
 </blockquote>
-<p>&#x6240;&#x8C13;**&#x65E0;&#x72B6;&#x6001;&#xFF08; stateless &#xFF09;**&#x610F;&#x601D;&#x5C31;&#x662F;&#xFF1A;&#x5BF9;&#x4E8E;&#x4E4B;&#x524D;&#x7684;&#x4EA4;&#x4E92;&#x6CA1;&#x6709;&#x8BB0;&#x5F55;&#x3002;&#x6BCF;&#x6B21;&#x4EA4;&#x4E92;&#x80FD;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x5C31;&#x53EA;&#x6709;&#x8FD9;&#x6B21;&#x4EA4;&#x4E92;&#x6240;&#x643A;&#x5E26;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
-<p>&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;HTTP &#x534F;&#x8BAE;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8BB0;&#x4F4F;&#x4E4B;&#x524D;&#x7684;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x6839;&#x636E;&#x524D;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x6765;&#x8F85;&#x52A9;&#x540E;&#x4E00;&#x6B21;&#x8BF7;&#x6C42;&#x3002;&#x5F53;&#x4E00;&#x4E2A; Web &#x5E94;&#x7528; &#x770B;&#x8D77;&#x6765;&#x4F3C;&#x4E4E;&#x53EF;&#x4EE5;&#x8BB0;&#x4F4F;&#x4E4B;&#x524D;&#x7684;&#x4EA4;&#x4E92;&#xFF0C;&#x4F8B;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x8BB0;&#x4F4F;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x5176;&#x5B9E;&#x5B83;&#x91C7;&#x7528;&#x7684;&#x6280;&#x5DE7;&#x5DF2;&#x7ECF;&#x8D85;&#x51FA;&#x4E86; HTTP &#x672C;&#x8EAB;&#x3002;HTTP &#x7684;&#x4FE1;&#x606F;&#x5C31;&#x597D;&#x50CF; &#x662F;&#x53EF;&#x4EE5;&#x81EA;&#x9500;&#x6BC1;&#x7684;&#xFF0C;&#x6BCF;&#x6B21;&#x8BFB;&#x53D6;&#x5B8C;&#x6BD5;&#xFF0C;&#x7ACB;&#x523B;&#x5C31;&#x6D88;&#x5931;&#x4E86;&#x3002;&#x603B;&#x4E4B;&#xFF0C;HTTP &#x5C31;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x8BB0;&#x5F55;&#x6216;&#x8005;&#x7EF4;&#x6301;&#x67D0;&#x79CD;&#x72B6;&#x6001;&#x7684;&#x3002;</p>
-<h4 id="&#x72B6;&#x6001;&#x7801;">&#x72B6;&#x6001;&#x7801;</h4>
-<p><a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#3xx.E9.87.8D.E5.AE.9A.E5.90.91" target="_blank" rel="external">&#x7EF4;&#x57FA;&#x767E;&#x79D1;</a>&#x7684;&#x5185;&#x5BB9;&#xFF0C;<a href="http://www.w3school.com.cn/tags/html_ref_httpmessages.asp" target="_blank" rel="external">w3</a>&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
-<p>&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#xFF1A;</p>
+<p>所谓**无状态（ stateless ）**意思就是：对于之前的交互没有记录。每次交互能用的信息就只有这次交互所携带的信息。</p>
+<p>换句话说，HTTP 协议是没有办法记住之前的一次请求的，所以也没有办法根据前一次请求来辅助后一次请求。当一个 Web 应用 看起来似乎可以记住之前的交互，例如，可以记住你的用户名，其实它采用的技巧已经超出了 HTTP 本身。HTTP 的信息就好像 是可以自销毁的，每次读取完毕，立刻就消失了。总之，HTTP 就是无状态的，也就是不能记录或者维持某种状态的。</p>
+<h4 id="状态码">状态码</h4>
+<p><a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#3xx.E9.87.8D.E5.AE.9A.E5.90.91" target="_blank" rel="external">维基百科</a>的内容，<a href="http://www.w3school.com.cn/tags/html_ref_httpmessages.asp" target="_blank" rel="external">w3</a>的内容。</p>
+<p>简单介绍：</p>
 <ul>
-<li>20x &#x7684;&#x72B6;&#x6001;&#x7801;&#x90FD;&#x4EE3;&#x8868;&#x67D0;&#x79CD;&#x6210;&#x529F;&#x72B6;&#x6001;&#x3002;&#x6700;&#x5E38;&#x89C1;&#x7684; 200 &#xFF0C;&#x5B83;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x5C31;&#x6B63;&#x5982;&#x5B83;&#x540E;&#x9762;&#x8DDF;&#x7684; &#x72B6;&#x6001;&#x4FE1;&#x606F; &#x4E00;&#x6837;&#xFF0C;&#x4EE3;&#x8868;&#x4E00;&#x5207; OK &#x3002;</li>
-<li>30x &#x7684;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x8D44;&#x6E90;&#x5DF2;&#x7ECF;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x5176;&#x4ED6;&#x5730;&#x65B9;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x54CD;&#x5E94;&#x4E2D;&#x7ED9;&#x51FA;&#x4E86;&#x5E94;&#x8BE5;&#x8DF3;&#x8F6C;&#x5230;&#x54EA;&#x91CC;&#x53BB;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x3002;&#x8FD9;&#x4E2A;&#x884C;&#x4E3A;&#x7684; &#x672F;&#x8BED;&#x5C31;&#x53EB;&#x505A; <strong>redirect</strong> &#xFF08;&#x91CD;&#x5B9A;&#x5411;&#xFF09;&#x3002;</li>
-<li>40x &#x7684;&#x4EE3;&#x7801;&#x4E5F;&#x90FD;&#x662F;&#x4EE3;&#x8868;&#x4E00;&#x79CD;<strong>&#x5BA2;&#x6237;&#x7AEF;&#x8BF7;&#x6C42;&#x9519;&#x8BEF;</strong> &#x3002;&#x4E00;&#x4E2A;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x72B6;&#x6001;&#x7801; 404 &#xFF0C;&#x5B83;&#x7684;&#x610F; &#x4E49;&#x4E5F;&#x8DDF;&#x5B83;&#x540E;&#x9762;&#x7D27;&#x8DDF;&#x7684;&#x72B6;&#x6001;&#x4FE1;&#x606F;&#x6240;&#x8BF4;&#x7684; &#x4E00;&#x6837;&#xFF1A;Page Not Found &#xFF08;&#x9875;&#x9762;&#x672A;&#x627E;&#x5230;&#xFF09;&#x3002;</li>
-<li>50x &#x7684;&#x72B6;&#x6001;&#x5417;&#x4E5F;&#x5F88;&#x5E38;&#x89C1;&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x5982;&#x679C;&#x662F;&#x8FD9;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x72B6;&#x6001;&#x7801;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740; &#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5728;&#x5904;&#x7406;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x51FA;&#x9519; &#x3002;50x &#x51FA;&#x73B0;&#xFF0C;&#x5BF9;&#x4E8E;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x4E00;&#x822C;&#x610F;&#x5473;&#x7740;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4EE3;&#x7801;&#x51FA;&#x4E86;&#x9519;&#x8BEF;&#x3002;</li>
+<li>20x 的状态码都代表某种成功状态。最常见的 200 ，它的意义，就正如它后面跟的 状态信息 一样，代表一切 OK 。</li>
+<li>30x 的状态码，意味着资源已经被移动到其他地方了，但是响应中给出了应该跳转到哪里去找到这个资源。这个行为的 术语就叫做 <strong>redirect</strong> （重定向）。</li>
+<li>40x 的代码也都是代表一种<strong>客户端请求错误</strong> 。一个最常见的状态码 404 ，它的意 义也跟它后面紧跟的状态信息所说的 一样：Page Not Found （页面未找到）。</li>
+<li>50x 的状态吗也很常见。返回的如果是这一系列的状态码，就意味着 服务器端在处理请求的时候出错 。50x 出现，对于开发者，一般意味着服务器端代码出了错误。</li>
 </ul>
-<h4 id="post&#x8BF7;&#x6C42;&#x53D1;&#x9001;">post&#x8BF7;&#x6C42;&#x53D1;&#x9001;</h4>
-<p>GET &#x8BF7;&#x6C42;&#x662F;&#x53EA;&#x8BFB;&#x7684;&#xFF0C;&#x610F;&#x601D;&#x5C31;&#x662F;&#x53EA;&#x80FD;&#x7528;&#x6765;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x83B7;&#x53D6;&#x4FE1;&#x606F;&#x3002;&#x800C;&#x76F8;&#x5BF9;&#x7684; POST &#x8BF7;&#x6C42;<code>&#x5C31;&#x662F;&#x7528;&#x6765;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x5668;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93;&#x8BB0;&#x5F55;&#xFF0C;&#x4E0A;&#x4F20;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;</code></p>
-<p>GET &#x8BF7;&#x6C42;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x901A;&#x8FC7;&#x5BF9; url &#x6DFB;&#x52A0;&#x53C2;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#x4F20;&#x9012;&#x989D;&#x5916;&#x7684;&#x53C2;&#x6570;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x4F46;&#x662F; POST &#x8BF7;&#x6C42;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x901A;&#x5E38;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x628A;&#x8981;&#x4F20;&#x9012;&#x7684;&#x6570;&#x636E;&#x653E;&#x5230; request body &#xFF08;&#x8BF7;&#x6C42;&#x4F53;&#xFF09;&#x4E2D;&#x3002;</p>
-<p>&#x4F7F;&#x7528; POST &#x8BF7;&#x6C42;&#x901A;&#x8FC7; request body &#x643A;&#x5E26;&#x6570;&#x636E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x6709;&#x56DB;&#x79CD;&#x65B9;&#x5F0F;:</p>
+<h4 id="post请求发送">post请求发送</h4>
+<p>GET 请求是只读的，意思就是只能用来从服务器上获取信息。而相对的 POST 请求<code>就是用来修改服务器的，例如修改数据库记录，上传一个文件等等。</code></p>
+<p>GET 请求中，我们一般通过对 url 添加参数的形式传递额外的参数给服务器端，但是 POST 请求的情况下，通常我们都会把要传递的数据放到 request body （请求体）中。</p>
+<p>使用 POST 请求通过 request body 携带数据到服务器端，有四种方式:</p>
 <ul>
-<li>&#x666E;&#x901A; html &#x8868;&#x5355; form &#x63D0;&#x4EA4;&#x65B9;&#x5F0F;&#xFF1A;application/x-www-form-urlencoded</li>
-<li>&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x60EF;&#x7528;&#x65B9;&#x5F0F;&#xFF1A;multipart/form-data</li>
-<li>&#x901A;&#x8FC7; fetch/axios &#x7B49;&#x5BA2;&#x6237;&#x7AEF;&#x63D0;&#x4EA4; JSON &#x6570;&#x636E;&#xFF1A;application/json</li>
-<li>&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x662F; text/xml &#xFF0C;&#x4E0D;&#x5E38;&#x7528;&#x4E86;</li>
+<li>普通 html 表单 form 提交方式：application/x-www-form-urlencoded</li>
+<li>上传文件惯用方式：multipart/form-data</li>
+<li>通过 fetch/axios 等客户端提交 JSON 数据：application/json</li>
+<li>还有一种方式是 text/xml ，不常用了</li>
 </ul>
-<p>&#x524D;&#x4E09;&#x79CD;&#x662F;&#x6BD4;&#x8F83;&#x91CD;&#x8981;&#x7684;&#x3002;</p>
+<p>前三种是比较重要的。</p>
 <h5 id="applicationx-www-form-urlencoded">application/x-www-form-urlencoded</h5>
-<p>&#x8FD9;&#x662F;&#x6700;&#x5E38;&#x89C1;&#x7684; POST &#x63D0;&#x4EA4;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#x4E86;&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x539F;&#x751F; <code>&lt;form&gt;</code> &#x8868;&#x5355;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E; <code>enctype</code> &#x5C5E;&#x6027;&#xFF0C;&#x90A3;&#x4E48;&#x6700;&#x7EC8;&#x5C31;&#x4F1A;&#x4EE5; <strong>application/x-www-form-urlencoded</strong> &#x65B9;&#x5F0F;&#x63D0;&#x4EA4;&#x6570;&#x636E;&#x3002;</p>
-<p>&#x8BF7;&#x6C42;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#xFF08;&#x65E0;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x5934;&#x5728;&#x672C;&#x6587;&#x4E2D;&#x90FD;&#x7701;&#x7565;&#x6389;&#x4E86;&#xFF09;&#xFF1A;</p>
+<p>这是最常见的 POST 提交数据的方式了。浏览器的原生 <code>&lt;form&gt;</code> 表单，如果不设置 <code>enctype</code> 属性，那么最终就会以 <strong>application/x-www-form-urlencoded</strong> 方式提交数据。</p>
+<p>请求类似于下面这样（无关的请求头在本文中都省略掉了）：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1</div><div class="line">Content-Type: application/x-www-form-urlencoded;charset=utf-8</div><div class="line"></div><div class="line">title=test&amp;sub%5B%5D=1&amp;sub%5B%5D=2&amp;sub%5B%5D=3</div></pre></td></tr></table></figure>
 <ul>
-<li>&#x9996;&#x5148;&#xFF0C;Content-Type &#x88AB;&#x6307;&#x5B9A;&#x4E3A; application/x-www-form-urlencoded&#xFF1B;</li>
-<li>&#x5176;&#x6B21;&#xFF0C;&#x63D0;&#x4EA4;&#x7684;&#x6570;&#x636E;&#x6309;&#x7167; key1=val1&amp;key2=val2 &#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#xFF0C;key &#x548C; val &#x90FD;&#x8FDB;&#x884C;&#x4E86; URL &#x8F6C;&#x7801;&#x3002;&#x5927;&#x90E8;&#x5206;&#x670D;&#x52A1;&#x7AEF;&#x8BED;&#x8A00;&#x90FD;&#x5BF9;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6709;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#x3002;</li>
+<li>首先，Content-Type 被指定为 application/x-www-form-urlencoded；</li>
+<li>其次，提交的数据按照 key1=val1&amp;key2=val2 的方式进行编码，key 和 val 都进行了 URL 转码。大部分服务端语言都对这种方式有很好的支持。</li>
 </ul>
-<p>&#x5F88;&#x591A;&#x65F6;&#x5019;&#xFF0C;&#x7528; Ajax &#x63D0;&#x4EA4;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x3002;&#x4F8B;&#x5982; <a href="http://jquery.com/" target="_blank" rel="external">JQuery</a> &#x548C; <a href="http://www.qwrap.com/" target="_blank" rel="external">QWrap</a> &#x7684; Ajax&#xFF0C;Content-Type &#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x662F;&#x300C;application/x-www-form-urlencoded;charset=utf-8&#x300D;&#x3002;</p>
+<p>很多时候，用 Ajax 提交数据时，也是使用这种方式。例如 <a href="http://jquery.com/" target="_blank" rel="external">JQuery</a> 和 <a href="http://www.qwrap.com/" target="_blank" rel="external">QWrap</a> 的 Ajax，Content-Type 默认值都是「application/x-www-form-urlencoded;charset=utf-8」。</p>
 <h5 id="multipartform-data">multipart/form-data</h5>
-<p>&#x53C8;&#x4E00;&#x4E2A;&#x5E38;&#x89C1;&#x7684; POST &#x6570;&#x636E;&#x63D0;&#x4EA4;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x8868;&#x5355;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x5FC5;&#x987B;&#x8BA9; <code>&lt;form&gt;</code>&#x8868;&#x5355;&#x7684; <code>enctype</code> &#x7B49;&#x4E8E; <code>multipart/form-data</code>&#x3002;</p>
-<p>&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x793A;&#x4F8B;&#xFF1A;</p>
+<p>又一个常见的 POST 数据提交的方式。我们使用表单上传文件时，必须让 <code>&lt;form&gt;</code>表单的 <code>enctype</code> 等于 <code>multipart/form-data</code>。</p>
+<p>一个请求示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1</div><div class="line">Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line"></div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line">Content-Disposition: form-data; name=&quot;text&quot;</div><div class="line"></div><div class="line">title</div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;chrome.png&quot;</div><div class="line">Content-Type: image/png</div><div class="line"></div><div class="line">PNG ... content of chrome.png ...</div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA--</div></pre></td></tr></table></figure>
-<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x7A0D;&#x5FAE;&#x590D;&#x6742;&#x70B9;&#x3002;</p>
+<p>这个例子稍微复杂点。</p>
 <ul>
-<li>&#x9996;&#x5148;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A; boundary &#x7528;&#x4E8E;&#x5206;&#x5272;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4E0E;&#x6B63;&#x6587;&#x5185;&#x5BB9;&#x91CD;&#x590D;&#xFF0C;boundary &#x5F88;&#x957F;&#x5F88;&#x590D;&#x6742;&#x3002;</li>
-<li>&#x7136;&#x540E; Content-Type &#x91CC;&#x6307;&#x660E;&#x4E86;&#x6570;&#x636E;&#x662F;&#x4EE5; multipart/form-data &#x6765;&#x7F16;&#x7801;&#xFF0C;&#x4EE5;&#x53CA;&#x8BF7;&#x6C42;&#x7684; boundary &#x662F;&#x4EC0;&#x4E48;&#x5185;&#x5BB9;&#x3002;&#x6D88;&#x606F;&#x4E3B;&#x4F53;&#x91CC;&#x6309;&#x7167;&#x5B57;&#x6BB5;&#x4E2A;&#x6570;&#x53C8;&#x5206;&#x4E3A;&#x591A;&#x4E2A;&#x7ED3;&#x6784;&#x7C7B;&#x4F3C;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x6BCF;&#x90E8;&#x5206;&#x90FD;&#x662F;&#x4EE5; <code>--boundary</code> &#xFF08;------WebKitFormBoundaryrGKCBY7qhFd3Trw&#xFF09;&#x5F00;&#x59CB;&#xFF0C;&#x7D27;&#x63A5;&#x7740;&#x662F;&#x5185;&#x5BB9;&#x63CF;&#x8FF0;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x662F;&#x56DE;&#x8F66;&#xFF0C;&#x6700;&#x540E;&#x662F;&#x5B57;&#x6BB5;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#xFF08;&#x6587;&#x672C;&#x6216;&#x4E8C;&#x8FDB;&#x5236;&#xFF09;&#x3002;</li>
-<li>&#x5982;&#x679C;&#x4F20;&#x8F93;&#x7684;&#x662F;&#x6587;&#x4EF6;&#xFF0C;&#x8FD8;&#x8981;&#x5305;&#x542B;&#x6587;&#x4EF6;&#x540D;&#x548C;&#x6587;&#x4EF6;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x3002;&#x6D88;&#x606F;&#x4E3B;&#x4F53;&#x6700;&#x540E;&#x4EE5; <code>--boundary--</code> &#x6807;&#x793A;&#x7ED3;&#x675F;&#x3002;&#x5173;&#x4E8E; multipart/form-data &#x7684;&#x8BE6;&#x7EC6;&#x5B9A;&#x4E49;&#xFF0C;&#x8BF7;&#x524D;&#x5F80; <a href="http://www.ietf.org/rfc/rfc1867.txt" target="_blank" rel="external">rfc1867</a> &#x67E5;&#x770B;&#x3002;</li>
+<li>首先生成了一个 boundary 用于分割不同的字段，为了避免与正文内容重复，boundary 很长很复杂。</li>
+<li>然后 Content-Type 里指明了数据是以 multipart/form-data 来编码，以及请求的 boundary 是什么内容。消息主体里按照字段个数又分为多个结构类似的部分，每部分都是以 <code>--boundary</code> （------WebKitFormBoundaryrGKCBY7qhFd3Trw）开始，紧接着是内容描述信息，然后是回车，最后是字段具体内容（文本或二进制）。</li>
+<li>如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以 <code>--boundary--</code> 标示结束。关于 multipart/form-data 的详细定义，请前往 <a href="http://www.ietf.org/rfc/rfc1867.txt" target="_blank" rel="external">rfc1867</a> 查看。</li>
 </ul>
-<p>&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4E00;&#x822C;&#x7528;&#x6765;&#x4E0A;&#x4F20;&#x6587;&#x4EF6;&#xFF0C;&#x5404;&#x5927;&#x670D;&#x52A1;&#x7AEF;&#x8BED;&#x8A00;&#x5BF9;&#x5B83;&#x4E5F;&#x6709;&#x7740;&#x826F;&#x597D;&#x7684;&#x652F;&#x6301;&#x3002;</p>
-<p>&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x8FD9;&#x4E24;&#x79CD; POST &#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x90FD;&#x662F;&#x6D4F;&#x89C8;&#x5668;&#x539F;&#x751F;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x73B0;&#x9636;&#x6BB5;&#x6807;&#x51C6;&#x4E2D;&#x539F;&#x751F; <form> &#x8868;&#x5355;&#x4E5F;<a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4" target="_blank" rel="external">&#x53EA;&#x652F;&#x6301;&#x8FD9;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</a>&#xFF08;&#x901A;&#x8FC7; <code>&lt;form&gt;</code> &#x5143;&#x7D20;&#x7684; <code>enctype</code> &#x5C5E;&#x6027;&#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; application/x-www-form-urlencoded&#x3002;&#x5176;&#x5B9E; <code>enctype</code> &#x8FD8;&#x652F;&#x6301; <code>text/plain</code>&#xFF0C;&#x4E0D;&#x8FC7;&#x7528;&#x5F97;&#x975E;&#x5E38;&#x5C11;&#xFF09;&#x3002;</form></p>
-<p>&#x968F;&#x7740;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684; Web &#x7AD9;&#x70B9;&#xFF08;&#x5C24;&#x5176;&#x662F; WebApp&#xFF09;&#xFF0C;&#x5168;&#x90E8;&#x4F7F;&#x7528; Ajax &#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x65B0;&#x7684;&#x6570;&#x636E;&#x63D0;&#x4EA4;&#x65B9;&#x5F0F;&#xFF0C;&#x7ED9;&#x5F00;&#x53D1;&#x5E26;&#x6765;&#x66F4;&#x591A;&#x4FBF;&#x5229;&#x3002;</p>
+<p>这种方式一般用来上传文件，各大服务端语言对它也有着良好的支持。</p>
+<p>上面提到的这两种 POST 数据的方式，都是浏览器原生支持的，而且现阶段标准中原生 <form> 表单也<a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4" target="_blank" rel="external">只支持这两种方式</a>（通过 <code>&lt;form&gt;</code> 元素的 <code>enctype</code> 属性指定，默认为 application/x-www-form-urlencoded。其实 <code>enctype</code> 还支持 <code>text/plain</code>，不过用得非常少）。</form></p>
+<p>随着越来越多的 Web 站点（尤其是 WebApp），全部使用 Ajax 进行数据交互之后，我们完全可以定义新的数据提交方式，给开发带来更多便利。</p>
 <h5 id="applicationjson">application/json</h5>
-<p>application/json &#x8FD9;&#x4E2A; Content-Type &#x4F5C;&#x4E3A;&#x54CD;&#x5E94;&#x5934;&#x5E76;&#x4E0D;&#x65B0;&#x9C9C;&#xFF0C;&#x73B0;&#x5728;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x4EBA;&#x628A;&#x5B83;&#x4F5C;&#x4E3A;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x7528;&#x6765;&#x544A;&#x8BC9;&#x670D;&#x52A1;&#x7AEF;&#x6D88;&#x606F;&#x4E3B;&#x4F53;&#x662F;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684; JSON &#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
-<p>&#x7531;&#x4E8E; JSON &#x89C4;&#x8303;&#x7684;&#x6D41;&#x884C;&#xFF0C;&#x9664;&#x4E86;&#x4F4E;&#x7248;&#x672C; IE &#x4E4B;&#x5916;&#x7684;&#x5404;&#x5927;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x539F;&#x751F;&#x652F;&#x6301; JSON.stringify&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x8BED;&#x8A00;&#x4E5F;&#x90FD;&#x6709;&#x5904;&#x7406; JSON &#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F7F;&#x7528; JSON &#x4E0D;&#x4F1A;&#x9047;&#x4E0A;&#x4EC0;&#x4E48;&#x9EBB;&#x70E6;&#x3002;</p>
-<p>JSON &#x683C;&#x5F0F;&#x652F;&#x6301;&#x6BD4;&#x952E;&#x503C;&#x5BF9;&#x590D;&#x6742;&#x5F97;&#x591A;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4E5F;&#x5F88;&#x6709;&#x7528;&#x3002;</p>
-<p>Google &#x7684; <a href="http://angularjs.org/" target="_blank" rel="external">AngularJS</a> &#x4E2D;&#x7684; Ajax &#x529F;&#x80FD;&#xFF0C;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x63D0;&#x4EA4; JSON &#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">JSvar data = {&apos;title&apos;:&apos;test&apos;, &apos;sub&apos; : [1,2,3]};</div><div class="line">$http.post(url, data).success(function(result) {</div><div class="line">    ...</div><div class="line">});</div></pre></td></tr></table></figure>
-<p>&#x6700;&#x7EC8;&#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;&#x662F;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1 </div><div class="line">Content-Type: application/json;charset=utf-8</div><div class="line"></div><div class="line">{&quot;title&quot;:&quot;test&quot;,&quot;sub&quot;:[1,2,3]}</div></pre></td></tr></table></figure>
-<p>&#x8FD9;&#x79CD;&#x65B9;&#x6848;&#xFF0C;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x63D0;&#x4EA4;&#x590D;&#x6742;&#x7684;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#xFF0C;&#x7279;&#x522B;&#x9002;&#x5408; <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="external">RESTful &#x7684;&#x63A5;&#x53E3;</a>&#x3002;</p>
-<p>&#x5404;&#x5927;&#x6293;&#x5305;&#x5DE5;&#x5177;&#x5982; Chrome &#x81EA;&#x5E26;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#x3001;Firebug&#x3001;Fiddler&#xFF0C;&#x90FD;&#x4F1A;&#x4EE5;&#x6811;&#x5F62;&#x7ED3;&#x6784;&#x5C55;&#x793A; JSON &#x6570;&#x636E;&#xFF0C;&#x975E;&#x5E38;&#x53CB;&#x597D;&#x3002;&#x4E00;&#x4E9B;&#x670D;&#x52A1;&#x7AEF;&#x8BED;&#x8A00;&#x8FD8;&#x6CA1;&#x6709;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x4E00;&#x4E9B;&#x76F8;&#x5E94;&#x7684;&#x6846;&#x67B6;&#x5DF2;&#x7ECF;&#x5F00;&#x59CB;&#x505A;&#x51FA;&#x6539;&#x53D8;&#x4E86;&#x3002;</p>
+<p>application/json 这个 Content-Type 作为响应头并不新鲜，现在越来越多的人把它作为请求头，用来告诉服务端消息主体是序列化后的 JSON 字符串。</p>
+<p>由于 JSON 规范的流行，除了低版本 IE 之外的各大浏览器都原生支持 JSON.stringify，服务端语言也都有处理 JSON 的函数，使用 JSON 不会遇上什么麻烦。</p>
+<p>JSON 格式支持比键值对复杂得多的结构化数据，这一点也很有用。</p>
+<p>Google 的 <a href="http://angularjs.org/" target="_blank" rel="external">AngularJS</a> 中的 Ajax 功能，默认就是提交 JSON 字符串。例如下面这段代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">JSvar data = &#123;&apos;title&apos;:&apos;test&apos;, &apos;sub&apos; : [1,2,3]&#125;;</div><div class="line">$http.post(url, data).success(function(result) &#123;</div><div class="line">    ...</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>最终发送的请求是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1 </div><div class="line">Content-Type: application/json;charset=utf-8</div><div class="line"></div><div class="line">&#123;&quot;title&quot;:&quot;test&quot;,&quot;sub&quot;:[1,2,3]&#125;</div></pre></td></tr></table></figure>
+<p>这种方案，可以方便的提交复杂的结构化数据，特别适合 <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="external">RESTful 的接口</a>。</p>
+<p>各大抓包工具如 Chrome 自带的开发者工具、Firebug、Fiddler，都会以树形结构展示 JSON 数据，非常友好。一些服务端语言还没有支持这种方式，但一些相应的框架已经开始做出改变了。</p>
 <h5 id="textxml">text/xml</h5>
-<p><a href="https://imququ.com/post/pingback-and-xmlrpc.html" target="_blank" rel="external">XML-RPC</a>&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x79CD;&#x4F7F;&#x7528; HTTP &#x4F5C;&#x4E3A;&#x4F20;&#x8F93;&#x534F;&#x8BAE;&#xFF0C;XML &#x4F5C;&#x4E3A;&#x7F16;&#x7801;&#x65B9;&#x5F0F;&#x7684;&#x8FDC;&#x7A0B;&#x8C03;&#x7528;&#x89C4;&#x8303;&#x3002;&#x5178;&#x578B;&#x7684; XML-RPC &#x8BF7;&#x6C42;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;</p>
+<p><a href="https://imququ.com/post/pingback-and-xmlrpc.html" target="_blank" rel="external">XML-RPC</a>，它是一种使用 HTTP 作为传输协议，XML 作为编码方式的远程调用规范。典型的 XML-RPC 请求是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">HTMLPOST http://www.example.com HTTP/1.1 </div><div class="line">Content-Type: text/xml</div><div class="line"></div><div class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</div><div class="line">&lt;methodCall&gt;</div><div class="line">  &lt;methodName&gt;examples.getStateName&lt;/methodName&gt;</div><div class="line">  &lt;params&gt;</div><div class="line">    &lt;param&gt;</div><div class="line">      &lt;value&gt;&lt;i4&gt;233&lt;/i4&gt;&lt;/value&gt;</div><div class="line">    &lt;/param&gt;</div><div class="line">  &lt;/params&gt;</div><div class="line">&lt;/methodCall&gt;</div></pre></td></tr></table></figure>
-<p>XML-RPC &#x534F;&#x8BAE;&#x7B80;&#x5355;&#x3001;&#x529F;&#x80FD;&#x591F;&#x7528;&#xFF0C;&#x5404;&#x79CD;&#x8BED;&#x8A00;&#x7684;&#x5B9E;&#x73B0;&#x90FD;&#x6709;&#x3002;&#x5B83;&#x7684;&#x4F7F;&#x7528;&#x4E5F;&#x5F88;&#x5E7F;&#x6CDB;&#xFF0C;&#x5982; WordPress &#x7684; <a href="http://codex.wordpress.org/XML-RPC_WordPress_API" target="_blank" rel="external">XML-RPC Api</a>&#xFF0C;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x7684; <a href="http://help.baidu.com/question?prod_en=master&amp;class=476&amp;id=1000423" target="_blank" rel="external">ping &#x670D;&#x52A1;</a>&#x7B49;&#x7B49;&#x3002;JavaScript &#x4E2D;&#xFF0C;&#x4E5F;&#x6709;<a href="http://plugins.jquery.com/xmlrpc/" target="_blank" rel="external">&#x73B0;&#x6210;&#x7684;&#x5E93;</a>&#x652F;&#x6301;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4EA4;&#x4E92;&#xFF0C;&#x80FD;&#x5F88;&#x597D;&#x7684;&#x652F;&#x6301;&#x5DF2;&#x6709;&#x7684; XML-RPC &#x670D;&#x52A1;&#x3002;&#x53EF;&#x80FD;&#x4E00;&#x4E9B;&#x4EBA;&#x89C9;&#x5F97; XML &#x7ED3;&#x6784;&#x8FD8;&#x662F;&#x8FC7;&#x4E8E;&#x81C3;&#x80BF;&#xFF0C;&#x4E00;&#x822C;&#x573A;&#x666F;&#x7528; JSON &#x4F1A;&#x66F4;&#x7075;&#x6D3B;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>XML-RPC 协议简单、功能够用，各种语言的实现都有。它的使用也很广泛，如 WordPress 的 <a href="http://codex.wordpress.org/XML-RPC_WordPress_API" target="_blank" rel="external">XML-RPC Api</a>，搜索引擎的 <a href="http://help.baidu.com/question?prod_en=master&amp;class=476&amp;id=1000423" target="_blank" rel="external">ping 服务</a>等等。JavaScript 中，也有<a href="http://plugins.jquery.com/xmlrpc/" target="_blank" rel="external">现成的库</a>支持以这种方式进行数据交互，能很好的支持已有的 XML-RPC 服务。可能一些人觉得 XML 结构还是过于臃肿，一般场景用 JSON 会更灵活方便。</p>
 <h3 id="2222222">2222222</h3>
 <h4 id="how">how?</h4>
-<p>&#x6211;&#x8FD9;&#x91CC;&#x60F3;&#x8868;&#x8FBE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6280;&#x672F;&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x7684;&#xFF1F;</p>
+<p>我这里想表达的是一个技术是如何实现的？</p>
 <p><a href="https://zh.wikipedia.org/wiki/Cookie" target="_blank" rel="external">Cookie</a></p>
-<p>&#x524D;&#x9762;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x8BF4;&#x4E86;&#xFF1A;HTTP &#x7684;&#x4E00;&#x4E2A;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x5B83;&#x662F;<strong>&#x65E0;&#x72B6;&#x6001;</strong>&#x534F;&#x8BAE;&#xFF08;easy come, easy go&#xFF09;&#x3002;</p>
-<p>&#x4F46;&#x662F;&#x6709;&#x65F6;&#x5019;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x7C7B;&#x4F3C;&#x7535;&#x5546;&#x7F51;&#x7AD9;&#x8D2D;&#x7269;&#x8F66;&#x8FD9;&#x6837;&#x7684;&#x5E94;&#x7528;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x6C42;&#x7F51;&#x7EDC;&#x5E94;&#x7528;&#x4FDD;&#x6301;&#x4E00;&#x79CD;&#x72B6;&#x6001;&#xFF0C;&#x6240;&#x4EE5; cookie &#x5C31;&#x88AB;&#x53D1;&#x660E;&#x51FA;&#x6765;&#x4E86;&#x3002;</p>
+<p>前面我们已经说了：HTTP 的一个特点就是它是<strong>无状态</strong>协议（easy come, easy go）。</p>
+<p>但是有时候为了实现类似电商网站购物车这样的应用，必须要求网络应用保持一种状态，所以 cookie 就被发明出来了。</p>
 <h5 id="general">general</h5>
-<p>&#x901A;&#x5E38;&#x6765;&#x8BB2;&#xFF1A;&#xFF1A;&#xFF1A;&#xFF1A;</p>
-<p>&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x8BBF;&#x95EE; <a href="https://atom.io/" target="_blank" rel="external">atom.io</a> &#xFF0C;&#x5728; Chrome Devtools &#x7684; Network &#x6807;&#x7B7E;&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x6253;&#x5F00;&#x9996;&#x9875;&#xFF0C; &#x5C31;&#x53D1;&#x51FA;&#x4E86;&#x5F88;&#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x3002;&#x5176;&#x5B9E;&#x5177;&#x4F53;&#x7684;&#x8FC7;&#x7A0B;&#x662F;&#x8FD9;&#x6837;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x9996;&#x5148;&#x53D1;&#x51FA;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF7;&#x6C42; <a href="http://atom.io" target="_blank" rel="external">atom.io</a> &#x7684;&#x9996;&#x9875;&#xFF0C; &#x4F46;&#x662F;&#x95EE;&#x9898;&#x7684;&#x662F;&#x9996;&#x9875;&#x7684; html &#x4E2D;&#x6709;&#x6307;&#x5411;&#x56FE;&#x7247;&#xFF0C;css &#xFF0C;js &#x7684;&#x4E00;&#x4E9B;&#x94FE;&#x63A5;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x53D1;&#x51FA;&#x540E;&#x7EED;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4EE5;&#x4FDD;&#x8BC1; &#x6700;&#x7EC8;&#x9875;&#x9762;&#x662F;&#x663E;&#x793A;&#x5B8C;&#x6574;&#x7684;&#x3002;</p>
+<p>通常来讲：：：：</p>
+<p>比如我们现在访问 <a href="https://atom.io/" target="_blank" rel="external">atom.io</a> ，在 Chrome Devtools 的 Network 标签下可以看到，仅仅是打开首页， 就发出了很多个请求。其实具体的过程是这样，浏览器首先发出的是一个请求，也就是请求 <a href="http://atom.io" target="_blank" rel="external">atom.io</a> 的首页， 但是问题的是首页的 html 中有指向图片，css ，js 的一些链接，这样，浏览器就会自动发出后续的请求，以保证 最终页面是显示完整的。</p>
 <p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/atomio.png" alt="atom"></p>
-<p>&#x4E0A;&#x9762;&#x6240;&#x8BF4;&#x7684;&#x8FD9;&#x4E9B;&#x8BF7;&#x6C42;&#xFF0C;&#x90FD;&#x662F; stateless &#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x670D;&#x52A1;&#x5668;&#x6536;&#x5230;&#x540E;&#x7EED;&#x8BF7;&#x6C42;&#x540E;&#xFF0C;&#x6839;&#x672C;&#x4E0D;&#x8BB0;&#x5F97;&#x4E4B;&#x524D;&#x4E5F;&#x6536;&#x5230;&#x8FC7;&#x76F8;&#x5173;&#x7684;&#x8BF7;&#x6C42;&#x3002; &#x4E5F;&#x5C31;&#x662F;&#x670D;&#x52A1;&#x5668;&#x6839;&#x672C;&#x4E0D;&#x8BB0;&#x5F97;&#x6211;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x3002; &#x65E0;&#x72B6;&#x6001;&#x5C31;&#x662F;<strong>&#x968F;&#x65F6;&#x5FD8;&#x8BB0;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x670D;&#x52A1;&#x5668;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53BB;&#x59CB;&#x7EC8;&#x8DDF;&#x8E2A;&#x540C;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x6837; &#x6BD4;&#x5982;&#x8BF4;&#x6211;&#x4EEC;&#x60F3;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x5546;&#x54C1;&#x8FDB;&#x8D2D;&#x7269;&#x8F66;&#xFF0C;&#x90A3;&#x4E48;&#x670D;&#x52A1;&#x5668;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x8BB0;&#x5F55;&#xFF0C;&#x540E;&#x6DFB;&#x52A0;&#x7684;&#x5546;&#x54C1;&#x662F;&#x4E0D;&#x662F;&#x8DDF;&#x524D;&#x9762;&#x6DFB;&#x52A0;&#x7684;&#x5546;&#x54C1;&#x662F;&#x540C;&#x4E00;&#x4E2A; &#x6D4F;&#x89C8;&#x5668;&#x8BF7;&#x6C42;&#x7684;&#x3002;</p>
+<p>上面所说的这些请求，都是 stateless 无状态的，也就是服务器收到后续请求后，根本不记得之前也收到过相关的请求。 也就是服务器根本不记得我的浏览器。 无状态就是<strong>随时忘记</strong>，也就是服务器没有办法去始终跟踪同一个浏览器。但是这样 比如说我们想用浏览器添加多个商品进购物车，那么服务器是没有办法记录，后添加的商品是不是跟前面添加的商品是同一个 浏览器请求的。</p>
 <h5 id="then">then</h5>
-<p>&#x540E;&#x6765;&#xFF1A;&#xFF1A;&#xFF1A;&#xFF1A;</p>
-<p>&#x4E5F;&#x5C31;&#x771F;&#x662F;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x8FD9;&#x79CD;&#x9700;&#x6C42;&#xFF0C;&#x4E3A;&#x4E86;&#x8FBE;&#x6210;&#x6D4F;&#x89C8;&#x5668;&#x8DDF;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x4E00;&#x79CD;<strong>&#x6301;&#x7EED;&#x8FDE;&#x63A5;&#x72B6;&#x6001;</strong>&#xFF0C;&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x77E5;&#x9053;&#x5230;&#x5E95;&#x7528;&#x6237;&#x662F;&#x8C01;&#xFF0C; &#x5728;1993&#x5E74;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x53D1;&#x660E;&#x4E86; cookie &#x8FD9;&#x4E2A;&#x6280;&#x672F;&#x3002;</p>
-<p>Cookie &#x5C31;&#x662F;&#x5E73;&#x65F6;&#x6240;&#x8BF4;&#x7684;&#x66F2;&#x5947;&#x997C;&#x5E72;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x7684; Cookie &#x53EF;&#x4EE5;&#x7FFB;&#x8BD1;&#x6210;<strong>&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x6587;&#x4EF6;</strong>&#x3002;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x4F1A;&#x88AB;&#x8BBE;&#x7F6E;&#x6210; http &#x8BF7;&#x6C42; &#x7684;&#x4E00;&#x4E2A; header &#xFF0C;header &#x7684;&#x540D;&#x5B57;&#x5C31;&#x53EB; <strong>Cookie</strong> &#xFF0C;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x8FD9;&#x4E2A; header &#x505A;&#x7279;&#x6B8A;&#x5BF9;&#x5F85;&#xFF0C;&#x6BCF;&#x6B21;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x90FD;&#x4F1A;&#x643A;&#x5E26;&#x7740; cookie &#x4FE1;&#x606F;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x3002;</p>
-<p><em>&#x90A3;&#x4E48;&#x6D4F;&#x89C8;&#x5668;&#x7684; cookie &#x5C0F;&#x6587;&#x4EF6;&#x7684;&#x4FE1;&#x606F;&#x662F;&#x4ECE;&#x54EA;&#x91CC;&#x6765;&#x7684;&#x5462;&#xFF1F;</em></p>
+<p>后来：：：：</p>
+<p>也就真是为了解决购物车的这种需求，为了达成浏览器跟服务器之间的一种<strong>持续连接状态</strong>，让服务器知道到底用户是谁， 在1993年的时候，网景公司发明了 cookie 这个技术。</p>
+<p>Cookie 就是平时所说的曲奇饼干，浏览器的 Cookie 可以翻译成<strong>浏览器的一个小文件</strong>。文件中的信息，会被设置成 http 请求 的一个 header ，header 的名字就叫 <strong>Cookie</strong> ，让浏览器对这个 header 做特殊对待，每次发出请求的时候都会携带着 cookie 信息给服务器。</p>
+<p><em>那么浏览器的 cookie 小文件的信息是从哪里来的呢？</em></p>
 <blockquote>
-<p>Cookie &#x4E00;&#x822C;&#x90FD;&#x662F;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;&#x901A;&#x8FC7; http &#x54CD;&#x5E94;&#x7684;&#x5934;&#x90E8;&#x8FD4;&#x56DE;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x62FF;&#x5230;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x5C31;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x5230;&#x81EA;&#x5DF1;&#x7684; cookie &#x6587;&#x4EF6;&#x4E2D;</p>
+<p>Cookie 一般都是在服务器端设置的，通过 http 响应的头部返回给浏览器，浏览器拿到这些信息就可以保存到自己的 cookie 文件中</p>
 </blockquote>
-<p><em>cookie&#x7684;&#x4F5C;&#x7528;&#xFF1F;</em></p>
+<p><em>cookie的作用？</em></p>
 <blockquote>
-<p>&#x4E00;&#x65E6;&#x5BA2;&#x6237;&#x7AEF;&#x6709;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x53D1;&#x6765;&#x7684;&#x7279;&#x6B8A;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982; <code>id=xxx</code> &#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x7B49;&#x4E8E;&#x670D;&#x52A1;&#x5668;&#x5DF2;&#x7ECF;&#x8BA4;&#x5B9A;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x4E86;&#x3002;&#x5BA2;&#x6237;&#x7AEF;&#x6BCF;&#x6B21;&#x53D1;&#x8BF7;&#x6C42;&#x90FD;&#x5E26;&#x7740;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C; &#x5C31;&#x53EF;&#x4EE5;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8BA4;&#x9886;&#x5C5E;&#x4E8E;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x5404;&#x79CD;&#x8D44;&#x6E90;&#x4E86;&#x3002;&#x8FD9;&#x6837;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5C31;&#x5EFA;&#x7ACB;&#x8D77;&#x4E86;&#x4E00;&#x79CD;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#xFF0C;HTTP &#x7684;<strong>&#x65E0;&#x72B6;&#x6001;</strong>&#x7684;&#x95EE;&#x9898;&#x5C31;&#x88AB;&#x89E3;&#x51B3;&#x4E86;&#x3002;</p>
+<p>一旦客户端有了服务器发来的特殊信息，例如 <code>id=xxx</code> ，那么就等于服务器已经认定这个客户端了。客户端每次发请求都带着这些信息， 就可以到服务器上认领属于本浏览器的各种资源了。这样客户端和服务器端就建立起了一种连接状态，HTTP 的<strong>无状态</strong>的问题就被解决了。</p>
 </blockquote>
 <h4 id="session">Session</h4>
-<p>&#x5148;&#x6765;&#x666E;&#x53CA;&#x4E0B;&#x6982;&#x5FF5;&#x3002;</p>
+<p>先来普及下概念。</p>
 <blockquote>
-<p>&#x4EC0;&#x4E48;&#x662F;Session&#xFF1F;&#x2014;&#x662F;&#x4F1A;&#x8BDD;&#xFF01;</p>
+<p>什么是Session？—是会话！</p>
 </blockquote>
-<p><strong>&#x4F1A;&#x8BDD;</strong>&#x8FD9;&#x4E2A;&#x8BCD;&#x4E5F;&#x672C;&#x8EAB;&#x610F;&#x601D;&#x5C31;&#x6BD4;&#x8F83;&#x5BBD;&#x6CDB;&#xFF0C;&#x5BB9;&#x6613;&#x88AB;&#x5916;&#x884C;&#x6CDB;&#x7528;&#x3002;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x662F;<a href="https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AF%9D_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)" target="_blank" rel="external">&#x8FD9;&#x4E48;&#x8BF4;&#x7684;</a>&#x3002;&#x901A;&#x4FD7;&#x70B9;&#x8BB2;&#xFF0C;&#x4ECE;&#x6548;&#x679C;&#x5207;&#x5165;&#x5E94;&#x8BE5;&#x66F4;&#x5408;&#x9002;&#x3002;&#x90A3;&#x4E48;&#xFF1A;</p>
+<p><strong>会话</strong>这个词也本身意思就比较宽泛，容易被外行泛用。维基百科是<a href="https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AF%9D_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)" target="_blank" rel="external">这么说的</a>。通俗点讲，从效果切入应该更合适。那么：</p>
 <blockquote>
-<p>&#x4F1A;&#x8BDD;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x670D;&#x52A1;&#x5668;&#x4ECE;&#x8BA4;&#x8BC6;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5230;&#x4E0D;&#x518D;&#x8BA4;&#x8BC6;&#x8FD9;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#xFF08;url&#x6548;&#x7528;&#x5931;&#x6548;&#xFF09;&#x3002;</p>
+<p>会话开始和结束，就意味着服务器从认识一个浏览器到不再认识这个浏览器（url效用失效）。</p>
 </blockquote>
-<h5 id="&#x5B9E;&#x73B0;&#x4F1A;&#x8BDD;&#x7684;&#x6280;&#x672F;&#x673A;&#x5236;">&#x5B9E;&#x73B0;&#x4F1A;&#x8BDD;&#x7684;&#x6280;&#x672F;&#x673A;&#x5236;</h5>
-<p>&#x65B9;&#x6CD5;&#x4E0D;&#x552F;&#x4E00;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x4E00;&#x4E2A;&#x65B9;&#x5F0F;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+<h5 id="实现会话的技术机制">实现会话的技术机制</h5>
+<p>方法不唯一，最常见的一个方式是这样：</p>
 <ul>
-<li>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x51C6;&#x5907;&#x5EFA;&#x7ACB;&#x4F1A;&#x8BDD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x5728;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5B58;&#x91CC;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4F8B;&#x5982;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x53EB;&#x505A; session-3333 &#xFF0C;</li>
-<li>&#x7B2C;&#x4E8C;&#x6B65;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x628A;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD;&#x7684; id &#x4E5F;&#x5C31;&#x662F; 3333 &#x53D1;&#x9001;&#x5230;&#x6211;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x628A;&#x8FD9;&#x4E2A; id &#x4FDD;&#x5B58;&#x5230; cookie &#x4E2D;</li>
-<li>&#x4E4B;&#x540E;&#xFF0C;&#x6BCF;&#x6B21;&#x6211;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x518D;&#x53BB;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x4F1A;&#x643A;&#x5E26; cookie &#x4E2D;&#x5B58;&#x653E;&#x7684; 3333 &#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD; id &#x503C;&#xFF0C;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x8BA4;&#x8BC6; &#x8FD9;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x4E86;</li>
-<li>&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684; session-3333 &#x53D8;&#x91CF;&#x4E2D;&#x53EF;&#x4EE5;&#x5B58;&#x653E;&#x4EFB;&#x610F;&#x7684;&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x6211;&#x7684;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x6211;&#x8D2D;&#x7269;&#x8F66;&#x91CC;&#x6709;&#x54EA;&#x51E0;&#x4EF6;&#x5546;&#x54C1;&#x7B49;&#x7B49;</li>
-<li>&#x6BCF;&#x6B21;&#x6D4F;&#x89C8;&#x5668;&#x8BBF;&#x95EE;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x51ED;&#x501F;&#x81EA;&#x5DF1;&#x7684;&#x4F1A;&#x8BDD; id &#x53BB;&#x670D;&#x52A1;&#x5668;&#x7684; session-3333 &#x53D8;&#x91CF;&#x4E2D;&#x53BB;&#x8BA4;&#x9886;&#x5C5E;&#x4E8E;&#x6211;&#x7684;&#x4FE1;&#x606F;</li>
+<li>第一步，准备建立会话的时候，服务器会在自己的内存里创建一个新的变量，例如这个变量叫做 session-3333 ，</li>
+<li>第二步，服务器把这个会话的 id 也就是 3333 发送到我的浏览器，浏览器会把这个 id 保存到 cookie 中</li>
+<li>之后，每次我的浏览器再去访问服务器的时候，都会携带 cookie 中存放的 3333 这个会话 id 值，这样服务器就认识 这个浏览器了</li>
+<li>服务器端的 session-3333 变量中可以存放任意的会话数据，例如：我的用户名，我购物车里有哪几件商品等等</li>
+<li>每次浏览器访问服务器，都可以凭借自己的会话 id 去服务器的 session-3333 变量中去认领属于我的信息</li>
 </ul>
-<p>&#x6BCF;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x90FD;&#x4F1A;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD; id &#xFF0C;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x80FD;&#x552F;&#x4E00;&#x786E;&#x8BA4;&#x4F60;&#x8FD9;&#x4E2A;&#x5BA2;&#x6237;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x3002; &#x8FD9;&#x6837;&#xFF0C;&#x76F4;&#x5230;&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x662F;&#x4E92;&#x76F8;&#x8BA4;&#x8BC6;&#x7684;&#xFF0C;&#x90FD;&#x4FDD;&#x6301;&#x6709;&#x6548;&#x7684;&#x94FE;&#x63A5;&#x3002;</p>
-<h5 id="&#x4F1A;&#x8BDD;&#x7684;&#x610F;&#x4E49;">&#x4F1A;&#x8BDD;&#x7684;&#x610F;&#x4E49;</h5>
-<p>&#x8BF4;&#x7684;&#x62BD;&#x8C61;&#x70B9;&#xFF1A;<strong>&#x4F1A;&#x8BDD;&#x53EF;&#x4EE5;&#x8BA9;&#x65E0;&#x72B6;&#x6001;&#x7684; HTTP &#x534F;&#x8BAE;&#x4FDD;&#x6301;&#x7279;&#x5B9A;&#x7684;&#x72B6;&#x6001;</strong>&#x3002;</p>
-<p>&#x8FD9;&#x79CD;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#x4E0E;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x4F20;&#x9012;<strong>&#x4F1A;&#x8BDD; id</strong>&#x7684;&#x673A;&#x5236;&#xFF0C;&#x80FD;&#x8BA9;&#x670D;&#x52A1;&#x5668;&#x521B;&#x5EFA;&#x4E00;&#x79CD;&#x5404;&#x6B21;&#x8BF7;&#x6C42;&#x4E4B;&#x95F4;&#x7684;&#x6301;&#x7EED;&#x8FDE;&#x63A5;&#x72B6;&#x6001;&#x3002;Web &#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x5229;&#x7528;&#x8FD9;&#x79CD;&#x4EBA;&#x9020;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6765;&#x6784;&#x5EFA;&#x4E00;&#x4E9B;&#x201D;&#x6709;&#x72B6;&#x6001;&#x201C;&#x7684;&#x5E94;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x4F8B;&#x5982;&#x7528;&#x6237;&#x5904;&#x4E8E;&#x4E00;&#x76F4;&#x767B;&#x9646;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x8D2D;&#x7269;&#x8F66;&#x91CC;&#x9762;&#x4E4B;&#x524D;&#x6DFB;&#x52A0;&#x7684;&#x5546;&#x54C1;&#xFF0C;&#x540E;&#x7EED;&#x8BBF;&#x95EE;&#x4E2D;&#x8FD8;&#x6709;&#x7B49;&#x7B49;&#x3002;</p>
-<p>&#x4E0D;&#x8FC7;&#x5373;&#x4F7F;&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x672C;&#x8D28;&#x4E0A;&#x6765;&#x8BF4;&#x8FD8;&#x662F;&#x65E0;&#x72B6;&#x6001;&#x7684;&#xFF0C;&#x5404;&#x6B21;&#x8BF7;&#x6C42;&#x4E4B;&#x95F4;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x5F7C;&#x6B64;&#x7684;&#x5B58;&#x5728;&#x3002;</p>
-<h5 id="&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x5B58;&#x5728;&#x54EA;&#x91CC;">&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x5B58;&#x5728;&#x54EA;&#x91CC;&#xFF1F;</h5>
-<p>&#x4E00;&#x53E5;&#x8BDD;&#x6765;&#x8BB2;&#xFF1A;&#x662F;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x67D0;&#x4E2A;&#x5730;&#x65B9;&#x3002;</p>
-<p>&#x4E4B;&#x524D;&#x6240;&#x8BB2;&#x7684;cookie&#x662F;&#x5728;&#x5185;&#x5B58;&#x91CC;&#xFF0C;&#x4F46;&#x5176;&#x5B9E;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5B58;&#x5728;&#x67D0;&#x4E2A;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x4ECB;&#x8D28;&#x4E0A;&#xFF0C;&#x6BD4;&#x5982;&#x6570;&#x636E;&#x5E93;&#x6216;&#x8005;&#x952E; / &#x503C;&#x5B58;&#x50A8;&#x3002;&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x5B58;&#x5728;&#x54EA;&#x91CC;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x7684;&#x3002;&#x73B0;&#x5728;&#x91CD;&#x8981;&#x7684;&#x662F;&#x8981;&#x7406;&#x89E3;&#x4F1A;&#x8BDD; id &#x5B58;&#x50A8;&#x5728;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x5B83;&#x662F;&#x8BBF;&#x95EE;&#x5B58;&#x50A8;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x4F1A;&#x8BDD;&#x6570;&#x636E;&#x7684; &#x201C;&#x94A5;&#x5319;&#x201D;&#x3002;</p>
-<h5 id="&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;">&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;</h5>
-<p>&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x8BBF;&#x95EE;&#xFF0C;&#x5C31;&#x4F1A;&#x5728;&#x81EA;&#x5DF1;&#x5185;&#x5B58;&#x4E2D;&#x521B;&#x5EFA;&#x591A;&#x5C11;&#x4E86;&#x7C7B;&#x4F3C; session-3333 &#x8FD9;&#x6837;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x70B9;&#x975E;&#x5E38;&#x91CD;&#x8981;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x4F1A;&#x8BDD;&#x91CC;&#x53D1;&#x51FA;&#x7684;&#x4F1A;&#x8BDD; id &#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x77ED;&#x7684;&#x8FC7;&#x671F;&#x65F6;&#x95F4;&#x3002;&#x90A3;&#x4EC0;&#x4E48;&#x60C5;&#x51B5;&#x4E0B;&#x4F1A;&#x8BDD;&#x5C31;&#x4F1A;&#x8FC7;&#x671F;&#x5462;&#xFF1F;</p>
+<p>每一个请求都会包含这个会话 id ，这样服务器就能唯一确认你这个客户端浏览器。 这样，直到会话过期，客户端和服务器都是互相认识的，都保持有效的链接。</p>
+<h5 id="会话的意义">会话的意义</h5>
+<p>说的抽象点：<strong>会话可以让无状态的 HTTP 协议保持特定的状态</strong>。</p>
+<p>这种在客户端与服务器之间传递<strong>会话 id</strong>的机制，能让服务器创建一种各次请求之间的持续连接状态。Web 开发人员利用这种人造的状态，来构建一些”有状态“的应用场景：例如用户处于一直登陆的状态，购物车里面之前添加的商品，后续访问中还有等等。</p>
+<p>不过即使这样，每一个 HTTP 请求本质上来说还是无状态的，各次请求之间并不知道彼此的存在。</p>
+<h5 id="会话数据存在哪里">会话数据存在哪里？</h5>
+<p>一句话来讲：是服务器上的某个地方。</p>
+<p>之前所讲的cookie是在内存里，但其实有时候，可能会存在某个持久化存储介质上，比如数据库或者键 / 值存储。会话数据存在哪里不是我们需要关心的。现在重要的是要理解会话 id 存储在客户端，它是访问存储在服务器上的会话数据的 “钥匙”。</p>
+<h5 id="会话过期">会话过期</h5>
+<p>服务器上有多少个浏览器在访问，就会在自己内存中创建多少了类似 session-3333 这样的变量。但是，还有一点非常重要，在一个会话里发出的会话 id 是唯一的，而且有一个很短的过期时间。那什么情况下会话就会过期呢？</p>
 <ul>
-<li>&#x624B;&#x52A8;&#x5220;&#x6389; cookie &#x4E2D;&#x7684;&#x4F1A;&#x8BDD; id &#xFF08;&#x5728; chrome devtools &#x91CC;&#xFF0C;&#x53F3;&#x952E; cookies &#x7136;&#x540E;&#x5220;&#x9664;&#x5B83;&#xFF09;</li>
-<li>&#x70B9;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#x7684;&#x9000;&#x51FA;&#x767B;&#x5F55;&#x6309;&#x94AE;</li>
-<li>&#x5173;&#x95ED;&#x7F51;&#x7AD9;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x901A;&#x5E38;&#x80FD;&#x7ED3;&#x675F;&#x4F1A;&#x8BDD;</li>
+<li>手动删掉 cookie 中的会话 id （在 chrome devtools 里，右键 cookies 然后删除它）</li>
+<li>点一个网站的退出登录按钮</li>
+<li>关闭网站有时候也通常能结束会话</li>
 </ul>
-<p>&#x5F53;&#x7136;&#xFF0C;&#x8BA8;&#x8BBA;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x4F1A;&#x8BDD;&#x8FC7;&#x671F;&#x7684;&#x672C;&#x8D28;&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x662F;&#x77E5;&#x9053;&#x7684;&#xFF1A;<strong>&#x7528;&#x5BA2;&#x6237;&#x7AEF; cookie &#x4E2D;&#x7684; id &#x627E;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5BF9;&#x5E94;&#x7684; session &#x4E86;&#x3002;</strong></p>
-<h5 id="&#x4F1A;&#x8BDD;&#x52AB;&#x6301;">&#x4F1A;&#x8BDD;&#x52AB;&#x6301;</h5>
-<p>&#x4F1A;&#x8BDD; id &#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x4EE4;&#x724C;&#x6765;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x4F1A;&#x8BDD;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x4F1A;&#x8BDD; id &#x662F;&#x4F5C;&#x4E3A; cookie &#x5B58;&#x50A8;&#x5728;&#x8BA1;&#x7B97;&#x673A;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;.&#x3002;&#x5F88;&#x591A; Web &#x5E94;&#x7528;&#x7684;&#x7528;&#x6237;&#x8BA4;&#x8BC1;&#x7CFB;&#x7EDF;&#x6240;&#x5728;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF0C;&#x5F53;&#x7528;&#x6237;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x5339;&#x914D;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x8BDD; id &#x4F1A;&#x5B58;&#x50A8;&#x5728;&#x7528;&#x6237;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x91CC;&#xFF0C;&#x8FD9;&#x6837;&#x6211;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x5C31;&#x4E0D;&#x7528;&#x91CD;&#x65B0;&#x8BA4;&#x8BC1;&#x4E86;&#x3002;</p>
-<p>&#x4E0D;&#x5E78;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x653B;&#x51FB;&#x8005;&#x62FF;&#x5230;&#x4E86;&#x6211;&#x7684;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD; id &#xFF0C;&#x4ED6;&#x5C31;&#x4F1A;&#x8DDF;&#x6211;&#x5171;&#x4EAB;&#x8FD9;&#x4E00;&#x4E2A;&#x4F1A;&#x8BDD;&#xFF0C;&#x90A3;&#x670D;&#x52A1;&#x5668;&#x5C31;&#x4F1A;&#x628A;&#x4ED6;&#x5F53;&#x6210;&#x6211;&#xFF0C;&#x6211;&#x7684;&#x6240;&#x6709;&#x6743;&#x9650;&#xFF0C; &#x4ED6;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x77E5;&#x9053;&#x6211;&#x7684;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E86;&#x3002;</p>
-<p>&#x9632;&#x6B62;&#x4F1A;&#x8BDD;&#x52AB;&#x6301;&#x662F;&#x5B89;&#x5168;&#x95EE;&#x9898;&#xFF0C;&#x603B;&#x4E4B;&#x5C31;&#x662F;&#x7528;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x8BA9;&#x5F53;&#x524D;&#x4F1A;&#x8BDD; id &#x4F5C;&#x5E9F;&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x65B0;&#x4F1A;&#x8BDD;&#x3002;</p>
-<h4 id="ajax&#x4E0E;&#x540C;&#x6E90;&#x7B56;&#x7565;">Ajax&#x4E0E;&#x540C;&#x6E90;&#x7B56;&#x7565;</h4>
+<p>当然，讨论到这里，会话过期的本质我们其实是知道的：<strong>用客户端 cookie 中的 id 找到服务器端对应的 session 了。</strong></p>
+<h5 id="会话劫持">会话劫持</h5>
+<p>会话 id 作为一个唯一的令牌来唯一标识一个会话。通常，会话 id 是作为 cookie 存储在计算机上的一个随机字符串.。很多 Web 应用的用户认证系统所在做的事情，当用户的用户名和密码匹配之后，会话 id 会存储在用户的浏览器里，这样我的下一个请求就不用重新认证了。</p>
+<p>不幸的是，如果一个攻击者拿到了我的这个会话 id ，他就会跟我共享这一个会话，那服务器就会把他当成我，我的所有权限， 他都不需要知道我的用户名密码，都可以获得了。</p>
+<p>防止会话劫持是安全问题，总之就是用各种方法让当前会话 id 作废，然后重新创建新会话。</p>
+<h4 id="ajax与同源策略">Ajax与同源策略</h4>
 <h5 id="ajax">Ajax</h5>
-<p>AJAX &#x662F; &#x201D;&#x5F02;&#x6B65; javascript &#x548C; XML &#x201C; &#x7684;&#x7B80;&#x79F0;&#xFF08; Asynchronous JavaScript and XML &#xFF09;&#x3002;&#x5B83;&#x7684;&#x4E3B;&#x8981;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x5141;&#x8BB8;&#x6D4F;&#x89C8;&#x5668;&#x53D1;&#x9001;&#x8BF7;&#x6C42;&#x548C;&#x5904;&#x7406;&#x54CD;&#x5E94;&#x7684;&#x65F6;&#x5019;</p>
+<p>AJAX 是 ”异步 javascript 和 XML “ 的简称（ Asynchronous JavaScript and XML ）。它的主要特点就是允许浏览器发送请求和处理响应的时候</p>
 <blockquote>
-<p>&#x4E0D;&#x7528;&#x5237;&#x65B0;&#x6574;&#x4E2A;&#x9875;&#x9762;</p>
+<p>不用刷新整个页面</p>
 </blockquote>
-<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x7F51;&#x7AD9;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4F1A;&#x7ED9;&#x4F60;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#x751F;&#x6210;&#x4F60;&#x770B;&#x5230;&#x7684;&#x4E3B;&#x9875;&#x3002;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BCF;&#x5F53;&#x7528;&#x6237;&#x70B9;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#xFF0C;&#x6216;&#x8005;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;&#x8868;&#x5355;&#xFF0C;&#x9875;&#x9762;&#x90FD;&#x4F1A;&#x6574;&#x4E2A;&#x53BB;&#x5237;&#x65B0;&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x4E24;&#x4E2A;&#x660E;&#x663E;&#x7684;&#x5F0A;&#x7AEF;&#xFF1A;</p>
+<p>举个例子，如果你访问一个网站，服务器会给你一个响应生成你看到的主页。正常情况下，每当用户点一个连接，或者提交一个表单，页面都会整个去刷新，这样有两个明显的弊端：</p>
 <ul>
-<li>&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x4E0D;&#x597D;&#xFF0C;&#x56E0;&#x4E3A;&#x9875;&#x9762;&#x4F1A;&#x95EA;&#x70C1;</li>
-<li>&#x65B0;&#x9875;&#x9762;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x8DDF;&#x8001;&#x9875;&#x9762;&#x76F8;&#x4F3C;&#x5EA6;&#x5F88;&#x9AD8;&#xFF0C;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x5237;&#x65B0;&#x5176;&#x5B9E;&#x5F88;&#x591A;&#x5DE5;&#x4F5C;&#x91CF;&#x662F;&#x6CA1;&#x5FC5;&#x8981;&#x7684;&#xFF08;&#x6D6A;&#x8D39;&#x7F51;&#x7EDC;&#x8D44;&#x6E90;&#xFF09;</li>
+<li>用户体验不好，因为页面会闪烁</li>
+<li>新页面很多时候跟老页面相似度很高，整个页面刷新其实很多工作量是没必要的（浪费网络资源）</li>
 </ul>
-<p>&#x5F53;&#x4F7F;&#x7528; Ajax&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9875;&#x9762;&#x5C31;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x3002;</p>
-<p>Why&#xFF1F;</p>
+<p>当使用 Ajax的时候，页面就不会刷新。</p>
+<p>Why？</p>
 <blockquote>
-<p>Ajax &#x8BF7;&#x6C42;&#x672C;&#x8D28;&#x4E0A;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x666E;&#x901A;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E5F;&#x4F1A;&#x7ED9;&#x51FA;&#x54CD;&#x5E94;&#x3002;&#x8DDF;&#x666E;&#x901A;&#x7684;&#x8BF7;&#x6C42;&#x7684;&#x533A;&#x522B;&#x4E5F;&#x5C31;&#x662F;&#x9875;&#x9762;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x4E86;&#x3002;</p>
+<p>Ajax 请求本质上也就是一个普通的请求，服务器也会给出响应。跟普通的请求的区别也就是页面不会刷新了。</p>
 </blockquote>
-<p>&#x4F46;&#x662F;&#x9875;&#x9762;&#x8981;&#x662F;&#x4E0D;&#x5237;&#x65B0;&#xFF0C;&#x90A3;&#x4E48;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x5982;&#x4F55;&#x52A0;&#x8F7D;&#x5462;&#xFF1F;</p>
+<p>但是页面要是不刷新，那么响应数据如何加载呢？</p>
 <blockquote>
-<p>&#x8FD9;&#x4E9B;&#x8BF7;&#x6C42;&#x7684;&#x54CD;&#x5E94;&#x4F1A;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;<strong>&#x56DE;&#x8C03;&#x51FD;&#x6570;</strong>&#x6765;&#x5904;&#x7406;&#x3002;&#x5C31;&#x662F;&#x628A;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#x5B58;&#x653E;&#x5728;mou&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#xFF0C;&#x5F53;&#x67D0;&#x4E2A;&#x6761;&#x4EF6;&#x88AB;&#x89E6;&#x53D1;&#x4E4B;&#x540E;&#x518D;&#x56DE;&#x6765;&#x6267;&#x884C;&#x4F60;&#x524D;&#x9762;&#x5B58;&#x653E;&#x7684;&#x903B;&#x8F91;&#x3002;&#x5F53;&#x54CD;&#x5E94;&#x8FD4;&#x56DE;&#x7684;&#x65F6;&#x5019;&#xFF0C;<strong>&#x56DE;&#x8C03;&#x51FD;&#x6570;</strong>&#x5C31;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#x3002;<strong>&#x56DE;&#x8C03;&#x51FD;&#x6570;</strong>&#x91CC;&#x9762;&#x5199;&#x4E00;&#x4E9B;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x66F4;&#x65B0;&#x9875;&#x9762;&#x7684; JS &#x8BED;&#x6CD5;&#xFF0C;&#x914D;&#x5408;&#x4E0A;&#x521A;&#x521A;&#x8FD4;&#x56DE;&#x7684;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x66FF;&#x6362;&#x9875;&#x9762;&#x5C40;&#x90E8;&#x7684;&#x6548;&#x679C;&#x4E86;&#x3002;</p>
+<p>这些请求的响应会通过一些<strong>回调函数</strong>来处理。就是把一些逻辑存放在mou个函数里，当某个条件被触发之后再回来执行你前面存放的逻辑。当响应返回的时候，<strong>回调函数</strong>就会被触发。<strong>回调函数</strong>里面写一些可以用来更新页面的 JS 语法，配合上刚刚返回的服务器端的数据，就可以实现替换页面局部的效果了。</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#x5F53;&#x4EE3; Web &#x5E94;&#x7528;&#xFF0C;&#x65E0;&#x5237;&#x65B0;&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x6210;&#x4E3A;&#x6807;&#x914D;&#x3002;&#x5C24;&#x5176;&#x662F;&#x5355;&#x9875;&#x9762;&#x6982;&#x5FF5;&#x76DB;&#x884C;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x8D8B;&#x52BF;&#x5C31;&#x66F4;&#x660E;&#x663E;&#x4E86;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x4F20;&#x9012;&#x6570;&#x636E;&#x7684;&#x683C;&#x5F0F;&#x539F;&#x6765;&#x7528; XML &#xFF0C;&#x73B0;&#x5728;&#x5927;&#x5BB6;&#x4E5F;&#x90FD;&#x7528; JSON &#x4E86;&#x3002;</div><div class="line"></div><div class="line">AJAX &#x8BF7;&#x6C42;&#x5C31;&#x50CF;&#x662F;&#x666E;&#x901A;&#x8BF7;&#x6C42;&#xFF0C;&#x53D1;&#x9001;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BF7;&#x6C42;&#x4F9D;&#x7136;&#x8DDF;&#x666E;&#x901A;&#x8BF7;&#x6C42;&#x4E00;&#x6837;&#x6709;&#x7740;&#x4E00;&#x4E2A; HTTP &#x8BF7;&#x6C42;&#x8BE5;&#x6709;&#x7684;&#x6240;&#x6709;&#x7EC4;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x4E14;&#x670D;&#x52A1;&#x5668;&#x5904;&#x7406; AJAX &#x8BF7;&#x6C42;&#x7684;&#x65B9;&#x6CD5;&#x8DDF;&#x5904;&#x7406;&#x666E;&#x901A;&#x8BF7;&#x6C42;&#x4E5F;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</div><div class="line"></div><div class="line">&#x552F;&#x4E00;&#x4E0D;&#x540C;&#x5C31;&#x662F;&#xFF0C;&#x4E0D;&#x662F;&#x901A;&#x8FC7;&#x6D4F;&#x89C8;&#x5668;&#x5237;&#x65B0;&#x6765;&#x5904;&#x7406;&#x54CD;&#x5E94;&#xFF0C;&#x800C;&#x901A;&#x5E38;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x4E00;&#x4E9B; javascript &#x4EE3;&#x7801;&#x6765;&#x5904;&#x7406;&#x3002;</div></pre></td></tr></table></figure>
-<h5 id="&#x540C;&#x6E90;&#x7B56;&#x7565;">&#x540C;&#x6E90;&#x7B56;&#x7565;</h5>
-<p>&#x540C;&#x6E90;&#x7B56;&#x7565;&#xFF08; Same-origin policy &#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5B83;<strong>&#x5141;&#x8BB8;&#x6765;&#x81EA;&#x540C;&#x4E00;&#x7AD9;&#x70B9;&#x7684;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x4E92;&#x76F8;&#x8BBF;&#x95EE;&#x800C;&#x4E0D;&#x53D7;&#x9650;&#x5236;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x963B;&#x6B62;&#x5176;&#x4ED6;&#x4E0D;&#x540C;&#x7AD9;&#x70B9;&#x5BF9;&#x6587;&#x6863;/&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#x3002;</strong></p>
-<p>&#x540C;&#x6E90;&#x7B56;&#x7565;&#x6D89;&#x53CA;&#x7684;&#x662F;&#x8BBF;&#x95EE;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x94FE;&#x63A5;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x968F;&#x610F;&#x94FE;&#x63A5;&#x5230;&#x4EFB;&#x4F55; URL&#x3002; &#x540C;&#x6E90;&#x7B56;&#x7565;&#x662F;&#x9632;&#x8303;&#x4F1A;&#x8BDD;&#x52AB;&#x6301;&#x7684;&#x91CD;&#x8981;&#x624B;&#x6BB5;&#xFF0C;&#x662F; web &#x5E94;&#x7528;&#x5B89;&#x5168;&#x7684;&#x57FA;&#x77F3;&#x3002;</p>
-<p>&#x53C2;&#x8003;&#xFF1A;<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="external">1111</a>&#xFF0C;<a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank" rel="external">2222</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">当代 Web 应用，无刷新几乎已经成为标配。尤其是单页面概念盛行之后，这个趋势就更明显了。另外，传递数据的格式原来用 XML ，现在大家也都用 JSON 了。</div><div class="line"></div><div class="line">AJAX 请求就像是普通请求，发送到服务器的请求依然跟普通请求一样有着一个 HTTP 请求该有的所有组成部分，并且服务器处理 AJAX 请求的方法跟处理普通请求也是一样的。</div><div class="line"></div><div class="line">唯一不同就是，不是通过浏览器刷新来处理响应，而通常由客户端的一些 javascript 代码来处理。</div></pre></td></tr></table></figure>
+<h5 id="同源策略">同源策略</h5>
+<p>同源策略（ Same-origin policy ）是一个重要的概念，它<strong>允许来自同一站点的资源进行互相访问而不受限制，但是会阻止其他不同站点对文档/资源的访问。</strong></p>
+<p>同源策略涉及的是访问文件内容，而不是链接，你可以随意链接到任何 URL。 同源策略是防范会话劫持的重要手段，是 web 应用安全的基石。</p>
+<p>参考：<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="external">1111</a>，<a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank" rel="external">2222</a></p>
 <h3 id="3333333">3333333</h3>
 <h4 id="https">https</h4>
-<p><a href="https://zh.wikipedia.org/zh-cn/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="external">&#x8D85;&#x6587;&#x672C;&#x4F20;&#x8F93;&#x5B89;&#x5168;&#x534F;&#x8BAE;</a></p>
-<p>&#x901A;&#x8FC7; HTTPS &#x8BBF;&#x95EE;&#x8D44;&#x6E90;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x4EE5; <code>https://</code> &#x5F00;&#x5934;&#x800C;&#x4E0D;&#x662F; <code>http://</code> &#xFF0C;&#x800C;&#x4E14;&#x901A;&#x5E38;&#x5728;&#x8FB9;&#x4E0A;&#x90FD;&#x4F1A;&#x6709;&#x4E2A;&#x5C0F;&#x9501;&#x5B50;&#x7684;&#x56FE;&#x6807;&#x3002;</p>
+<p><a href="https://zh.wikipedia.org/zh-cn/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="external">超文本传输安全协议</a></p>
+<p>通过 HTTPS 访问资源的时候，通常以 <code>https://</code> 开头而不是 <code>http://</code> ，而且通常在边上都会有个小锁子的图标。</p>
 <p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/douban.png" alt="douban"></p>
-<h5 id="&#x5E72;&#x561B;&#x8981;&#x7528;">&#x5E72;&#x561B;&#x8981;&#x7528;&#xFF1F;</h5>
-<p>HTTP &#x662F;&#x660E;&#x6587;&#x4F20;&#x8F93;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x6709;&#x4EBA;&#x5728;&#x7F51;&#x4E0A;&#x622A;&#x83B7;&#x4E86;&#x4F60;&#x7684;&#x6570;&#x636E;&#x6D41;&#xFF0C;&#x90A3;&#x4E48;&#x7528;&#x6237;&#x7684;&#x5BC6;&#x7801;&#x7B49;&#x5404;&#x79CD;&#x4FE1;&#x606F;&#x5C31;&#x4F1A;&#x66B4;&#x9732;&#x3002;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x77E5;&#x9053;&#x4E3A;&#x5565;&#x5927;&#x5BB6;&#x90FD;&#x62FC;&#x547D;&#x4E0A; HTTPS &#x4E86;&#x5427;&#x3002;&#x3002;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x6709;&#x7528;&#x6237;&#x767B;&#x4E0A;&#x4F60;&#x7684;&#x7F51;&#x7AD9;&#x4E70;&#x4E1C;&#x897F;&#xFF0C;&#x9700;&#x8981;&#x8F93;&#x5165;&#x4FE1;&#x7528;&#x5361;&#x7684;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x7136;&#x540E;&#x4ED6;&#x770B;&#x5230;&#x4F60;&#x7684;&#x7F51;&#x7AD9;&#x6CA1;&#x6709;&#x7528; HTTPS &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x662F;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x90A3;&#x4ED6;&#x5C31;&#x5F88;&#x6709;&#x53EF;&#x80FD;&#x653E;&#x5F03;&#x8FD9;&#x6B21;&#x8D2D;&#x4E70;&#x3002;</p>
-<p>HTTP &#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x4F1A;&#x8BDD; id &#xFF0C;&#x5B83;&#x552F;&#x4E00;&#x5730;&#x6807;&#x8BC6;&#x4F60;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x522B;&#x4EBA;&#x590D;&#x5236;&#x4E86;&#x8FD9;&#x4E2A;&#x4F1A;&#x8BDD; id &#xFF0C;&#x4ED6;&#x4EEC;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x8FDB;&#x884C;&#x4F2A;&#x88C5;&#xFF0C;&#x751A;&#x81F3;&#x90FD;&#x4E0D;&#x9700;&#x8981;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;&#x548C;&#x5BC6;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x81EA;&#x52A8;&#x767B;&#x9646;&#x3002;</p>
-<p>&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x9700;&#x8981;&#x5B89;&#x5168;&#x7684; HTTP &#x4E5F;&#x5C31;&#x662F; HTTPS &#x6765;&#x5E2E;&#x5FD9;&#x3002;&#x901A;&#x8FC7; HTTPS &#x53D1;&#x9001;&#x7684;&#x8BF7;&#x6C42;&#x548C;&#x54CD;&#x5E94;&#x5728;&#x53D1;&#x9001;&#x524D;&#x90FD;&#x4F1A;&#x88AB;&#x52A0;&#x5BC6;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6076;&#x610F;&#x7684;&#x9ED1;&#x5BA2;&#x76D1;&#x542C; HTTPS &#x901A;&#x4FE1;&#xFF0C;&#x4ED6;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x90FD;&#x662F;&#x52A0;&#x5BC6;&#x7684;&#xFF0C;&#x5C31;&#x662F;&#x622A;&#x83B7;&#x4E86;&#x4E5F;&#x96BE;&#x770B;&#x61C2;&#x3002;</p>
+<h5 id="干嘛要用">干嘛要用？</h5>
+<p>HTTP 是明文传输的，所以如果有人在网上截获了你的数据流，那么用户的密码等各种信息就会暴露。这样你就知道为啥大家都拼命上 HTTPS 了吧。。。</p>
+<p>如果有用户登上你的网站买东西，需要输入信用卡的一些信息，然后他看到你的网站没有用 HTTPS ，也就是说是不安全的，那他就很有可能放弃这次购买。</p>
+<p>HTTP 请求可以包含会话 id ，它唯一地标识你的浏览器和服务器之间的联系，所以如果别人复制了这个会话 id ，他们可以手动创建到服务器的请求，进行伪装，甚至都不需要你的用户名和密码就可以自动登陆。</p>
+<p>这种情况就需要安全的 HTTP 也就是 HTTPS 来帮忙。通过 HTTPS 发送的请求和响应在发送前都会被加密。这意味着如果一个恶意的黑客监听 HTTPS 通信，他得到的信息都是加密的，就是截获了也难看懂。</p>
 <h5 id="how">how?</h5>
-<p>HTTPS &#x901A;&#x8FC7; <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="external">TLS</a> &#x7684;&#x52A0;&#x5BC6;&#x534F;&#x8BAE;&#x6765;&#x52A0;&#x5BC6;&#x6D88;&#x606F;&#x3002;&#x5728; TLS &#x5F00;&#x53D1;&#x5B8C;&#x6210;&#x524D;&#xFF0C;&#x65E9;&#x671F; HTTPS &#x4F7F;&#x7528; <code>SSL</code> &#xFF08; Secure Sockets Layer &#xFF09;&#x3002;&#x8FD9;&#x4E9B;&#x52A0;&#x5BC6;&#x534F;&#x8BAE;&#x5728;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x4F7F;&#x7528;&#x8BC1;&#x4E66;&#x6765;&#x4E0E;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x6765;&#x4EA4;&#x6362;&#x5B89;&#x5168;&#x5BC6;&#x94A5;&#x3002;</p>
-<p>&#x4F60;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x6709;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x9881;&#x53D1;&#x7684;&#x8BC1;&#x4E66;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4E00;&#x79CD;&#x8DDF;&#x670D;&#x52A1;&#x5668;&#x7EA6;&#x5B9A;&#x597D;&#x7684;&#x65B9;&#x5F0F;&#x628A;&#x8981;&#x4F20;&#x8F93;&#x7684;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x7136;&#x540E;&#x4F20;&#x8F93;&#x7ED9;&#x670D;&#x52A1;&#x5668;&#x3002; &#x8FD9;&#x6837;&#x6709;&#x4E86;&#x7EA6;&#x5B9A;&#x597D;&#x7684;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#xFF0C;&#x5B89;&#x5168;&#x7684;&#x4FE1;&#x606F;&#x901A;&#x9053;&#x4E5F;&#x5C31;&#x5EFA;&#x7ACB;&#x8D77;&#x6765;&#x4E86;&#x3002;</p>
+<p>HTTPS 通过 <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="external">TLS</a> 的加密协议来加密消息。在 TLS 开发完成前，早期 HTTPS 使用 <code>SSL</code> （ Secure Sockets Layer ）。这些加密协议在加密数据之前，需要先使用证书来与远程服务器进行通信来交换安全密钥。</p>
+<p>你的浏览器有了服务器颁发的证书，这样就可以按照一种跟服务器约定好的方式把要传输的信息进行加密，然后传输给服务器。 这样有了约定好的加密方式，安全的信息通道也就建立起来了。</p>
 <h4 id="web-sockets">Web Sockets</h4>
-<p>Web Sockets &#x662F; HTML5 &#x7684;&#x65B0;&#x589E;&#x529F;&#x80FD;&#x4E4B;&#x4E00;&#x3002;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;Web Sockets &#x662F;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x7ED9;&#x6211;&#x4EEC;&#x7684;&#x4E00;&#x79CD;&#x901A;&#x8BAF;&#x673A;&#x5236;&#x3002;</p>
-<p>Web Sockets &#x6280;&#x672F;&#x5230;&#x5E95;&#x7B97;&#x4E0D;&#x7B97; HTTP &#x534F;&#x8BAE;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF1F;</p>
+<p>Web Sockets 是 HTML5 的新增功能之一。换句话说，Web Sockets 是浏览器提供给我们的一种通讯机制。</p>
+<p>Web Sockets 技术到底算不算 HTTP 协议的一部分？</p>
 <blockquote>
-<p>&#x4E0D;&#x7B97;&#xFF01;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x4ED6;&#x4EEC;&#x5C31;&#x662F;&#x4E24;&#x5957;&#x534F;&#x8BAE;&#x3002;&#x4F46;&#x662F;&#x6BD5;&#x7ADF;&#x4E8C;&#x8005;&#x7D27;&#x5BC6;&#x76F8;&#x5173;&#xFF0C;&#x6240;&#x4EE5;&#x804A; HTTP &#x5C31;&#x4E0D;&#x80FD;&#x4E0D;&#x804A; Web Sockets &#x3002;&#x53EF;&#x4EE5;&#x628A; Web Socket &#x770B;&#x6210;&#x6D4F;&#x89C8;&#x5668;&#x4E3A;&#x4E86;&#x5F25;&#x8865; HTTP &#x534F;&#x8BAE;&#x7684;&#x4E0D;&#x8DB3;&#x800C;&#x6253;&#x7684;&#x4E00;&#x4E2A;&#x5927;&#x8865;&#x4E01;&#x3002;</p>
+<p>不算！可以认为他们就是两套协议。但是毕竟二者紧密相关，所以聊 HTTP 就不能不聊 Web Sockets 。可以把 Web Socket 看成浏览器为了弥补 HTTP 协议的不足而打的一个大补丁。</p>
 </blockquote>
-<h5 id="web-sockets-&#x8981;&#x89E3;&#x51B3;">Web Sockets &#x8981;&#x89E3;&#x51B3;&#xFF1F;</h5>
-<p>&#x76F8;&#x5BF9;&#x4E8E; HTTP &#x8FD9;&#x79CD;&#x975E;&#x6301;&#x4E45;&#x7684;&#x534F;&#x8BAE;&#xFF0C;Web Sockets &#x662F;&#x4E00;&#x4E2A;&#x6301;&#x4E45;&#x5316;&#x7684;&#x534F;&#x8BAE;&#x3002;</p>
-<p>HTTP &#x534F;&#x8BAE;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x7B80;&#x5355;&#x76F4;&#x63A5;&#xFF1A;<code>&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7ED9;&#x4E00;&#x4E2A;&#x54CD;&#x5E94;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x5404;&#x627E;&#x5404;&#x5988;&#xFF0C;&#x8C01;&#x4E5F;&#x4E0D;&#x8BA4;&#x8BC6;&#x8C01;&#x4E86;&#x3002;</code>&#x8FD9;&#x79CD;&#x5173;&#x7CFB;&#x4E0D;&#x4F46;&#x5065;&#x5FD8;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x5355;&#x5411;&#x7684;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x5FC5;&#x987B;&#x4E3B;&#x52A8;&#x53D1;&#x8BF7;&#x6C42;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x4E0D;&#x80FD;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x4E3B;&#x52A8;&#x63A8;&#x9001;&#x4FE1;&#x606F;&#x7684;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x57FA;&#x4E8E;&#x57FA;&#x672C;&#x7684; HTTP &#x534F;&#x8BAE;&#xFF0C;&#x6765;&#x505A;&#x4E2A;&#x7F51;&#x7EDC;&#x804A;&#x5929;&#x5BA4;&#x662F;&#x5F88;&#x96BE;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x8DDF;&#x4F60;&#x5728;&#x804A;&#x5929;&#xFF0C;&#x4F60;&#x90A3;&#x8FB9;&#x53D1;&#x4E86;&#x65B0;&#x4FE1;&#x606F;&#xFF0C;&#x6211;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x600E;&#x4E48;&#x80FD;&#x77E5;&#x9053;&#x5462;&#xFF1F;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x80FD;&#x7ED9;&#x6211;&#x4E3B;&#x52A8;&#x63A8;&#x9001;&#x4FE1;&#x606F;&#x7684;&#x5F0A;&#x7AEF;&#x5C31;&#x66B4;&#x9732;&#x51FA;&#x6765;&#x4E86;&#xFF01;</p>
-<p>Web Socket &#x51FA;&#x73B0;&#x4E4B;&#x524D;&#xFF0C;&#x5F80;&#x5F80;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x7638;&#x817F;&#x7684;&#x6280;&#x672F;&#x4F8B;&#x5982; <a href="http://www.cnblogs.com/hoojo/p/longPolling_comet_jquery_iframe_ajax.html" target="_blank" rel="external"><strong>long poll</strong></a> &#x548C; <strong><a href="https://segmentfault.com/a/1190000005032921" target="_blank" rel="external">ajax &#x8F6E;&#x8BE2;</a></strong> &#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x6BCF;&#x6B21;&#x67E5;&#x8BE2;&#x90FD;&#x662F;&#x5F00;&#x542F;&#x4E00;&#x6B21;&#x8FDE;&#x63A5;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x65AD;&#x5F00;&#xFF0C;&#x8017;&#x8D39;&#x8D44;&#x6E90;&#xFF0C;&#x6548;&#x679C;&#x5DEE;&#x3002;</p>
-<h5 id="web-sockets-&#x5E26;&#x6765;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x6539;&#x8FDB;">Web Sockets &#x5E26;&#x6765;&#x7684;&#x662F;&#x4E24;&#x4E2A;&#x6539;&#x8FDB;&#xFF1A;</h5>
+<h5 id="web-sockets-要解决">Web Sockets 要解决？</h5>
+<p>相对于 HTTP 这种非持久的协议，Web Sockets 是一个持久化的协议。</p>
+<p>HTTP 协议特点就是简单直接：<code>客户端发请求，服务器给一个响应，然后就各找各妈，谁也不认识谁了。</code>这种关系不但健忘，而且是单向的，客户端必须主动发请求，服务器端不能给客户端主动推送信息的。</p>
+<p>如果只是基于基本的 HTTP 协议，来做个网络聊天室是很难的。比如，我跟你在聊天，你那边发了新信息，我的浏览器怎么能知道呢？服务器不能给我主动推送信息的弊端就暴露出来了！</p>
+<p>Web Socket 出现之前，往往是通过一些瘸腿的技术例如 <a href="http://www.cnblogs.com/hoojo/p/longPolling_comet_jquery_iframe_ajax.html" target="_blank" rel="external"><strong>long poll</strong></a> 和 <strong><a href="https://segmentfault.com/a/1190000005032921" target="_blank" rel="external">ajax 轮询</a></strong> 来实现，每次查询都是开启一次连接，然后再断开，耗费资源，效果差。</p>
+<h5 id="web-sockets-带来的是两个改进">Web Sockets 带来的是两个改进：</h5>
 <ul>
-<li>&#x5BA2;&#x6237;&#x7AEF;&#x53EA;&#x8981;&#x5148;&#x53D1;&#x8D77;&#x4E00;&#x6B21; HTTP &#x8BF7;&#x6C42;&#xFF0C;&#x90A3;&#x4E48;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x8FD9;&#x5BF9;&#x670B;&#x53CB;&#x5C31;&#x7B97;&#x4EA4;&#x4E0A;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5EFA;&#x7ACB;&#x4E86;&#x6301;&#x4E45;&#x8FDE;&#x63A5;&#x3002;</li>
-<li>&#x4EE5;&#x524D;&#x90FD;&#x53EA;&#x80FD;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x4E3B;&#x52A8;&#x95EE;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x53EA;&#x6709;&#x56DE;&#x7B54;&#x7684;&#x4EFD;&#x513F;&#xFF0C;&#x73B0;&#x5728;&#x4E0D;&#x662F;&#x4E86;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5982;&#x679C;&#x60F3;&#x4E3B;&#x52A8;&#x8BF4;&#x8BDD;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x4E5F;&#x542C;&#x5728;&#x76D1;&#x542C;&#x7740;&#x3002;</li>
+<li>客户端只要先发起一次 HTTP 请求，那么客户端和服务器这对朋友就算交上了，也就是建立了持久连接。</li>
+<li>以前都只能是客户端主动问，服务器端只有回答的份儿，现在不是了，服务器如果想主动说话，客户端也听在监听着。</li>
 </ul>
-<h5 id="&#x5B9E;&#x9645;&#x65B9;&#x6848;">&#x5B9E;&#x9645;&#x65B9;&#x6848;</h5>
-<p>Web Sockets &#x7684;&#x786E;&#x5F88;&#x68D2;&#xFF0C;&#x4F46;&#x662F;&#x6BD5;&#x7ADF;&#x662F;&#x65B0;&#x7279;&#x6027;&#xFF0C;&#x603B;&#x6709;&#x4E9B;&#x5E7A;&#x86FE;&#x5B50;&#x51FA;&#x73B0;&#x3002;</p>
-<p>&#x6240;&#x4EE5;&#x5B9E;&#x9645;&#x9879;&#x76EE;&#x4E2D;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <a href="http://socket.io" target="_blank" rel="external">socket.io</a> &#x6765;&#x66F4;&#x597D;&#x7684;&#x4F7F;&#x7528; Web Socket &#x6280;&#x672F;&#x3002;<a href="http://haoduoshipin.com/v/99.html" target="_blank" rel="external">http://haoduoshipin.com/v/99.html</a> &#x7528; <a href="http://socket.io" target="_blank" rel="external">socket.io</a> &#x642D;&#x5EFA;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x6F14;&#x793A;&#x4E86;&#x6548;&#x679C;&#x3002;</p>
+<h5 id="实际方案">实际方案</h5>
+<p>Web Sockets 的确很棒，但是毕竟是新特性，总有些幺蛾子出现。</p>
+<p>所以实际项目中可以通过 <a href="http://socket.io" target="_blank" rel="external">socket.io</a> 来更好的使用 Web Socket 技术。<a href="http://haoduoshipin.com/v/99.html" target="_blank" rel="external">http://haoduoshipin.com/v/99.html</a> 用 <a href="http://socket.io" target="_blank" rel="external">socket.io</a> 搭建一个项目，演示了效果。</p>
 <h4 id="http2">http2</h4>
-<p>&#x7EF4;&#x57FA;&#x767E;&#x79D1;<a href="https://zh.wikipedia.org/wiki/HTTP/2" target="_blank" rel="external">&#x8FD9;&#x6837;&#x8BF4;</a>&#x3002;</p>
-<p>&#x901A;&#x4FD7;&#x4E0A;&#x8BB2;&#xFF0C;1999&#x5E74;&#x7684;http1.1&#x7248;&#x672C;&#x540E;&#x7684;&#x9996;&#x4E2A;&#x66F4;&#x65B0;&#x5728;2015&#x5E74;5&#x6708;&#x5F00;&#x542F;&#x4E86;&#x6B63;&#x5F0F;&#x7248;&#x7684;&#x53D1;&#x5E03;&#x2014;http2&#x3002;&#x5728;&#x4FDD;&#x7559;&#x4E0E;http1.1&#x7684;&#x5B8C;&#x5168;&#x8BED;&#x4E49;&#x517C;&#x5BB9;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;http2&#x7684;&#x76EE;&#x6807;&#x5305;&#x62EC;&#x5F02;&#x6B65;&#x8FDE;&#x63A5;&#x590D;&#x7528;&#xFF0C;&#x5934;&#x538B;&#x7F29;&#x548C;&#x8BF7;&#x6C42;&#x53CD;&#x9988;&#x7BA1;&#x7EBF;&#x5316;&#x3002;</p>
-<p>&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x8FD9;&#x7BC7; <a href="https://imququ.com/post/http2-resource.html" target="_blank" rel="external">https://imququ.com/post/http2-resource.html</a> &#x5305;&#x542B;&#x4E86;&#x8BE6;&#x7EC6;&#x7684;http2&#x5185;&#x5BB9;&#xFF0C;&#x5165;&#x95E8;&#x8FDB;&#x9636;&#x90FD;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4E2D;&#x627E;&#x5230;&#x8DEF;&#x7EBF;&#x3002;</p>
+<p>维基百科<a href="https://zh.wikipedia.org/wiki/HTTP/2" target="_blank" rel="external">这样说</a>。</p>
+<p>通俗上讲，1999年的http1.1版本后的首个更新在2015年5月开启了正式版的发布—http2。在保留与http1.1的完全语义兼容情况下，http2的目标包括异步连接复用，头压缩和请求反馈管线化。</p>
+<p>基本上，这篇 <a href="https://imququ.com/post/http2-resource.html" target="_blank" rel="external">https://imququ.com/post/http2-resource.html</a> 包含了详细的http2内容，入门进阶都可以在其中找到路线。</p>
 <h3 id="bye">bye</h3>
-<p>&#x5176;&#x5B9E;&#x5185;&#x5BB9;&#x4E0A;&#x8BB2;&#xFF0C;&#x8FD9;&#x7BC7;&#x535A;&#x5BA2;&#x7B97;&#x662F;&#x5165;&#x4E86;&#x95E8;&#xFF0C;&#x5165;&#x4E86;http&#x4E16;&#x754C;&#x7684;&#x5927;&#x95E8;&#x3002;&#x8981;&#x5B66;&#x7684;&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x3002;</p>
-<p>&#x63A8;&#x8350;&#x7F51;&#x7EDC;&#x8BFE;&#x7A0B; <a href="https://haoqicat.com/http-with-peter" target="_blank" rel="external">https://haoqicat.com/http-with-peter</a></p>
+<p>其实内容上讲，这篇博客算是入了门，入了http世界的大门。要学的还有很多。</p>
+<p>推荐网络课程 <a href="https://haoqicat.com/http-with-peter" target="_blank" rel="external">https://haoqicat.com/http-with-peter</a></p>
 
       
     </div>
