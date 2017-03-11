@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-11T15:53:28.132Z</updated>
+  <updated>2017-03-11T18:55:08.665Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Less.js的若干记录</title>
+    <title>Less的若干记述</title>
     <link href="http://zrdsj.cc/2017/03/10/less/"/>
     <id>http://zrdsj.cc/2017/03/10/less/</id>
     <published>2017-03-10T13:05:41.831Z</published>
-    <updated>2017-03-11T15:53:28.132Z</updated>
+    <updated>2017-03-11T18:55:08.665Z</updated>
     
     <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
 <p>一门CSS预处理语言，一切都为CSS更好使。</p>
