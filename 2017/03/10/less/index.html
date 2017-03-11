@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="♀昨日的世界♂">
 <meta property="og:description" content="什么是Less？
 一门CSS预处理语言，一切都为CSS更好使。">
-<meta property="og:updated_time" content="2017-03-10T15:04:45.541Z">
+<meta property="og:updated_time" content="2017-03-11T15:53:28.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Less.js的若干记录">
 <meta name="twitter:description" content="什么是Less？
@@ -389,6 +389,7 @@
 <li>CSS Cacheer</li>
 <li>DT CSS</li>
 </ul>
+<p>Less是一种动态的样式语言。Less扩展了CSS的动态行为，比如说，设置变量（<strong>Variables</strong>）、混合书写模式（<strong>mixins</strong>）、操作（<strong>operations</strong>）和功能（<strong>functions</strong>）等等，最棒的是，Less使用了现有的CSS语法，也就是说，你可以直接把你现成的样式文件“style.css”直接改成“style.less”，也能正常工作。</p>
 <h3 id="起步">起步</h3>
 <p>Less的使用，在不同平台上（服务器端、客户端和集成的第三方环境等等）也不太一样，但一样的是都可以使用。</p>
 <h4 id="服务器">服务器</h4>
@@ -401,6 +402,9 @@
 <p>若要输出压缩过的 CSS，只需添加 <code>-x</code> 选项。如果希望获得更好的压缩效果，还可以通过 <code>--clean-css</code> 选项启用 <a href="https://github.com/GoalSmashers/clean-css" target="_blank" rel="external">Clean CSS</a> 进行压缩。</p>
 <p>执行 lessc 且不带任何参数，就会在命令行上输出所有可用选项的列表。</p>
 <h4 id="代码生成">代码生成</h4>
+<blockquote>
+<p>这部分是我当前不理解的，在我目前的经验中，这种方法并不合理难以体现<strong>更好用</strong>。</p>
+</blockquote>
 <p>Nodejs的用法，写调用模块的JavaScript即可。例子（来自<a href="http://lesscss.org/" target="_blank" rel="external">官网</a>）：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var less = require(&apos;less&apos;);</div><div class="line"></div><div class="line">less.render(&apos;.class &#123; width: (1 + 1) &#125;&apos;, function (e, css) &#123;</div><div class="line">  console.log(css);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>其实结果就是：</p>
@@ -410,16 +414,51 @@
 <p>这里（官方文档）其实提到了一些工具，第三方的命令行工具，基本没什么必要说。po出在<a href="http://www.runoob.com/manual/lessguide/#using-less-third-party-tools" target="_blank" rel="external">这里</a>。</p>
 <h4 id="浏览器">浏览器</h4>
 <p>在客户端使用 Less.js 是最容易的方式，并且在开发阶段很方便，但是，在生产环境中，性能和可靠性非常重要， 建议最好使用 node.js 或其它第三方工具进行预编译。</p>
-<p>在页面中加入 <code>.less</code> 样式表的链接，并将 <code>rel</code> 属性设置为 “<code>stylesheet/less</code>”：</p>
+<ol>
+<li>在页面中加入 <code>.less</code> 样式表的链接，并将 <code>rel</code> 属性设置为 “<code>stylesheet/less</code>”：</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=&quot;stylesheet/less&quot; type=&quot;text/css&quot; href=&quot;styles.less&quot; /&gt;</div></pre></td></tr></table></figure>
-<p>接下来，下载 <a href="https://github.com/less/less.js/archive/master.zip" target="_blank" rel="external">less.js</a> 并通过 <code>&lt;script&gt;&lt;/script&gt;</code> 标签将其引入，放置于页面的<code>&lt;head&gt;</code> 元素内：</p>
+<ol start="2">
+<li>下来，下载 <a href="https://github.com/less/less.js/archive/master.zip" target="_blank" rel="external">less.js</a> 并通过 <code>&lt;script&gt;&lt;/script&gt;</code> 标签将其引入，放置于页面的<code>&lt;head&gt;</code> 元素内：</li>
+</ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;less.js&quot; type=&quot;text/javascript&quot;&gt;  -content-  &lt;/script&gt;</div></pre></td></tr></table></figure>
 <p>也可以使用一些网站的CDN，比如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h5 id="浏览器选项">浏览器选项</h5>
-<p>在 <code>&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</code> 之前 定义全局的 <code>less</code> 对象就可以为 <code>Less.js</code> 设置参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&lt;!-- set options before less.js script --&gt;</div><div class="line">&lt;script&gt;</div><div class="line">  less = &#123;</div><div class="line">    env: &quot;development&quot;,</div><div class="line">    async: false,</div><div class="line">    fileAsync: false,</div><div class="line">    poll: 1000,</div><div class="line">    functions: &#123;&#125;,</div><div class="line">    dumpLineNumbers: &quot;comments&quot;,</div><div class="line">    relativeUrls: false,</div><div class="line">    rootpath: &quot;:/a.com/&quot;</div><div class="line">  &#125;;</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;script src=&quot;less.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>然后就好了。</p>
 <h3 id="使用">使用</h3>
+<h4 id="变量">变量</h4>
+<p>Less中的变量充许你在样式中的某个地方对常用的值进行定义，然后应用到样式中，这样只要改变你定义的变量参数值就可以达到改变全局的效果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">/*======== 定义变量===========*/</div><div class="line">@color: #4d926f;</div><div class="line">/*======== 应用到元素中 ========*/</div><div class="line">#header &#123;</div><div class="line">	color: @color;</div><div class="line">&#125;</div><div class="line">h2 &#123;</div><div class="line">	color: @color;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上是Less代码，编译成为CSS如下—&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #4d926f;</div><div class="line">&#125;</div><div class="line">h2 &#123;</div><div class="line">  color: #4d926f;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Less还有计算功能：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@nice-blue: #5b83ad;</div><div class="line">@light-blue: @nice-blue + #111;</div><div class="line">#header &#123;</div><div class="line">	color: @light-blue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译CSS为—&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #6c94be;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Less定义一个变量名为变量，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@color: #253636;</div><div class="line">@highlight: &quot;color&quot;;</div><div class="line">#header &#123;</div><div class="line">	color: @@highlight;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译CSS为—&gt;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #253636;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>在Less中的变量实际上就是一个“常量”，因为它们只能被定义一次。</strong></p>
+<p>Less code；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@color: #253636;</div><div class="line">@highlight: &quot;color&quot;;</div><div class="line">@color: #ff3636;</div><div class="line">#header &#123;</div><div class="line">  color: @@highlight;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Compiled Css code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #ff3636;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="混入">混入</h4>
+<p>混入其实是一种嵌套，它充许你将一个类嵌入到另一个类中，而被嵌入的这个类也称为是一个变量。</p>
+<p>换句话说，你可以用一个类定义CSS，然后把整个为当作一个变量来使用，嵌入到另一个类中当作他的属性；另外混入也像一个带有参数的functions，如下在的例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========= 定义一个类 ===========*/			Less code</div><div class="line">.roundedCorners(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*＝＝＝＝＝＝＝＝＝＝ 定义的类应用到另个一个类中 ＝＝＝＝＝＝＝＝＝＝＝*/</div><div class="line">＃header &#123;</div><div class="line">    .roundedCorners;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">    .roundedCorners(10px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;							      CSS code									</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;</div><div class="line">  border-radius: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>这样任何CSS的类或ID下的样式都可以当作变量，使用混入模式用来当作另一个元素的属性值。</strong></p>
+<p>混入(Mixin)有一个名词叫“混入参数（Parametric Mixins）”。Less具有一个特殊类型的规则集，就是一个类可以当作另一个元素的属生值，并且还可以接受其自己的参数。如下的Less</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========== 定义一个规则，并且不设置默认参数值 ============*/</div><div class="line">.borderRadius(@radius)&#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*============ 应用到元素中 ============*/</div><div class="line">#header &#123;</div><div class="line">    .borderRadius(10px); /*把10px传给变量@radius*/</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius(3px);/*把3px传给变量@radius*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Complied CSS code：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;						 /*把10px传给变量@radius*/</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;			</div><div class="line">  border-radius: 10px;  </div><div class="line">&#125;</div><div class="line">.btn &#123;							 /*把3px传给变量@radius*/</div><div class="line">  -moz-border-radius: 3px;</div><div class="line">  -webkit-border-radius: 3px;</div><div class="line">  border-radius: 3px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Mixins的参数定义默认值，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.borderRadius(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译后的CSS：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.btn &#123;</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -506,7 +545,7 @@
          <p><span>本文标题:</span><a href="/2017/03/10/less/">Less.js的若干记录</a></p>
          <p><span>文章作者:</span><a href="/" title="访问 jimmy_jude 的个人博客">jimmy_jude</a></p>
          <p><span>发布时间:</span>2017年3月10日 - 21时03分</p>
-         <p><span>最后更新:</span>2017年3月10日 - 23时03分</p>         <p><span>原始链接:</span><a href="/2017/03/10/less/" title="Less.js的若干记录">http://zrdsj.cc/2017/03/10/less/</a></p>
+         <p><span>最后更新:</span>2017年3月11日 - 23时03分</p>         <p><span>原始链接:</span><a href="/2017/03/10/less/" title="Less.js的若干记录">http://zrdsj.cc/2017/03/10/less/</a></p>
          <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
          <p><span>转载请保留以上信息。</span></p>
       </div>
@@ -675,7 +714,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#起步"><span class="nav-text">起步</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务器"><span class="nav-text">服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码生成"><span class="nav-text">代码生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器"><span class="nav-text">浏览器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#浏览器选项"><span class="nav-text">浏览器选项</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-text">使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#起步"><span class="nav-text">起步</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#服务器"><span class="nav-text">服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码生成"><span class="nav-text">代码生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浏览器"><span class="nav-text">浏览器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#混入"><span class="nav-text">混入</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
