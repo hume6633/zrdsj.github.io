@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-11T18:55:08.665Z</updated>
+  <updated>2017-03-11T20:56:02.217Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zrdsj.cc/2017/03/10/less/"/>
     <id>http://zrdsj.cc/2017/03/10/less/</id>
     <published>2017-03-10T13:05:41.831Z</published>
-    <updated>2017-03-11T18:55:08.665Z</updated>
+    <updated>2017-03-11T20:56:02.217Z</updated>
     
     <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
 <p>一门CSS预处理语言，一切都为CSS更好使。</p>
@@ -92,7 +92,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #253636;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><strong>在Less中的变量实际上就是一个“常量”，因为它们只能被定义一次。</strong></p>
 <p>Less code；</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@color: #253636;</div><div class="line">@highlight: &quot;color&quot;;</div><div class="line">@color: #ff3636;</div><div class="line">#header &#123;</div><div class="line">  color: @@highlight;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@color: #253636;</div><div class="line">@highlight: &quot;color&quot;;</div><div class="line">@color: #ff3636;</div><div class="line">#header &#123;</div><div class="line">	color: @@highlight;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Compiled Css code:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #ff3636;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="混入">混入</h4>
@@ -100,12 +100,12 @@
 <p>换句话说，你可以用一个类定义CSS，然后把整个为当作一个变量来使用，嵌入到另一个类中当作他的属性；另外混入也像一个带有参数的functions，如下在的例子：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========= 定义一个类 ===========*/			Less code</div><div class="line">.roundedCorners(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*＝＝＝＝＝＝＝＝＝＝ 定义的类应用到另个一个类中 ＝＝＝＝＝＝＝＝＝＝＝*/</div><div class="line">＃header &#123;</div><div class="line">    .roundedCorners;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">    .roundedCorners(10px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>编译过后：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;							      CSS code									</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;</div><div class="line">  border-radius: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;							CSS code									</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;</div><div class="line">  border-radius: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><strong>这样任何CSS的类或ID下的样式都可以当作变量，使用混入模式用来当作另一个元素的属性值。</strong></p>
 <p>混入(Mixin)有一个名词叫“混入参数（Parametric Mixins）”。Less具有一个特殊类型的规则集，就是一个类可以当作另一个元素的属生值，并且还可以接受其自己的参数。如下的Less</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========== 定义一个规则，并且不设置默认参数值 ============*/</div><div class="line">.borderRadius(@radius)&#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*============ 应用到元素中 ============*/</div><div class="line">#header &#123;</div><div class="line">    .borderRadius(10px); /*把10px传给变量@radius*/</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius(3px);/*把3px传给变量@radius*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Complied CSS code：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;						 /*把10px传给变量@radius*/</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;			</div><div class="line">  border-radius: 10px;  </div><div class="line">&#125;</div><div class="line">.btn &#123;							 /*把3px传给变量@radius*/</div><div class="line">  -moz-border-radius: 3px;</div><div class="line">  -webkit-border-radius: 3px;</div><div class="line">  border-radius: 3px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;				 /*把10px传给变量@radius*/</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;			</div><div class="line">  border-radius: 10px;  </div><div class="line">&#125;</div><div class="line">.btn &#123;					 /*把3px传给变量@radius*/</div><div class="line">  -moz-border-radius: 3px;</div><div class="line">  -webkit-border-radius: 3px;</div><div class="line">  border-radius: 3px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Mixins的参数定义默认值，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.borderRadius(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>编译后的CSS：</p>
@@ -133,14 +133,102 @@
     <link href="http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/"/>
     <id>http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/</id>
     <published>2017-03-10T09:44:43.434Z</published>
-    <updated>2017-03-10T15:19:29.416Z</updated>
+    <updated>2017-03-12T13:30:45.319Z</updated>
     
-    <content type="html"><![CDATA[<p>主要是针对一些学习中</p>
-<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p>主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟<a href="https://www.zhihu.com/question/20976405" target="_blank" rel="external">响应式设计</a>有关的。</p>
+<a id="more"></a>
+<p>如何去实现响应式设计，不是要写进本文的内容。更多的是一些响应式实现过程中会遇到的可能遭遇遗忘的问题。</p>
+<h3 id="媒体查询与响应式设计的关系">媒体查询与响应式设计的关系？</h3>
+<p>媒体查询？</p>
+<p>说实在的，不去查资料，我不知道媒体查询就是原来是<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries" target="_blank" rel="external">那种东西</a>。我只知道那样那样去写就可以是响应式设计的实现。不管如何，我们为了专业点，搞清楚总是好的。</p>
+<p><strong>媒体查询（Media Queries）是为了做成响应式设计所需的最强大的工具。</strong></p>
+<p><a href="http://mediaqueri.es/" target="_blank" rel="external">这里</a>是一些使用了媒体查询的站点，</p>
+<h4 id="为什么需要媒体查询">为什么需要媒体查询？</h4>
+<p>HTML和CSS可以使页面的样式变得风格化与专一，媒体查询可以让这种表达有更强的针对性，拓展了媒体类型的功能。</p>
+<p>媒体查询由媒体类型和一个或多个检测媒体特性的条件表达式组成。媒体查询中可用于检测的媒体特性有<code>width</code>、<code>height</code>和<code>color</code>等。使用媒体查询，可以在不改变页面内容的情况下，为特定的输出设备定制显示效果。</p>
+<h4 id="媒体查询的语法">媒体查询的语法？</h4>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#%E8%AF%AD%E6%B3%95" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#语法</a></p>
+<h4 id="媒体查询可检测的特性列表">媒体查询可检测的特性列表？</h4>
+<hr>
+<ol>
+<li>width：设备的视口宽度；</li>
+<li>height：屏幕宽度；</li>
+<li>device-width：设备屏幕的宽度；</li>
+<li>device-height：设备屏幕的高度；</li>
+<li>orientation：检测屏幕是横向还是竖向；</li>
+<li>aspect-ratio：基于视口宽度和高度的宽高比。一个16:9比例的显示屏可以定义为，aspect-ratio：16/9；</li>
+</ol>
+<ol start="7">
+<li>device-aspect-ratio：和aspect-ratio类似，基于设备渲染平面宽度与高度的宽高比；</li>
+<li>color：每种颜色的位数。如：min-color：16会检测设备是否支持16位颜色；</li>
+<li>color-index：设备的颜色索引表中的颜色书。值必须是非负整数；</li>
+<li>monochrome 单色：检测单色帧缓冲区中每像素所使用的位数。值必须为非负整数，如，monochrome：2；</li>
+</ol>
+<ol start="11">
+<li>resolution：检测屏幕或打印机的分辨率，如min-resolution：300dpi。还可以接受每厘米像素点数的度量值，min-resolution：118dpcom。</li>
+</ol>
+<ol start="12">
+<li>scan：电视机的扫面方式，值：progressive（逐行扫描）、interlace（隔行扫描）。 如,720pHD电视（720p的p表明是逐行扫描）匹配scan：progressive，而1080iHD电视（1080i中的i表示隔行扫描）匹配scan：interlace。</li>
+</ol>
+<ol start="13">
+<li>grid：用来检测输出设备是网络设备还是位图设备。</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>说明</strong>：除scan和grid外，都可用min和max前缀来创建一个查询范围。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@import： url（“myphone.css”） screen and (min-width:200px) and (max-width:360px);</div></pre></td></tr></table></figure>
+<p>这里对width 应用了min 和max 来设定查询范围。这样myphone.css 文件只会引入视口宽度介于200 像素至360 像素的显示屏设备。</p>
+<p>参考：<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#%E5%AA%92%E4%BD%93%E5%B1%9E%E6%80%A7" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#媒体属性</a></p>
+<h3 id="如何引导客户去认识响应式网站">如何引导客户去认识响应式网站？</h3>
+<p>设计师在创作设计图时，通常只会考虑固定宽度 “桌面版” 网站，考虑得更多的设计师也许会想到移动端。</p>
+<p>客户们的想法往往是这样：客户签字认同了设计图，然后将其交给你、我这样的前端设计师/工程师，之后我们投入时间来确保最终代码在所有主流浏览器中的显示效果与原始设计尽可能接近——<strong>客户所见就是客户所得</strong>。</p>
+<p>显然一切不可能是尽善尽美的。客户需要明白为什么应该支持响应式设计，响应式设计的结果如何，为何最终设计不会也不应在所有视口和浏览器中表现一致。有些客户能理解，有些则不能，解决这个问题的唯一方法就是说服引导。</p>
+<p>当开始一个新项目时，不论响应式设计是否适合，都应该试着给客户说明以下几点。</p>
+<ul>
+<li>允许页面显示效果在老旧浏览器中有细微的差别，这样可以使代码更易维护，将来更新的成本也更低。</li>
+<li>让页面元素在那些老旧浏览器中表现一致会导致网站增加大量的图片。这会使网站变慢，制作成本变高，而且更难维护。</li>
+<li>现代浏览器可以理解的简洁代码等同于更快速的网站。快速响应的网站在搜索引擎中的评级高于慢腾腾的网站。</li>
+<li>使用老旧浏览器的用户越来越少，使用现代浏览器的用户越来越多——应该支持大多数！</li>
+<li>最重要的一点，<strong>支持现代浏览器，就能尽情地享受响应式网页设计</strong>，它能响应不同设备的不同浏览器视口。</li>
+</ul>
+<p>last</p>
+<blockquote>
+<p>在预算允许的情况下，一个完全定制的“移动”版网站比响应式设计更适合。澄清一下，我将那些完全专注移动平台、为移动设备用户提供不同内容/体验的解决方案称之为“移动网站”。提倡响应式设计方法的人，不会都认为响应式设计在任何情况下都可以替代“移动网站”。</p>
+<p>使用HTML5和CSS3的响应式网页设计不是解决所有设计和内容服务问题的灵丹妙药。和以往的网页设计一样，项目的具体情况（即预算、目标用户以及网站用途）决定了其实现方式。如果预算有限或开发一个完全定制的“移动网站”不太可行，那么响应式网页设计较之标准的固定宽度设计，总能提供更好的和无歧视的用户体验。</p>
+</blockquote>
+<h3 id="响应式设计需要百分比布局">响应式设计需要百分比布局？</h3>
+<p>仅使用媒体查询来适应不同视口的固定宽度设计，只会从一组CSS媒体查询规则突变到另一组，两者之间没有任何平滑渐变。</p>
+<p>当某个视口处于媒体查询设置的固定宽度范围之外（可能是某种未知的未来设备及视口），网页就需要水平滚动才能完整浏览。不过我们想要的是一个灵活的设计，能在所有视口中都完美显示，而不仅仅只针对媒体查询设定的一些固定视口。</p>
+<p>我们需要将固定像素布局转换成灵活的百分比布局。这样才能让页面元素根据视口大小在一个又一个媒体查询之间灵活伸缩修正样式。</p>
+<h4 id="百分比布局和媒体查询">百分比布局和媒体查询</h4>
+<p>使用百分比布局创建流动的弹性界面，同时使用媒体查询来限制元素的变动范围。将这两者组合到一起构成了响应式设计的核心，基于此可以创造出真正完美的设计。</p>
+<h4 id="将网页从固定布局修改为百分比布局">将网页从固定布局修改为百分比布局</h4>
+<p>固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。但这种方法不是一种完全兼容未来网页的制作方法，我们需要一些适应未知设备的方法。</p>
+<p>仅使用媒体查询来适应不同视口的固定宽度设计，只会从一组CSS媒体查询规则突变到另一组，两者间没有任何平滑渐变。</p>
+<p>需要将固定像素布局转换成灵活的百分比布局，才能让页面元素根据视口大小在一个又一个媒体查询间伸缩修正样式。</p>
+<p>将固定像素宽度转换对应的百分比宽度：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">目标元素宽度 ÷ 上下文元素宽度 ＝ 百分比宽度</div></pre></td></tr></table></figure>
+<h3 id="em-px">em - px</h3>
+<p>使用em替代px主要是为了文字缩放。现代浏览器很久以前就支持缩放以像素为单位的文字。</p>
+<p><strong>那用em替换px还有什么必要性或优越性呢？</strong></p>
+<ol>
+<li>即使那些使用Internet Explorer 6的用户也将能够缩放文字</li>
+<li>可以使设计师和开发者的生活更简单。em的实际大小是相对于其上下文的字体大小而言的。</li>
+</ol>
+<p>如果给＜body＞标签设置文字大小为100%，给其他文字都使用相对单位em，那这些文字都会受body上的初始声明的影响。这样做的好处就是：<code>如果在完成了所有文字排版后，客户又提出将页面文字统一放大一点，就可以只修改body的文字大小，其他所有文字也会相应变大。</code></p>
+<p>em?</p>
+<blockquote>
+<p>em是书面形式的大写字母“M”的简称，发音和M相同。以前，“M”常被用来测定某种字体的大小，因为它是英文字母中最大（最宽）的字母。如今，em作为一个测量单位，指的是特定字母的宽度和高度相对于特定字体磅值的比例。</p>
+</blockquote>
+<p>推荐：</p>
+<p><a href="https://www.w3cplus.com/css/px-to-em" target="_blank" rel="external">https://www.w3cplus.com/css/px-to-em</a></p>
+<p><a href="https://segmentfault.com/a/1190000005936910" target="_blank" rel="external">https://segmentfault.com/a/1190000005936910</a></p>
+]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;主要是针对一些学习中&lt;/p&gt;
+      &lt;p&gt;主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟&lt;a href=&quot;https://www.zhihu.com/question/20976405&quot;&gt;响应式设计&lt;/a&gt;有关的。&lt;/p&gt;
     
     </summary>
     
@@ -323,9 +411,9 @@
     <link href="http://zrdsj.cc/2017/03/02/book-review2/"/>
     <id>http://zrdsj.cc/2017/03/02/book-review2/</id>
     <published>2017-03-02T05:26:10.156Z</published>
-    <updated>2017-03-10T15:14:24.893Z</updated>
+    <updated>2017-03-12T13:28:55.318Z</updated>
     
-    <content type="html"><![CDATA[<p>此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—<a href="http://zrdsj.cc/2016/09/23/book-review1/%E3%80%82">http://zrdsj.cc/2016/09/23/book-review1/。</a></p>
+    <content type="html"><![CDATA[<p>此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—<a href="http://zrdsj.cc/2016/09/23/book-review1/">http://zrdsj.cc/2016/09/23/book-review1/</a> 。</p>
 <a id="more"></a>
 <h1 id="4444444444">4444444444</h1>
 <p>这一章在书中的标题是：<strong>搜集故事</strong>。</p>
@@ -402,12 +490,39 @@
 <p>q:负责客户的团队该干啥？</p>
 <p>a:了解自己是属于哪类用户代理+了解自己作为用户代理可能存在的问题并加以防范克服。</p>
 <h1 id="6666666666">6666666666</h1>
-<p>用户故事验收测试</p>
+<p><strong>用户故事验收测试</strong>，标题如此，不难想象是要我们做什么。</p>
+<p>一般来说，这个测试分为两个流程：</p>
+<ol>
+<li>将测试要点记录在股市卡的背面，任何时候发现新的测试，都可以记录在故事卡的背面</li>
+<li>将测试要点变成全面的测试，这些测试可以用来掩饰故事已正确、完整地实现。</li>
+</ol>
+<p>要知道，验收测试可以将客户与开发人员之间讨论沟通的很多细节记录（虽然这些细节一部分是假设），但是测试也提供了检查故事是否完整的一个标准，这样我们便可以知道什么时候某件事情是做完了，这几乎是避免花费太多或太少时间精力的最好方法。一个书中的例子：</p>
+<blockquote>
+<p>我的妻子在烤蛋糕，她的验收测试是在蛋糕内插一个牙签。如果牙签是干净的，蛋糕就是完成了。如果是“wo”，也许是吃下去才知道呢。</p>
+</blockquote>
+<p><em>测试应该在写代码之前进行，由客户来编写。</em></p>
+<p>这样做的好处，可以避免程序员的出错（更合理的说法是正确认识功能的开发）。</p>
+<p>开发人员与湖库的职责分配：</p>
+<ul>
+<li>开发人员
+<ol>
+<li>负责自动化验收测试</li>
+<li>新故事开始的时候，负责更多的验收测试</li>
+<li>负责为代码做单元测试，是验收测试不必顾及故事的每个细节</li>
+</ol>
+</li>
+<li>客户职责
+<ol>
+<li>负责编写验收测试</li>
+<li>负责执行验收测试</li>
+</ol>
+</li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—&lt;a href=&quot;http://zrdsj.cc/2016/09/23/book-review1/%E3%80%82&quot;&gt;http://zrdsj.cc/2016/09/23/book-review1/。&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—&lt;a href=&quot;http://zrdsj.cc/2016/09/23/book-review1/&quot;&gt;http://zrdsj.cc/2016/09/23/book-review1/&lt;/a&gt; 。&lt;/p&gt;
     
     </summary>
     

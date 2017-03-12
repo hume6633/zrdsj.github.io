@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="主要是针对一些学习中">
+<meta name="description" content="主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟响应式设计有关的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="响应式设计笔记01">
 <meta property="og:url" content="http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/index.html">
 <meta property="og:site_name" content="♀昨日的世界♂">
-<meta property="og:description" content="主要是针对一些学习中">
-<meta property="og:updated_time" content="2017-03-10T15:19:29.416Z">
+<meta property="og:description" content="主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟响应式设计有关的。">
+<meta property="og:updated_time" content="2017-03-12T13:30:45.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="响应式设计笔记01">
-<meta name="twitter:description" content="主要是针对一些学习中">
+<meta name="twitter:description" content="主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟响应式设计有关的。">
 
 
 
@@ -376,8 +376,96 @@
       
 
       
-        <p>主要是针对一些学习中</p>
+        <p>主要是针对一些学习中出现的一些基本的非基本的问题，当然了全是跟<a href="https://www.zhihu.com/question/20976405" target="_blank" rel="external">响应式设计</a>有关的。</p>
 <a id="more"></a>
+<p>如何去实现响应式设计，不是要写进本文的内容。更多的是一些响应式实现过程中会遇到的可能遭遇遗忘的问题。</p>
+<h3 id="媒体查询与响应式设计的关系">媒体查询与响应式设计的关系？</h3>
+<p>媒体查询？</p>
+<p>说实在的，不去查资料，我不知道媒体查询就是原来是<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries" target="_blank" rel="external">那种东西</a>。我只知道那样那样去写就可以是响应式设计的实现。不管如何，我们为了专业点，搞清楚总是好的。</p>
+<p><strong>媒体查询（Media Queries）是为了做成响应式设计所需的最强大的工具。</strong></p>
+<p><a href="http://mediaqueri.es/" target="_blank" rel="external">这里</a>是一些使用了媒体查询的站点，</p>
+<h4 id="为什么需要媒体查询">为什么需要媒体查询？</h4>
+<p>HTML和CSS可以使页面的样式变得风格化与专一，媒体查询可以让这种表达有更强的针对性，拓展了媒体类型的功能。</p>
+<p>媒体查询由媒体类型和一个或多个检测媒体特性的条件表达式组成。媒体查询中可用于检测的媒体特性有<code>width</code>、<code>height</code>和<code>color</code>等。使用媒体查询，可以在不改变页面内容的情况下，为特定的输出设备定制显示效果。</p>
+<h4 id="媒体查询的语法">媒体查询的语法？</h4>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#%E8%AF%AD%E6%B3%95" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#语法</a></p>
+<h4 id="媒体查询可检测的特性列表">媒体查询可检测的特性列表？</h4>
+<hr>
+<ol>
+<li>width：设备的视口宽度；</li>
+<li>height：屏幕宽度；</li>
+<li>device-width：设备屏幕的宽度；</li>
+<li>device-height：设备屏幕的高度；</li>
+<li>orientation：检测屏幕是横向还是竖向；</li>
+<li>aspect-ratio：基于视口宽度和高度的宽高比。一个16:9比例的显示屏可以定义为，aspect-ratio：16/9；</li>
+</ol>
+<ol start="7">
+<li>device-aspect-ratio：和aspect-ratio类似，基于设备渲染平面宽度与高度的宽高比；</li>
+<li>color：每种颜色的位数。如：min-color：16会检测设备是否支持16位颜色；</li>
+<li>color-index：设备的颜色索引表中的颜色书。值必须是非负整数；</li>
+<li>monochrome 单色：检测单色帧缓冲区中每像素所使用的位数。值必须为非负整数，如，monochrome：2；</li>
+</ol>
+<ol start="11">
+<li>resolution：检测屏幕或打印机的分辨率，如min-resolution：300dpi。还可以接受每厘米像素点数的度量值，min-resolution：118dpcom。</li>
+</ol>
+<ol start="12">
+<li>scan：电视机的扫面方式，值：progressive（逐行扫描）、interlace（隔行扫描）。 如,720pHD电视（720p的p表明是逐行扫描）匹配scan：progressive，而1080iHD电视（1080i中的i表示隔行扫描）匹配scan：interlace。</li>
+</ol>
+<ol start="13">
+<li>grid：用来检测输出设备是网络设备还是位图设备。</li>
+</ol>
+<hr>
+<blockquote>
+<p><strong>说明</strong>：除scan和grid外，都可用min和max前缀来创建一个查询范围。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">@import： url（“myphone.css”） screen and (min-width:200px) and (max-width:360px);</div></pre></td></tr></table></figure>
+<p>这里对width 应用了min 和max 来设定查询范围。这样myphone.css 文件只会引入视口宽度介于200 像素至360 像素的显示屏设备。</p>
+<p>参考：<a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#%E5%AA%92%E4%BD%93%E5%B1%9E%E6%80%A7" target="_blank" rel="external">https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries#媒体属性</a></p>
+<h3 id="如何引导客户去认识响应式网站">如何引导客户去认识响应式网站？</h3>
+<p>设计师在创作设计图时，通常只会考虑固定宽度 “桌面版” 网站，考虑得更多的设计师也许会想到移动端。</p>
+<p>客户们的想法往往是这样：客户签字认同了设计图，然后将其交给你、我这样的前端设计师/工程师，之后我们投入时间来确保最终代码在所有主流浏览器中的显示效果与原始设计尽可能接近——<strong>客户所见就是客户所得</strong>。</p>
+<p>显然一切不可能是尽善尽美的。客户需要明白为什么应该支持响应式设计，响应式设计的结果如何，为何最终设计不会也不应在所有视口和浏览器中表现一致。有些客户能理解，有些则不能，解决这个问题的唯一方法就是说服引导。</p>
+<p>当开始一个新项目时，不论响应式设计是否适合，都应该试着给客户说明以下几点。</p>
+<ul>
+<li>允许页面显示效果在老旧浏览器中有细微的差别，这样可以使代码更易维护，将来更新的成本也更低。</li>
+<li>让页面元素在那些老旧浏览器中表现一致会导致网站增加大量的图片。这会使网站变慢，制作成本变高，而且更难维护。</li>
+<li>现代浏览器可以理解的简洁代码等同于更快速的网站。快速响应的网站在搜索引擎中的评级高于慢腾腾的网站。</li>
+<li>使用老旧浏览器的用户越来越少，使用现代浏览器的用户越来越多——应该支持大多数！</li>
+<li>最重要的一点，<strong>支持现代浏览器，就能尽情地享受响应式网页设计</strong>，它能响应不同设备的不同浏览器视口。</li>
+</ul>
+<p>last</p>
+<blockquote>
+<p>在预算允许的情况下，一个完全定制的“移动”版网站比响应式设计更适合。澄清一下，我将那些完全专注移动平台、为移动设备用户提供不同内容/体验的解决方案称之为“移动网站”。提倡响应式设计方法的人，不会都认为响应式设计在任何情况下都可以替代“移动网站”。</p>
+<p>使用HTML5和CSS3的响应式网页设计不是解决所有设计和内容服务问题的灵丹妙药。和以往的网页设计一样，项目的具体情况（即预算、目标用户以及网站用途）决定了其实现方式。如果预算有限或开发一个完全定制的“移动网站”不太可行，那么响应式网页设计较之标准的固定宽度设计，总能提供更好的和无歧视的用户体验。</p>
+</blockquote>
+<h3 id="响应式设计需要百分比布局">响应式设计需要百分比布局？</h3>
+<p>仅使用媒体查询来适应不同视口的固定宽度设计，只会从一组CSS媒体查询规则突变到另一组，两者之间没有任何平滑渐变。</p>
+<p>当某个视口处于媒体查询设置的固定宽度范围之外（可能是某种未知的未来设备及视口），网页就需要水平滚动才能完整浏览。不过我们想要的是一个灵活的设计，能在所有视口中都完美显示，而不仅仅只针对媒体查询设定的一些固定视口。</p>
+<p>我们需要将固定像素布局转换成灵活的百分比布局。这样才能让页面元素根据视口大小在一个又一个媒体查询之间灵活伸缩修正样式。</p>
+<h4 id="百分比布局和媒体查询">百分比布局和媒体查询</h4>
+<p>使用百分比布局创建流动的弹性界面，同时使用媒体查询来限制元素的变动范围。将这两者组合到一起构成了响应式设计的核心，基于此可以创造出真正完美的设计。</p>
+<h4 id="将网页从固定布局修改为百分比布局">将网页从固定布局修改为百分比布局</h4>
+<p>固定像素尺寸的网页是匹配固定像素尺寸显示器的最简单办法。但这种方法不是一种完全兼容未来网页的制作方法，我们需要一些适应未知设备的方法。</p>
+<p>仅使用媒体查询来适应不同视口的固定宽度设计，只会从一组CSS媒体查询规则突变到另一组，两者间没有任何平滑渐变。</p>
+<p>需要将固定像素布局转换成灵活的百分比布局，才能让页面元素根据视口大小在一个又一个媒体查询间伸缩修正样式。</p>
+<p>将固定像素宽度转换对应的百分比宽度：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">目标元素宽度 ÷ 上下文元素宽度 ＝ 百分比宽度</div></pre></td></tr></table></figure>
+<h3 id="em-px">em - px</h3>
+<p>使用em替代px主要是为了文字缩放。现代浏览器很久以前就支持缩放以像素为单位的文字。</p>
+<p><strong>那用em替换px还有什么必要性或优越性呢？</strong></p>
+<ol>
+<li>即使那些使用Internet Explorer 6的用户也将能够缩放文字</li>
+<li>可以使设计师和开发者的生活更简单。em的实际大小是相对于其上下文的字体大小而言的。</li>
+</ol>
+<p>如果给＜body＞标签设置文字大小为100%，给其他文字都使用相对单位em，那这些文字都会受body上的初始声明的影响。这样做的好处就是：<code>如果在完成了所有文字排版后，客户又提出将页面文字统一放大一点，就可以只修改body的文字大小，其他所有文字也会相应变大。</code></p>
+<p>em?</p>
+<blockquote>
+<p>em是书面形式的大写字母“M”的简称，发音和M相同。以前，“M”常被用来测定某种字体的大小，因为它是英文字母中最大（最宽）的字母。如今，em作为一个测量单位，指的是特定字母的宽度和高度相对于特定字体磅值的比例。</p>
+</blockquote>
+<p>推荐：</p>
+<p><a href="https://www.w3cplus.com/css/px-to-em" target="_blank" rel="external">https://www.w3cplus.com/css/px-to-em</a></p>
+<p><a href="https://segmentfault.com/a/1190000005936910" target="_blank" rel="external">https://segmentfault.com/a/1190000005936910</a></p>
+
       
     </div>
 
@@ -467,7 +555,7 @@
          <p><span>本文标题:</span><a href="/2017/03/10/Responsive_Design_notes_1/">响应式设计笔记01</a></p>
          <p><span>文章作者:</span><a href="/" title="访问 jimmy_jude 的个人博客">jimmy_jude</a></p>
          <p><span>发布时间:</span>2017年3月10日 - 17时03分</p>
-         <p><span>最后更新:</span>2017年3月10日 - 23时03分</p>         <p><span>原始链接:</span><a href="/2017/03/10/Responsive_Design_notes_1/" title="响应式设计笔记01">http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/</a></p>
+         <p><span>最后更新:</span>2017年3月12日 - 21时03分</p>         <p><span>原始链接:</span><a href="/2017/03/10/Responsive_Design_notes_1/" title="响应式设计笔记01">http://zrdsj.cc/2017/03/10/Responsive_Design_notes_1/</a></p>
          <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
          <p><span>转载请保留以上信息。</span></p>
       </div>
@@ -636,7 +724,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#媒体查询与响应式设计的关系"><span class="nav-text">媒体查询与响应式设计的关系？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#为什么需要媒体查询"><span class="nav-text">为什么需要媒体查询？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#媒体查询的语法"><span class="nav-text">媒体查询的语法？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#媒体查询可检测的特性列表"><span class="nav-text">媒体查询可检测的特性列表？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何引导客户去认识响应式网站"><span class="nav-text">如何引导客户去认识响应式网站？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#响应式设计需要百分比布局"><span class="nav-text">响应式设计需要百分比布局？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#百分比布局和媒体查询"><span class="nav-text">百分比布局和媒体查询</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#将网页从固定布局修改为百分比布局"><span class="nav-text">将网页从固定布局修改为百分比布局</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#em-px"><span class="nav-text">em - px</span></a></li></ol></div>
             
           </div>
         </section>
