@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-11T20:56:02.217Z</updated>
+  <updated>2017-03-13T09:38:07.652Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zrdsj.cc/2017/03/10/less/"/>
     <id>http://zrdsj.cc/2017/03/10/less/</id>
     <published>2017-03-10T13:05:41.831Z</published>
-    <updated>2017-03-11T20:56:02.217Z</updated>
+    <updated>2017-03-13T09:38:07.652Z</updated>
     
     <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
 <p>一门CSS预处理语言，一切都为CSS更好使。</p>
@@ -96,7 +96,7 @@
 <p>Compiled Css code:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #ff3636;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h4 id="混入">混入</h4>
-<p>混入其实是一种嵌套，它充许你将一个类嵌入到另一个类中，而被嵌入的这个类也称为是一个变量。</p>
+<p>混入其实是一种嵌套，允许将一个类嵌入到另一个类中，而被嵌入的这个类也称为是一个变量。</p>
 <p>换句话说，你可以用一个类定义CSS，然后把整个为当作一个变量来使用，嵌入到另一个类中当作他的属性；另外混入也像一个带有参数的functions，如下在的例子：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========= 定义一个类 ===========*/			Less code</div><div class="line">.roundedCorners(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*＝＝＝＝＝＝＝＝＝＝ 定义的类应用到另个一个类中 ＝＝＝＝＝＝＝＝＝＝＝*/</div><div class="line">＃header &#123;</div><div class="line">    .roundedCorners;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">    .roundedCorners(10px);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>编译过后：</p>
@@ -107,7 +107,7 @@
 <p>Complied CSS code：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;				 /*把10px传给变量@radius*/</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;			</div><div class="line">  border-radius: 10px;  </div><div class="line">&#125;</div><div class="line">.btn &#123;					 /*把3px传给变量@radius*/</div><div class="line">  -moz-border-radius: 3px;</div><div class="line">  -webkit-border-radius: 3px;</div><div class="line">  border-radius: 3px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Mixins的参数定义默认值，如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.borderRadius(@radius:5px) &#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.borderRadius(@radius:5px) &#123;		/*定义默认是 5px*/</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>编译后的CSS：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.btn &#123;</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
@@ -411,11 +411,11 @@
     <link href="http://zrdsj.cc/2017/03/02/book-review2/"/>
     <id>http://zrdsj.cc/2017/03/02/book-review2/</id>
     <published>2017-03-02T05:26:10.156Z</published>
-    <updated>2017-03-12T13:28:55.318Z</updated>
+    <updated>2017-03-13T11:18:16.089Z</updated>
     
-    <content type="html"><![CDATA[<p>此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—<a href="http://zrdsj.cc/2016/09/23/book-review1/">http://zrdsj.cc/2016/09/23/book-review1/</a> 。</p>
+    <content type="html"><![CDATA[<p>此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—<a href="http://zrdsj.cc/2016/09/23/book-review1/">http://zrdsj.cc/2016/09/23/book-review1/</a></p>
 <a id="more"></a>
-<h1 id="4444444444">4444444444</h1>
+<h3 id="4444444444">4444444444</h3>
 <p>这一章在书中的标题是：<strong>搜集故事</strong>。</p>
 <blockquote>
 <p>搜集故事，其实是告诉你如何与用户一起工作，通过互相的沟通来发现故事。熟练使用各种合适的方法，提出恰当的问题，获得用户真正的需求。</p>
@@ -456,40 +456,40 @@
 </ul>
 </li>
 </ol>
-<h1 id="5555555555">5555555555</h1>
+<h3 id="5555555555">5555555555</h3>
 <p>这一章在书中的标题是：<strong>与用户代理合作</strong>。</p>
 <p>项目是做给别人的，准确来讲是做给客户的。客户团队因此必然显得举足轻重。</p>
 <p>在客户团队中，拥有一个或者几个实际用户（真实用户）是重要的，遗憾的是我们很难有机会与实际用户一起工作，当我们无法求助于实际用户时候，我们就得求助于用户代理（user proxy)，他们代表着用户。</p>
 <p>选择合适的用户代理对于项目的成功至关重要，要考虑潜在用户代理的背景和动机，不同领域的专家作为用户代理，是有差异的。</p>
-<h5 id="用户的经理">用户的经理</h5>
+<h4 id="用户的经理">用户的经理</h4>
 <p>作为一个开发，你也许不会接触到很多的用户，却可能会接触到用户的经理，因为其代表着用户的立场可以讲作是用户代理。但是，<strong>如果用户的经理不是产品的实际用户，ta就不会是合适的用户代理</strong>。就不必为此上调其话语的优先级。</p>
-<h5 id="开发经理">开发经理</h5>
+<h4 id="开发经理">开发经理</h4>
 <p>开发经理会试图担任用户代理，因为他们依然参加到了项目每天的细节之中。然而开发经理大多不是产品的用户，所以他们也不是理想的用户代理。</p>
 <p>开发经理的立场不是用户甚至也不是企业的立场，他们也没有用户的亲身体验也不是领域专家。当然，如果其本身也是用户的话，一切处理当有所调整。</p>
-<h5 id="销售人员">销售人员</h5>
+<h4 id="销售人员">销售人员</h4>
 <p>基本沿袭了老毛病。<strong>结论是：销售人员充当用户代理是危险的。</strong></p>
 <p>销售人员必须避免把重点放在那些可以重新赢得已失去订单的故事上，在此基础上凭借着自己与用户的有效沟通，才可以很好的开发项目。</p>
-<h5 id="领域专家">领域专家</h5>
+<h4 id="领域专家">领域专家</h4>
 <p>就是指那些主题专家，他们对软件应用领域的了解程度直接影响了软件的成败。尽管，在领域专家的丰富资源中，看似可以大加利用。实际上，<code>避免将产品开发成只适合那些与他们有相同水平的用户使用</code>才是重点。</p>
-<h5 id="客户">客户</h5>
+<h4 id="客户">客户</h4>
 <p>你会不会感到惊讶？wtf？客户？</p>
 <p>对的，我说的就是客户。</p>
 <blockquote>
 <p>在这里，我们所说的<u>客户</u>，和<u>用户</u>不一样的。</p>
 </blockquote>
 <p>作为做出决定购买决定的人，如果他们能与用户密切地交流，那么他们会是优秀的用户代理。如果他们本身也是用户，完美！（强无敌233</p>
-<h5 id="else_1">else_1</h5>
+<h4 id="else_1">else_1</h4>
 <p>有一些培训师，业务分析师，系统分析师什么的，这些角色的问题也在于缺点的过于暴露。</p>
 <blockquote>
 <p>“术业有专攻”</p>
 </blockquote>
 <p>这些人员往往更关心产品（软件），而不是如何代表用户。</p>
-<h5 id="else_2">else_2</h5>
+<h4 id="else_2">else_2</h4>
 <p>q:作为开发人员，这个过程我的职责是什么？</p>
 <p>a:负责帮助组织机构为项目物色合适的客户。+负责了解不同类型的用户代理怎么考虑正在开发的产品。</p>
 <p>q:负责客户的团队该干啥？</p>
 <p>a:了解自己是属于哪类用户代理+了解自己作为用户代理可能存在的问题并加以防范克服。</p>
-<h1 id="6666666666">6666666666</h1>
+<h3 id="6666666666">6666666666</h3>
 <p><strong>用户故事验收测试</strong>，标题如此，不难想象是要我们做什么。</p>
 <p>一般来说，这个测试分为两个流程：</p>
 <ol>
@@ -522,7 +522,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—&lt;a href=&quot;http://zrdsj.cc/2016/09/23/book-review1/&quot;&gt;http://zrdsj.cc/2016/09/23/book-review1/&lt;/a&gt; 。&lt;/p&gt;
+      &lt;p&gt;此篇是借之前某篇博客的续写，系列一共是7篇。本篇是第2篇，第一篇—&lt;a href=&quot;http://zrdsj.cc/2016/09/23/book-review1/&quot;&gt;http://zrdsj.cc/2016/09/23/book-review1/&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
