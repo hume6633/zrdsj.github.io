@@ -4,6 +4,67 @@
   
     
     <entry>
+      <title><![CDATA[看不见的美]]></title>
+      <url>http://zrdsj.cc/2017/03/15/beauty/</url>
+      <content type="html"><![CDATA[<p>本来不存希望 / 心事化作春泥 / 谁人巧言令色 / 使我意马难收</p>
+<p>谁说时光最能疗伤 / 谁说旧仇转眼遗忘 / 旧时笑声泪影 / 历历在我心上</p>
+<a id="more"></a>
+<p>昨日开封晴朗，在学校漂亮的角落里待了一会。</p>
+<p>nothing</p>
+<p>什么都没感觉到</p>
+<p>望着午后轻风阳光安抚的春枝，我似乎意识到了什么。:look:</p>
+<h4 id="1">1</h4>
+<p>过年的时候，卢总和雪碧谈论到了一些话题。<strong>签证</strong>、<strong>旅游</strong>、<strong>毕业旅行</strong>这些话题，若是我风华正茂， 也会多说上几句ba。那时候，我听了很多，随声附和。</p>
+<p>心底里我知道我，一片混沌。</p>
+<p>我想去？</p>
+<p>我不想去？</p>
+<p>说不清，我甚至都想不清。</p>
+<h4 id="2">2</h4>
+<p>记不得多少次了，在那些文化作品中，<code>草地、鲜花、欢笑、孩子、蓝天、夕阳、村落······</code>这些，总让我陶醉，常常忘记了抑郁已久的情绪。</p>
+<p>这些东西，可不就是我内心追寻的么！也是美啊。</p>
+<h4 id="3">3</h4>
+<p>昨日的午后，我似乎意识到了，</p>
+<p>我并不具有正常的情感与渴望。</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">生活中从不缺少美，而是缺少发现美的眼睛					——罗丹</div></pre></td></tr></table></figure>
+<p>hhh</p>
+<h4 id="4">4</h4>
+<p>我生命中越来越多的光景，贴上了上帝的标签。蒙主眷顾，我的心扉逐渐打了开来，这一两年间，好了些。</p>
+<p>再回到昨日午后的思绪。</p>
+<p>我想，我可能是被蒙蔽了。</p>
+<p>被，眼前的迷雾，蒙蔽了发现美的眼睛…</p>
+<h4 id="5">5</h4>
+<p>远近的关系、时空，往往让我们迷失，至少说是怅然若失。</p>
+<p>然而，这些看似深刻的事物，并没有多少跃迁性。</p>
+<p>所少年前的样子，如今不过是换了新衣服，再次上演。</p>
+<p>作为观众，应有的修养当然要有。</p>
+<p>若是演员，该有的节操何处去寻？</p>
+<hr>
+<p>范围或大或小，终究逃不过一双眼，一颗心。</p>
+<p>该回应的问题，也许是下顿饭，下次征途。</p>
+<p>人性不变，终究道貌岸然，步履虚浮，思想虚妄。</p>
+<p>我想，我已不再会去设想盲目与混沌。救赎的事情，这些真理，一直都未走远，我既看得见，就必摸得着。Amen</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1868553&auto=0&height=66"></iframe>]]></content>
+      
+        <categories>
+            
+            <category> moon </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 诉苦呻吟 </tag>
+            
+            <tag> 情感 </tag>
+            
+            <tag> 人生 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Less的若干记述]]></title>
       <url>http://zrdsj.cc/2017/03/10/less/</url>
       <content type="html"><![CDATA[<p><strong><u>什么是<a href="https://github.com/less/less.js" target="_blank" rel="external">Less</a>？</u></strong></p>
@@ -87,13 +148,82 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;							CSS code									</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;</div><div class="line">  border-radius: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><strong>这样任何CSS的类或ID下的样式都可以当作变量，使用混入模式用来当作另一个元素的属性值。</strong></p>
 <p>混入(Mixin)有一个名词叫“混入参数（Parametric Mixins）”。Less具有一个特殊类型的规则集，就是一个类可以当作另一个元素的属生值，并且还可以接受其自己的参数。如下的Less</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========== 定义一个规则，并且不设置默认参数值 ============*/</div><div class="line">.borderRadius(@radius)&#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*============ 应用到元素中 ============*/</div><div class="line">#header &#123;</div><div class="line">    .borderRadius(10px); /*把10px传给变量@radius*/</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius(3px);/*把3px传给变量@radius*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">/*========== 定义一个规则，并且不设置默认参数值 ============*/</div><div class="line">.borderRadius(@radius)&#123;</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">/*============ 应用到元素中 ============*/</div><div class="line">#header &#123;</div><div class="line">    .borderRadius(10px); 	/*把10px传给变量@radius*/</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius(3px);		/*把3px传给变量@radius*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Complied CSS code：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">#header &#123;				 /*把10px传给变量@radius*/</div><div class="line">  -moz-border-radius: 10px;</div><div class="line">  -webkit-border-radius: 10px;			</div><div class="line">  border-radius: 10px;  </div><div class="line">&#125;</div><div class="line">.btn &#123;					 /*把3px传给变量@radius*/</div><div class="line">  -moz-border-radius: 3px;</div><div class="line">  -webkit-border-radius: 3px;</div><div class="line">  border-radius: 3px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>Mixins的参数定义默认值，如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.borderRadius(@radius:5px) &#123;		/*定义默认是 5px*/</div><div class="line">	-moz-border-radius: @radius;</div><div class="line">	-webkit-border-radius: @radius;</div><div class="line">	border-radius: @radius;</div><div class="line">&#125;</div><div class="line">.btn &#123;</div><div class="line">    .borderRadius;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>编译后的CSS：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.btn &#123;</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">.btn &#123;						/*全部变成5px*/</div><div class="line">  -moz-border-radius: 5px;</div><div class="line">  -webkit-border-radius: 5px;</div><div class="line">  border-radius: 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>给Mixins不定任何参数，特别是在你想隐藏输出的CSS规则，但又想在别的规则中包含它的属性，使用这种不带参数的Mixins将非常有用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.wrap()&#123;				Less code</div><div class="line">	text-wrap: wrap;</div><div class="line">	white-space: pre-wrap;</div><div class="line">	white-space: -moz-pre-wrap;</div><div class="line">	word-wrap: break-word;</div><div class="line">&#125;</div><div class="line">pre &#123;</div><div class="line">	.wrap;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译后的结果是这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">pre &#123;		/*wrap()的内容直接混入了pre的样式*/</div><div class="line">  text-wrap: wrap;</div><div class="line">  white-space: pre-wrap;</div><div class="line">  white-space: -moz-pre-wrap;</div><div class="line">  word-wrap: break-word;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Mixins还有一个重要的变量：<strong>@arguments</strong>。</p>
+<p>@arguments在Mixins中具是一个很特别的参数，当Mixins引用这个参数时，他将表示所有的变量，当你不想处理个别的参数时，这个将变得有用。以下是一个阴影的实例</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.boxShadow(@x:0,@y:0,@blur:1px,@color:#000)&#123;</div><div class="line">	-moz-box-shadow: @arguments;</div><div class="line">	-webkit-box-shadow: @arguments;</div><div class="line">	box-shadow: @arguments;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">	.boxShadow(2px,2px,3px,#f36);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后的CSS：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">#header &#123;				/*header全部的样式都变成了boxShadow下的内容*/</div><div class="line">  -moz-box-shadow: 2px 2px 3px #FF36;</div><div class="line">  -webkit-box-shadow: 2px 2px 3px #FF36;</div><div class="line">  box-shadow: 2px 2px 3px #FF36;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="嵌套规则">嵌套规则</h4>
+<p>针对一多层元素的样式规则写法，以前我们在多层元素中写样式，要么从头选下来，要么另外给这个元素加上类名或id名，但在Less中我们不需要这样操作了，我们只要使用他的嵌套规则就可以完成。</p>
+<p>对于一个结构式这样的HTML来说：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div id=&quot;header&quot;&gt;</div><div class="line">	&lt;h1&gt;&lt;a href=&quot;&quot;&gt;WWW.baigle.com&lt;/a&gt;&lt;/h1&gt;</div><div class="line">	&lt;p&gt;封侯非我意，但愿海波平。&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>我们写Less如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  display: inline;</div><div class="line">  float: left;</div><div class="line">  h1 &#123;</div><div class="line">    font-size: 26px;</div><div class="line">    font-weight: bold;</div><div class="line">    a &#123;</div><div class="line">      text-decoration: none;</div><div class="line">      color: #f36;</div><div class="line">      &amp;:hover &#123;</div><div class="line">        text-decoration: underline;</div><div class="line">        color: #63f;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  p &#123;</div><div class="line">    font-size: 12px;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译后的CSS如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  display: inline;</div><div class="line">  float: left;</div><div class="line">&#125;</div><div class="line">#header h1 &#123;</div><div class="line">  font-size: 26px;</div><div class="line">  font-weight: bold;</div><div class="line">&#125;</div><div class="line">#header h1 a &#123;</div><div class="line">  text-decoration: none;</div><div class="line">  color: #f36;</div><div class="line">&#125;</div><div class="line">#header h1 a:hover &#123;</div><div class="line">  text-decoration: underline;</div><div class="line">  color: #63f;</div><div class="line">&#125;</div><div class="line">#header p &#123;</div><div class="line">  font-size: 12px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>可见：<strong>使用Less的嵌套规则让CSS代码更简洁，因为写法就是模仿HTML的DOM结构来写的。</strong></p>
+<p>从上在的实例代码中，可以清楚的了解到，嵌套规则可以让样式书写时能像DOM树形那样有结构的去写代码，从而减了选择器的层级关系，更主要的是这样使用我们的代码更简洁，更具有阅读性，这种嵌套规则对于操作伪元素更为方便和重要，如:hover，:link,:focus等，其写法是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">a &#123;</div><div class="line">  color: red;</div><div class="line">  text-decoration: none;</div><div class="line">  &amp;:hover &#123;			/*hover所在行*/</div><div class="line">    color: blue;</div><div class="line">    text-decoration: underline;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">a &#123;</div><div class="line">  color: red;</div><div class="line">  text-decoration: none;</div><div class="line">&#125;</div><div class="line">a:hover &#123;</div><div class="line">  color: blue;</div><div class="line">  text-decoration: underline;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>这里的**&amp;<strong>很重要，在Less中嵌套书写中有没有</strong>&amp;<strong>区别是完全不一样的效果，有</strong>&amp;<strong>时解析的是同一个元素或此元素的伪类，没有</strong>&amp;**解析是后代元素！</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  &amp;.fl &#123;			/*伪类*/</div><div class="line">    float: left;</div><div class="line">  &#125;</div><div class="line">  .mln &#123;			/*子元素*/</div><div class="line">    margin-left: 0;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译后的CSS代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#header.fl &#123;			/*与下面的.mln不一样*/</div><div class="line">  float: left;</div><div class="line">&#125;</div><div class="line">#header .mln &#123;</div><div class="line">  margin-left: 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="函数与操作">函数与操作</h4>
+<p>有很多元素的属性都具有一定的比例或倍数，那么这两个刚好可以帮我们实现这方面的功能，首先来看Operations（直译“懆作”）。可以对元素的属性值，颜色进行四则运算：加、减、乘、除。而Function就像javascript中的function一样可以让你进行你想要的值的操作。</p>
+<p>以下是个综合实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">@the-border: 1px;				/*Less code*/</div><div class="line">@base-color: #111;</div><div class="line">@red: #842210;</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">	color: @base-color *3;</div><div class="line">	border: 1px solid desaturate(@red,100%);</div><div class="line">	border-width: @the-border @the-border*2 @the-border*3 @the-border;</div><div class="line">	border-color: desaturate(@red,100%) @red lighten(@red, 10%)	darken(@red, 30%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #333333;</div><div class="line">  border: 1px solid #4a4a4a;</div><div class="line">  border-width: 1px 2px 3px 1px;</div><div class="line">  border-color: #4a4a4a #842210 #b12e16 #000000;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><strong>Less中的Operations主要是针对任何数字、颜色、变量的操作，可以对其是行加、减、乘、除或者更复杂的综合运算.</strong></li>
+</ul>
+<ul>
+<li><strong>Functions主要是针对Color functions，Less提供了多种变换颜色的功能。</strong></li>
+</ul>
+<p>先来看Operation的使用。同一单位下的操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">@base: 5%;</div><div class="line">@filler: @base*2;			/*10%*/</div><div class="line">@other: @base + @filler;	 /*15%*/</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">    color: #888 / 4;</div><div class="line">    height: 100% / 2 + @filler;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译的CSS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #222222;</div><div class="line">  height: 60%;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>不同单位的操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">@var: 1px + 5;		/*其实是6px*/</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">    border: @var solid red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  border: 6px solid #ff0000;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>@var: 1px + 5”，Less最终解析的值是“6px”。接下来使用（）改变下运算顺序：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@var: 20px;</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">    width: @var + 5 * 2;</div><div class="line">    height: (@var + 5 ) * 2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译之后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  width: 30px;			/*20+10 = 30*/</div><div class="line">  height: 50px;			/*25*2 = 50*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>利用百分比来整理颜色：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">@base: #f04615;</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">  color: @base;</div><div class="line">  background-color: fadein(@base, 10%);</div><div class="line">  h1 &#123;</div><div class="line">	color: lighten(@base,20%);</div><div class="line">    background-color: lighten(fadeout(@base,20%),5%);</div><div class="line">    a &#123;</div><div class="line">	  color: darken(@base,50%);</div><div class="line">      background-color: spin(@base,10);</div><div class="line">      &amp;: hover &#123;</div><div class="line">	  color: saturate(@base,30%);</div><div class="line">      background-color: fadein(spin(@base,-5),20%);</div><div class="line">	      &#125;</div><div class="line">        &#125;</div><div class="line">	&#125;</div><div class="line">  p &#123;</div><div class="line">    color: desaturate(@base,60%);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">#header &#123;</div><div class="line">  color: #f04615;</div><div class="line">  background-color: #f04615;</div><div class="line">&#125;</div><div class="line">#header h1 &#123;</div><div class="line">  color: #f69275;</div><div class="line">  background-color: rgba(242, 89, 45, 0.8);</div><div class="line">&#125;</div><div class="line">#header h1 a &#123;</div><div class="line">  color: #060200;</div><div class="line">  background-color: #f06b15;</div><div class="line">&#125;</div><div class="line">#header h1 a:hover &#123;</div><div class="line">  color: #ff3e06;</div><div class="line">  background-color: #f03415;</div><div class="line">&#125;</div><div class="line">#header p &#123;</div><div class="line">  color: #a56f60;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="命名空间">命名空间</h4>
+<p>有时候想要把一些变量或Mixins组织起来，并封装，想用的时候就把要关的一部分取出来，那么可以将在前面的Mixins基础上将其功能扩展，比如说有一个这样的库：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">#bundle &#123;</div><div class="line">  .button () &#123;</div><div class="line">	 display: block;</div><div class="line">	 border: 1px solid black;</div><div class="line">	 background-color: grey;</div><div class="line">	 &amp;:hover &#123; </div><div class="line">	 	background-color: white </div><div class="line">	 &#125;</div><div class="line"> &#125;</div><div class="line"> .tab &#123; ... &#125;</div><div class="line"> .citation &#123; ... &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>现在在实际操作中，header中的a样式和.button一样，那么我们就可以这样操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">#header a &#123;</div><div class="line">	color: orange;</div><div class="line"> 	#bundle &gt; .button;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>换过一种思维来说，如果页面上有几个部分的样是完全一样的，或者只是部分不同，就可以这样来写，就如上面的代码，#bundle可是以web页面中已存在的元素，然后#header中的a元素和#bundle中的.button样式是一样的，那么就可以把#bundle中 .button的所有样式引用到#header中的a元素上。</p>
+<h4 id="变量范围">变量范围</h4>
+<p>Less中的变量和大部分程序语言一样，他的变量也有一个范围概念，这个概念就有点像局部变量和全局变量一样，只是在Less中采取的是就近原则。</p>
+<blockquote>
+<p>元素先找本身有没有这个变量存在，如果本身存在，就取本身中的变量，如果本身不存在，就寻找父元素，依此类推，直到寻找到相对应的变量。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">@var: red;			/*局部大于整体*/</div><div class="line"></div><div class="line">#page &#123;</div><div class="line"> @var: white;</div><div class="line">#header &#123;</div><div class="line">	color: @var; // white</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#footer &#123;</div><div class="line">	color: @var; // red  </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>编译过后：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#page #header &#123;</div><div class="line">  color: #ffffff;		/*白*/</div><div class="line">&#125;</div><div class="line">#footer &#123;</div><div class="line">  color: #ff0000;		/*红*/</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
       
         <categories>
