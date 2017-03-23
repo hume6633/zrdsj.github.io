@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zrdsj.cc/"/>
-  <updated>2017-03-19T07:32:33.070Z</updated>
+  <updated>2017-03-23T14:41:51.838Z</updated>
   <id>http://zrdsj.cc/</id>
   
   <author>
@@ -14,6 +14,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>7</title>
+    <link href="http://zrdsj.cc/2017/03/23/Google7/"/>
+    <id>http://zrdsj.cc/2017/03/23/Google7/</id>
+    <published>2017-03-23T14:25:25.037Z</published>
+    <updated>2017-03-23T14:41:51.838Z</updated>
+    
+    <content type="html"><![CDATA[<p>啊啊啊啊</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;啊啊啊啊&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="moon" scheme="http://zrdsj.cc/categories/moon/"/>
+    
+    
+      <category term="生活随笔" scheme="http://zrdsj.cc/tags/%E7%94%9F%E6%B4%BB%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="人生" scheme="http://zrdsj.cc/tags/%E4%BA%BA%E7%94%9F/"/>
+    
+      <category term="谷歌" scheme="http://zrdsj.cc/tags/%E8%B0%B7%E6%AD%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>一些信仰的思考</title>
@@ -1590,307 +1618,6 @@
       <category term="杂谈" scheme="http://zrdsj.cc/tags/%E6%9D%82%E8%B0%88/"/>
     
       <category term="WeChat" scheme="http://zrdsj.cc/tags/WeChat/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端该了解的&#39;http&#39;故事</title>
-    <link href="http://zrdsj.cc/2016/09/30/Fe-http/"/>
-    <id>http://zrdsj.cc/2016/09/30/Fe-http/</id>
-    <published>2016-09-30T15:12:12.242Z</published>
-    <updated>2017-03-10T15:15:11.175Z</updated>
-    
-    <content type="html"><![CDATA[<p>算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。</p>
-<a id="more"></a>
-<p>时间已经过了很长了，都没写几个字。。。也是不好意思。。哈哈最初想到写篇这样的博客是因为物联网还不是因为自己是个前端。</p>
-<p>在之前的那篇物联网博客里面，有提到物联网的核心是联网，当然了在那个时候才发觉了一些互联网的协议或者说是科学研究的协议等的存在感，比如说<code>http协议</code>。</p>
-<p>这次是想说一些一个前端该懂得的http知识，该说多少我也拿捏不好。一度我是这样想的—&gt;找几个知乎链接+博客地址，贴出来over2333</p>
-<p>哈哈哈，好吧。。。还是自己写几句吧。</p>
-<h3 id="前奏">前奏</h3>
-<p>先说说<em>为什么</em>这次会说<code>前端的http故</code>事，直接说http不行么？为什么现在说http？</p>
-<p>OK，是这样的。</p>
-<blockquote>
-<p>如今我自己在实习并且在学习新的技术（想对自己而言2333），不管以后的话是做什么，现在的学习情况表明了就是前端之路。未来前端的趋势我说不太好，但我知道。。。<code>无论web技术再如何发展，理解web程序间通信的基本协议很重要，理解web应用程序的内部工作就必然会有http的事情。</code>关于http前端之外的更多事情，也许以后我会以<code>计算机网络</code>的视角再写一篇http？2333</p>
-</blockquote>
-<blockquote>
-<p>现在说http是因为：在了解了一个web世界的多个角落之后，在某一天总会有些原因驱动着你去做些不同往日的事情，比如联通彼此产生信息的交流。。。so,it’s the Time.</p>
-</blockquote>
-<p>说完了前奏，接下来就是主要的内容了。讲道理，<code>http基础内容</code>完全可以在百科上、在某个硬盘上的文档里、在某篇博客里、在互联网上的不明奇妙的角落里学习到······我所总结的点并不全面，只是常用到的几个点。😉</p>
-<p><strong>顺应博客的标题，仅仅说下前端应该知道的掌握的基本原理，更深层次不再进行探讨。</strong></p>
-<p>赛高：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这篇博文中的诸如是http或者https或者是HTTP等大小写拼写问题，请理解精神！</div></pre></td></tr></table></figure>
-<p>3个部分：</p>
-<ol>
-<li>初级
-<ul>
-<li>请求/响应</li>
-<li>状态码</li>
-<li>post请求发送</li>
-</ul>
-</li>
-<li>中级
-<ul>
-<li>how?</li>
-<li>Session</li>
-<li>Ajax与同源策略</li>
-</ul>
-</li>
-</ol>
-<ol start="3">
-<li>高级
-<ul>
-<li>https</li>
-<li>Web Sockets</li>
-<li>http2</li>
-</ul>
-</li>
-</ol>
-<h3 id="1111111">1111111</h3>
-<h4 id="请求响应">请求/响应</h4>
-<h5 id="http是啥">http是啥</h5>
-<p>HTTP ，是<strong>超文本传输协议</strong> （Hypertext Transfer Protocol ）的缩写。</p>
-<p>网上都有大量的图片，视频，HTML 页面等等这些东西飞来飞去，从服务器上送到我们的浏览器里，这个过程都是实用 HTTP 协议来传输数据的。所以理解 HTTP ，不管是对于做网站，还是做 Web App ，都是开发者非常重要的基本功。</p>
-<p>Web 客户端和服务器端</p>
-<p>Web 内容都是存储在 Web 服务器上的，Web 服务器都是使用 HTTP 协议的，因此也被称为 HTTP 服务器。HTTP 服务器存储了各种类型的数据，如果 HTTP 的客户端（浏览器）发出<strong>请求</strong>的话，服务器就会返回数据给客户端，叫做<strong>响应</strong>。<strong>请求（ request )和响应（ response ）都是重要的术语。</strong></p>
-<p>HTTP 的服务器和客户端是<a href="https://zh.wikipedia.org/zh-cn/%E4%B8%87%E7%BB%B4%E7%BD%91" target="_blank" rel="external">万维网</a>（ World Wide Web ）的基本单元。其实我们每天都在使用 HTTP 的客户端，最常见的客户端就是浏览器。浏览一个页面的时候，浏览器会向服务器发出一个 HTTP 请求。等到服务器响应返回之后，浏览器再去处理响应数据，以美观的形式展示给用户。</p>
-<h5 id="请求响应">请求/响应</h5>
-<p>HTTP 的开始是浏览器发出请求。但是请求的是什么呢？<strong>是服务器上的资源，英文叫 Resource 。</strong></p>
-<p>对应的每一个资源，都有一个 URL ，也就是<strong>统一资源定位地址</strong>，指向这个资源。不过资源分两种：一种是静态 资源，也就是各种文件了，最常见的就是静态 HTML ，但是也可以是 PDF ，json，MP4 文件等等。另外一种，就是动态 资源，也就是 URL 指向的地方不是一个文件，而是一段代码的入口，服务器经过运算后，才返回运算结果给客户端。</p>
-<p>所以， 我们有 <a href="http://xxxxx.com/23333.txt" target="_blank" rel="external">http://xxxxx.com/2333.txt</a> (雷同纯属巧合)，这个 URL 就是指向一个静态资源的。如果是 <a href="http://xxxxx.com/username" target="_blank" rel="external">http://xxxxx.com/username</a> 这个可能就是指向动态资源的，后台对应的可能就是一个 API 。</p>
-<p>发起一个 HTTP 请求很容易。比如你说你想用浏览器访问 <a href="http://zrdsj.cc">zrdsj.cc</a> 。你所需要做的仅仅是启动浏览器然后在地址栏输入 <a href="http://zrdsj.cc/">http://zrdsj.cc/</a> ，然后你就可以在页面中看到本站的首页了。</p>
-<p>那么底层发生了什么呢？首先，浏览器作为 <strong>HTTP Client</strong> ，发出了一个<strong>请求</strong>给服务器</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">GET http://zdsj.cc/</div></pre></td></tr></table></figure>
-<p>上面的 GET 是 HTTP 方法，这个后面还会介绍。</p>
-<p><a href="http://zrdsj.cc">zrdsj.cc</a> 的服务器收到请求后，给出<strong>响应</strong>。响应中带有各种数据，html/css/图片 等等，返回到浏览器。 浏览器是理解这些文件格式的，所以可以最终展示一个美观的网页给用户。</p>
-<p>用一些工具，可以清楚看出这些变化。有浏览器的插件，也有专门的软件，还有命令行工具。这里我们简便起见，达到目的即可，使用Chrome的开发者工具就可以。</p>
-<p>我们访问这个网站 <a href="https://office.qq.com/" target="_blank" rel="external">https://office.qq.com/</a> 作为举例。</p>
-<p>在控制器中我们看到了下列的数据：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Request URL:https://office.qq.com/</div><div class="line">Request Method:GET</div><div class="line">Status Code:200 </div><div class="line">Remote Address:127.0.0.1:8888</div></pre></td></tr></table></figure>
-<p>这都是极为重要的信息，先不做陈述。我们看下<code>请求部分</code>和<code>响应部分</code>的截图。</p>
-<p>请求部分的截图：</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get.png" alt="请求信息"></p>
-<p>下面是响应信息：</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/http_Get-resp.png" alt="响应信息"></p>
-<ol>
-<li>
-<p>我们这次的请求实际上，是一个<u>GET</u><strong>请求</strong>，就是想要从服务器上 GET （拿到）一些内容，而不是想去修改服务器数据。到底要 GET 哪些资源，就是后面的 URL 这一项来指定了。也可以说我们的<strong>HTTP 方法</strong>（ <a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank" rel="external">HTTP Method</a> ）是 GET 方法，当然还有其他种类的方法。</p>
-<p>我们可见看出在Request Headers（请求头）中，有许多项，可以参考的列表在<a href="https://zh.wikipedia.org/wiki/HTTP%E5%A4%B4%E5%AD%97%E6%AE%B5%E5%88%97%E8%A1%A8#.E5.B8.B8.E8.A7.81.E7.9A.84.E9.9D.9E.E6.A0.87.E5.87.86.E8.AF.B7.E6.B1.82.E5.AD.97.E6.AE.B5" target="_blank" rel="external">这里</a>。</p>
-</li>
-<li>
-<p>响应也有对应的信息，<strong>响应头部</strong>、<strong>状态行</strong>、<strong>响应主体</strong>（response body/payload）等。基本的格式在上面的截图也有了：</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[ header 名]: [ header 值]</div></pre></td></tr></table></figure>
-<p>​	在一些专门的工具中（除Chrome控制台之外），一般可以直接显示出<strong>状态行</strong> （ status line ）。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">HTTP[版本号] [状态码] [状态信息]</div><div class="line"></div><div class="line">比如</div><div class="line">HTTP/1.1 200 ok</div></pre></td></tr></table></figure>
-<p>​	其中含有的数据有一项为状态码，在稍后我们会讲道。</p>
-<p>​	<strong>响应主体</strong>很好理解了，就是代码文件了，在浏览器会显示成相应的页面。</p>
-<h5 id="无状态协议">无状态协议</h5>
-<p>前面 HTTP 的基本格式介绍完了，再补充一个小点：</p>
-<blockquote>
-<p>HTTP 是一个无状态的协议</p>
-</blockquote>
-<p>所谓**无状态（ stateless ）**意思就是：对于之前的交互没有记录。每次交互能用的信息就只有这次交互所携带的信息。</p>
-<p>换句话说，HTTP 协议是没有办法记住之前的一次请求的，所以也没有办法根据前一次请求来辅助后一次请求。当一个 Web 应用 看起来似乎可以记住之前的交互，例如，可以记住你的用户名，其实它采用的技巧已经超出了 HTTP 本身。HTTP 的信息就好像 是可以自销毁的，每次读取完毕，立刻就消失了。总之，HTTP 就是无状态的，也就是不能记录或者维持某种状态的。</p>
-<h4 id="状态码">状态码</h4>
-<p><a href="https://zh.wikipedia.org/wiki/HTTP%E7%8A%B6%E6%80%81%E7%A0%81#3xx.E9.87.8D.E5.AE.9A.E5.90.91" target="_blank" rel="external">维基百科</a>的内容，<a href="http://www.w3school.com.cn/tags/html_ref_httpmessages.asp" target="_blank" rel="external">w3</a>的内容。</p>
-<p>简单介绍：</p>
-<ul>
-<li>20x 的状态码都代表某种成功状态。最常见的 200 ，它的意义，就正如它后面跟的 状态信息 一样，代表一切 OK 。</li>
-<li>30x 的状态码，意味着资源已经被移动到其他地方了，但是响应中给出了应该跳转到哪里去找到这个资源。这个行为的 术语就叫做 <strong>redirect</strong> （重定向）。</li>
-<li>40x 的代码也都是代表一种<strong>客户端请求错误</strong> 。一个最常见的状态码 404 ，它的意 义也跟它后面紧跟的状态信息所说的 一样：Page Not Found （页面未找到）。</li>
-<li>50x 的状态吗也很常见。返回的如果是这一系列的状态码，就意味着 服务器端在处理请求的时候出错 。50x 出现，对于开发者，一般意味着服务器端代码出了错误。</li>
-</ul>
-<h4 id="post请求发送">post请求发送</h4>
-<p>GET 请求是只读的，意思就是只能用来从服务器上获取信息。而相对的 POST 请求<code>就是用来修改服务器的，例如修改数据库记录，上传一个文件等等。</code></p>
-<p>GET 请求中，我们一般通过对 url 添加参数的形式传递额外的参数给服务器端，但是 POST 请求的情况下，通常我们都会把要传递的数据放到 request body （请求体）中。</p>
-<p>使用 POST 请求通过 request body 携带数据到服务器端，有四种方式:</p>
-<ul>
-<li>普通 html 表单 form 提交方式：application/x-www-form-urlencoded</li>
-<li>上传文件惯用方式：multipart/form-data</li>
-<li>通过 fetch/axios 等客户端提交 JSON 数据：application/json</li>
-<li>还有一种方式是 text/xml ，不常用了</li>
-</ul>
-<p>前三种是比较重要的。</p>
-<h5 id="applicationx-www-form-urlencoded">application/x-www-form-urlencoded</h5>
-<p>这是最常见的 POST 提交数据的方式了。浏览器的原生 <code>&lt;form&gt;</code> 表单，如果不设置 <code>enctype</code> 属性，那么最终就会以 <strong>application/x-www-form-urlencoded</strong> 方式提交数据。</p>
-<p>请求类似于下面这样（无关的请求头在本文中都省略掉了）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1</div><div class="line">Content-Type: application/x-www-form-urlencoded;charset=utf-8</div><div class="line"></div><div class="line">title=test&amp;sub%5B%5D=1&amp;sub%5B%5D=2&amp;sub%5B%5D=3</div></pre></td></tr></table></figure>
-<ul>
-<li>首先，Content-Type 被指定为 application/x-www-form-urlencoded；</li>
-<li>其次，提交的数据按照 key1=val1&amp;key2=val2 的方式进行编码，key 和 val 都进行了 URL 转码。大部分服务端语言都对这种方式有很好的支持。</li>
-</ul>
-<p>很多时候，用 Ajax 提交数据时，也是使用这种方式。例如 <a href="http://jquery.com/" target="_blank" rel="external">JQuery</a> 和 <a href="http://www.qwrap.com/" target="_blank" rel="external">QWrap</a> 的 Ajax，Content-Type 默认值都是「application/x-www-form-urlencoded;charset=utf-8」。</p>
-<h5 id="multipartform-data">multipart/form-data</h5>
-<p>又一个常见的 POST 数据提交的方式。我们使用表单上传文件时，必须让 <code>&lt;form&gt;</code>表单的 <code>enctype</code> 等于 <code>multipart/form-data</code>。</p>
-<p>一个请求示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1</div><div class="line">Content-Type:multipart/form-data; boundary=----WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line"></div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line">Content-Disposition: form-data; name=&quot;text&quot;</div><div class="line"></div><div class="line">title</div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA</div><div class="line">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;chrome.png&quot;</div><div class="line">Content-Type: image/png</div><div class="line"></div><div class="line">PNG ... content of chrome.png ...</div><div class="line">------WebKitFormBoundaryrGKCBY7qhFd3TrwA--</div></pre></td></tr></table></figure>
-<p>这个例子稍微复杂点。</p>
-<ul>
-<li>首先生成了一个 boundary 用于分割不同的字段，为了避免与正文内容重复，boundary 很长很复杂。</li>
-<li>然后 Content-Type 里指明了数据是以 multipart/form-data 来编码，以及请求的 boundary 是什么内容。消息主体里按照字段个数又分为多个结构类似的部分，每部分都是以 <code>--boundary</code> （------WebKitFormBoundaryrGKCBY7qhFd3Trw）开始，紧接着是内容描述信息，然后是回车，最后是字段具体内容（文本或二进制）。</li>
-<li>如果传输的是文件，还要包含文件名和文件类型信息。消息主体最后以 <code>--boundary--</code> 标示结束。关于 multipart/form-data 的详细定义，请前往 <a href="http://www.ietf.org/rfc/rfc1867.txt" target="_blank" rel="external">rfc1867</a> 查看。</li>
-</ul>
-<p>这种方式一般用来上传文件，各大服务端语言对它也有着良好的支持。</p>
-<p>上面提到的这两种 POST 数据的方式，都是浏览器原生支持的，而且现阶段标准中原生 <form> 表单也<a href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4" target="_blank" rel="external">只支持这两种方式</a>（通过 <code>&lt;form&gt;</code> 元素的 <code>enctype</code> 属性指定，默认为 application/x-www-form-urlencoded。其实 <code>enctype</code> 还支持 <code>text/plain</code>，不过用得非常少）。</form></p>
-<p>随着越来越多的 Web 站点（尤其是 WebApp），全部使用 Ajax 进行数据交互之后，我们完全可以定义新的数据提交方式，给开发带来更多便利。</p>
-<h5 id="applicationjson">application/json</h5>
-<p>application/json 这个 Content-Type 作为响应头并不新鲜，现在越来越多的人把它作为请求头，用来告诉服务端消息主体是序列化后的 JSON 字符串。</p>
-<p>由于 JSON 规范的流行，除了低版本 IE 之外的各大浏览器都原生支持 JSON.stringify，服务端语言也都有处理 JSON 的函数，使用 JSON 不会遇上什么麻烦。</p>
-<p>JSON 格式支持比键值对复杂得多的结构化数据，这一点也很有用。</p>
-<p>Google 的 <a href="http://angularjs.org/" target="_blank" rel="external">AngularJS</a> 中的 Ajax 功能，默认就是提交 JSON 字符串。例如下面这段代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">JSvar data = &#123;&apos;title&apos;:&apos;test&apos;, &apos;sub&apos; : [1,2,3]&#125;;</div><div class="line">$http.post(url, data).success(function(result) &#123;</div><div class="line">    ...</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-<p>最终发送的请求是：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">BASHPOST http://www.example.com HTTP/1.1 </div><div class="line">Content-Type: application/json;charset=utf-8</div><div class="line"></div><div class="line">&#123;&quot;title&quot;:&quot;test&quot;,&quot;sub&quot;:[1,2,3]&#125;</div></pre></td></tr></table></figure>
-<p>这种方案，可以方便的提交复杂的结构化数据，特别适合 <a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" rel="external">RESTful 的接口</a>。</p>
-<p>各大抓包工具如 Chrome 自带的开发者工具、Firebug、Fiddler，都会以树形结构展示 JSON 数据，非常友好。一些服务端语言还没有支持这种方式，但一些相应的框架已经开始做出改变了。</p>
-<h5 id="textxml">text/xml</h5>
-<p><a href="https://imququ.com/post/pingback-and-xmlrpc.html" target="_blank" rel="external">XML-RPC</a>，它是一种使用 HTTP 作为传输协议，XML 作为编码方式的远程调用规范。典型的 XML-RPC 请求是这样的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">HTMLPOST http://www.example.com HTTP/1.1 </div><div class="line">Content-Type: text/xml</div><div class="line"></div><div class="line">&lt;?xml version=&quot;1.0&quot;?&gt;</div><div class="line">&lt;methodCall&gt;</div><div class="line">  &lt;methodName&gt;examples.getStateName&lt;/methodName&gt;</div><div class="line">  &lt;params&gt;</div><div class="line">    &lt;param&gt;</div><div class="line">      &lt;value&gt;&lt;i4&gt;233&lt;/i4&gt;&lt;/value&gt;</div><div class="line">    &lt;/param&gt;</div><div class="line">  &lt;/params&gt;</div><div class="line">&lt;/methodCall&gt;</div></pre></td></tr></table></figure>
-<p>XML-RPC 协议简单、功能够用，各种语言的实现都有。它的使用也很广泛，如 WordPress 的 <a href="http://codex.wordpress.org/XML-RPC_WordPress_API" target="_blank" rel="external">XML-RPC Api</a>，搜索引擎的 <a href="http://help.baidu.com/question?prod_en=master&amp;class=476&amp;id=1000423" target="_blank" rel="external">ping 服务</a>等等。JavaScript 中，也有<a href="http://plugins.jquery.com/xmlrpc/" target="_blank" rel="external">现成的库</a>支持以这种方式进行数据交互，能很好的支持已有的 XML-RPC 服务。可能一些人觉得 XML 结构还是过于臃肿，一般场景用 JSON 会更灵活方便。</p>
-<h3 id="2222222">2222222</h3>
-<h4 id="how">how?</h4>
-<p>我这里想表达的是一个技术是如何实现的？</p>
-<p><a href="https://zh.wikipedia.org/wiki/Cookie" target="_blank" rel="external">Cookie</a></p>
-<p>前面我们已经说了：HTTP 的一个特点就是它是<strong>无状态</strong>协议（easy come, easy go）。</p>
-<p>但是有时候为了实现类似电商网站购物车这样的应用，必须要求网络应用保持一种状态，所以 cookie 就被发明出来了。</p>
-<h5 id="general">general</h5>
-<p>通常来讲：：：：</p>
-<p>比如我们现在访问 <a href="https://atom.io/" target="_blank" rel="external">atom.io</a> ，在 Chrome Devtools 的 Network 标签下可以看到，仅仅是打开首页， 就发出了很多个请求。其实具体的过程是这样，浏览器首先发出的是一个请求，也就是请求 <a href="http://atom.io" target="_blank" rel="external">atom.io</a> 的首页， 但是问题的是首页的 html 中有指向图片，css ，js 的一些链接，这样，浏览器就会自动发出后续的请求，以保证 最终页面是显示完整的。</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/atomio.png" alt="atom"></p>
-<p>上面所说的这些请求，都是 stateless 无状态的，也就是服务器收到后续请求后，根本不记得之前也收到过相关的请求。 也就是服务器根本不记得我的浏览器。 无状态就是<strong>随时忘记</strong>，也就是服务器没有办法去始终跟踪同一个浏览器。但是这样 比如说我们想用浏览器添加多个商品进购物车，那么服务器是没有办法记录，后添加的商品是不是跟前面添加的商品是同一个 浏览器请求的。</p>
-<h5 id="then">then</h5>
-<p>后来：：：：</p>
-<p>也就真是为了解决购物车的这种需求，为了达成浏览器跟服务器之间的一种<strong>持续连接状态</strong>，让服务器知道到底用户是谁， 在1993年的时候，网景公司发明了 cookie 这个技术。</p>
-<p>Cookie 就是平时所说的曲奇饼干，浏览器的 Cookie 可以翻译成<strong>浏览器的一个小文件</strong>。文件中的信息，会被设置成 http 请求 的一个 header ，header 的名字就叫 <strong>Cookie</strong> ，让浏览器对这个 header 做特殊对待，每次发出请求的时候都会携带着 cookie 信息给服务器。</p>
-<p><em>那么浏览器的 cookie 小文件的信息是从哪里来的呢？</em></p>
-<blockquote>
-<p>Cookie 一般都是在服务器端设置的，通过 http 响应的头部返回给浏览器，浏览器拿到这些信息就可以保存到自己的 cookie 文件中</p>
-</blockquote>
-<p><em>cookie的作用？</em></p>
-<blockquote>
-<p>一旦客户端有了服务器发来的特殊信息，例如 <code>id=xxx</code> ，那么就等于服务器已经认定这个客户端了。客户端每次发请求都带着这些信息， 就可以到服务器上认领属于本浏览器的各种资源了。这样客户端和服务器端就建立起了一种连接状态，HTTP 的<strong>无状态</strong>的问题就被解决了。</p>
-</blockquote>
-<h4 id="session">Session</h4>
-<p>先来普及下概念。</p>
-<blockquote>
-<p>什么是Session？—是会话！</p>
-</blockquote>
-<p><strong>会话</strong>这个词也本身意思就比较宽泛，容易被外行泛用。维基百科是<a href="https://zh.wikipedia.org/wiki/%E4%BC%9A%E8%AF%9D_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6)" target="_blank" rel="external">这么说的</a>。通俗点讲，从效果切入应该更合适。那么：</p>
-<blockquote>
-<p>会话开始和结束，就意味着服务器从认识一个浏览器到不再认识这个浏览器（url效用失效）。</p>
-</blockquote>
-<h5 id="实现会话的技术机制">实现会话的技术机制</h5>
-<p>方法不唯一，最常见的一个方式是这样：</p>
-<ul>
-<li>第一步，准备建立会话的时候，服务器会在自己的内存里创建一个新的变量，例如这个变量叫做 session-3333 ，</li>
-<li>第二步，服务器把这个会话的 id 也就是 3333 发送到我的浏览器，浏览器会把这个 id 保存到 cookie 中</li>
-<li>之后，每次我的浏览器再去访问服务器的时候，都会携带 cookie 中存放的 3333 这个会话 id 值，这样服务器就认识 这个浏览器了</li>
-<li>服务器端的 session-3333 变量中可以存放任意的会话数据，例如：我的用户名，我购物车里有哪几件商品等等</li>
-<li>每次浏览器访问服务器，都可以凭借自己的会话 id 去服务器的 session-3333 变量中去认领属于我的信息</li>
-</ul>
-<p>每一个请求都会包含这个会话 id ，这样服务器就能唯一确认你这个客户端浏览器。 这样，直到会话过期，客户端和服务器都是互相认识的，都保持有效的链接。</p>
-<h5 id="会话的意义">会话的意义</h5>
-<p>说的抽象点：<strong>会话可以让无状态的 HTTP 协议保持特定的状态</strong>。</p>
-<p>这种在客户端与服务器之间传递<strong>会话 id</strong>的机制，能让服务器创建一种各次请求之间的持续连接状态。Web 开发人员利用这种人造的状态，来构建一些”有状态“的应用场景：例如用户处于一直登陆的状态，购物车里面之前添加的商品，后续访问中还有等等。</p>
-<p>不过即使这样，每一个 HTTP 请求本质上来说还是无状态的，各次请求之间并不知道彼此的存在。</p>
-<h5 id="会话数据存在哪里">会话数据存在哪里？</h5>
-<p>一句话来讲：是服务器上的某个地方。</p>
-<p>之前所讲的cookie是在内存里，但其实有时候，可能会存在某个持久化存储介质上，比如数据库或者键 / 值存储。会话数据存在哪里不是我们需要关心的。现在重要的是要理解会话 id 存储在客户端，它是访问存储在服务器上的会话数据的 “钥匙”。</p>
-<h5 id="会话过期">会话过期</h5>
-<p>服务器上有多少个浏览器在访问，就会在自己内存中创建多少了类似 session-3333 这样的变量。但是，还有一点非常重要，在一个会话里发出的会话 id 是唯一的，而且有一个很短的过期时间。那什么情况下会话就会过期呢？</p>
-<ul>
-<li>手动删掉 cookie 中的会话 id （在 chrome devtools 里，右键 cookies 然后删除它）</li>
-<li>点一个网站的退出登录按钮</li>
-<li>关闭网站有时候也通常能结束会话</li>
-</ul>
-<p>当然，讨论到这里，会话过期的本质我们其实是知道的：<strong>用客户端 cookie 中的 id 找到服务器端对应的 session 了。</strong></p>
-<h5 id="会话劫持">会话劫持</h5>
-<p>会话 id 作为一个唯一的令牌来唯一标识一个会话。通常，会话 id 是作为 cookie 存储在计算机上的一个随机字符串.。很多 Web 应用的用户认证系统所在做的事情，当用户的用户名和密码匹配之后，会话 id 会存储在用户的浏览器里，这样我的下一个请求就不用重新认证了。</p>
-<p>不幸的是，如果一个攻击者拿到了我的这个会话 id ，他就会跟我共享这一个会话，那服务器就会把他当成我，我的所有权限， 他都不需要知道我的用户名密码，都可以获得了。</p>
-<p>防止会话劫持是安全问题，总之就是用各种方法让当前会话 id 作废，然后重新创建新会话。</p>
-<h4 id="ajax与同源策略">Ajax与同源策略</h4>
-<h5 id="ajax">Ajax</h5>
-<p>AJAX 是 ”异步 javascript 和 XML “ 的简称（ Asynchronous JavaScript and XML ）。它的主要特点就是允许浏览器发送请求和处理响应的时候</p>
-<blockquote>
-<p>不用刷新整个页面</p>
-</blockquote>
-<p>举个例子，如果你访问一个网站，服务器会给你一个响应生成你看到的主页。正常情况下，每当用户点一个连接，或者提交一个表单，页面都会整个去刷新，这样有两个明显的弊端：</p>
-<ul>
-<li>用户体验不好，因为页面会闪烁</li>
-<li>新页面很多时候跟老页面相似度很高，整个页面刷新其实很多工作量是没必要的（浪费网络资源）</li>
-</ul>
-<p>当使用 Ajax的时候，页面就不会刷新。</p>
-<p>Why？</p>
-<blockquote>
-<p>Ajax 请求本质上也就是一个普通的请求，服务器也会给出响应。跟普通的请求的区别也就是页面不会刷新了。</p>
-</blockquote>
-<p>但是页面要是不刷新，那么响应数据如何加载呢？</p>
-<blockquote>
-<p>这些请求的响应会通过一些<strong>回调函数</strong>来处理。就是把一些逻辑存放在mou个函数里，当某个条件被触发之后再回来执行你前面存放的逻辑。当响应返回的时候，<strong>回调函数</strong>就会被触发。<strong>回调函数</strong>里面写一些可以用来更新页面的 JS 语法，配合上刚刚返回的服务器端的数据，就可以实现替换页面局部的效果了。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">当代 Web 应用，无刷新几乎已经成为标配。尤其是单页面概念盛行之后，这个趋势就更明显了。另外，传递数据的格式原来用 XML ，现在大家也都用 JSON 了。</div><div class="line"></div><div class="line">AJAX 请求就像是普通请求，发送到服务器的请求依然跟普通请求一样有着一个 HTTP 请求该有的所有组成部分，并且服务器处理 AJAX 请求的方法跟处理普通请求也是一样的。</div><div class="line"></div><div class="line">唯一不同就是，不是通过浏览器刷新来处理响应，而通常由客户端的一些 javascript 代码来处理。</div></pre></td></tr></table></figure>
-<h5 id="同源策略">同源策略</h5>
-<p>同源策略（ Same-origin policy ）是一个重要的概念，它<strong>允许来自同一站点的资源进行互相访问而不受限制，但是会阻止其他不同站点对文档/资源的访问。</strong></p>
-<p>同源策略涉及的是访问文件内容，而不是链接，你可以随意链接到任何 URL。 同源策略是防范会话劫持的重要手段，是 web 应用安全的基石。</p>
-<p>参考：<a href="http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html" target="_blank" rel="external">1111</a>，<a href="https://developer.mozilla.org/zh-CN/docs/Web/Security/Same-origin_policy" target="_blank" rel="external">2222</a></p>
-<h3 id="3333333">3333333</h3>
-<h4 id="https">https</h4>
-<p><a href="https://zh.wikipedia.org/zh-cn/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE" target="_blank" rel="external">超文本传输安全协议</a></p>
-<p>通过 HTTPS 访问资源的时候，通常以 <code>https://</code> 开头而不是 <code>http://</code> ，而且通常在边上都会有个小锁子的图标。</p>
-<p><img src="https://raw.githubusercontent.com/zrdsj/xiaoshujiang/master/pic_1702-1703/douban.png" alt="douban"></p>
-<h5 id="干嘛要用">干嘛要用？</h5>
-<p>HTTP 是明文传输的，所以如果有人在网上截获了你的数据流，那么用户的密码等各种信息就会暴露。这样你就知道为啥大家都拼命上 HTTPS 了吧。。。</p>
-<p>如果有用户登上你的网站买东西，需要输入信用卡的一些信息，然后他看到你的网站没有用 HTTPS ，也就是说是不安全的，那他就很有可能放弃这次购买。</p>
-<p>HTTP 请求可以包含会话 id ，它唯一地标识你的浏览器和服务器之间的联系，所以如果别人复制了这个会话 id ，他们可以手动创建到服务器的请求，进行伪装，甚至都不需要你的用户名和密码就可以自动登陆。</p>
-<p>这种情况就需要安全的 HTTP 也就是 HTTPS 来帮忙。通过 HTTPS 发送的请求和响应在发送前都会被加密。这意味着如果一个恶意的黑客监听 HTTPS 通信，他得到的信息都是加密的，就是截获了也难看懂。</p>
-<h5 id="how">how?</h5>
-<p>HTTPS 通过 <a href="http://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank" rel="external">TLS</a> 的加密协议来加密消息。在 TLS 开发完成前，早期 HTTPS 使用 <code>SSL</code> （ Secure Sockets Layer ）。这些加密协议在加密数据之前，需要先使用证书来与远程服务器进行通信来交换安全密钥。</p>
-<p>你的浏览器有了服务器颁发的证书，这样就可以按照一种跟服务器约定好的方式把要传输的信息进行加密，然后传输给服务器。 这样有了约定好的加密方式，安全的信息通道也就建立起来了。</p>
-<h4 id="web-sockets">Web Sockets</h4>
-<p>Web Sockets 是 HTML5 的新增功能之一。换句话说，Web Sockets 是浏览器提供给我们的一种通讯机制。</p>
-<p>Web Sockets 技术到底算不算 HTTP 协议的一部分？</p>
-<blockquote>
-<p>不算！可以认为他们就是两套协议。但是毕竟二者紧密相关，所以聊 HTTP 就不能不聊 Web Sockets 。可以把 Web Socket 看成浏览器为了弥补 HTTP 协议的不足而打的一个大补丁。</p>
-</blockquote>
-<h5 id="web-sockets-要解决">Web Sockets 要解决？</h5>
-<p>相对于 HTTP 这种非持久的协议，Web Sockets 是一个持久化的协议。</p>
-<p>HTTP 协议特点就是简单直接：<code>客户端发请求，服务器给一个响应，然后就各找各妈，谁也不认识谁了。</code>这种关系不但健忘，而且是单向的，客户端必须主动发请求，服务器端不能给客户端主动推送信息的。</p>
-<p>如果只是基于基本的 HTTP 协议，来做个网络聊天室是很难的。比如，我跟你在聊天，你那边发了新信息，我的浏览器怎么能知道呢？服务器不能给我主动推送信息的弊端就暴露出来了！</p>
-<p>Web Socket 出现之前，往往是通过一些瘸腿的技术例如 <a href="http://www.cnblogs.com/hoojo/p/longPolling_comet_jquery_iframe_ajax.html" target="_blank" rel="external"><strong>long poll</strong></a> 和 <strong><a href="https://segmentfault.com/a/1190000005032921" target="_blank" rel="external">ajax 轮询</a></strong> 来实现，每次查询都是开启一次连接，然后再断开，耗费资源，效果差。</p>
-<h5 id="web-sockets-带来的是两个改进">Web Sockets 带来的是两个改进：</h5>
-<ul>
-<li>客户端只要先发起一次 HTTP 请求，那么客户端和服务器这对朋友就算交上了，也就是建立了持久连接。</li>
-<li>以前都只能是客户端主动问，服务器端只有回答的份儿，现在不是了，服务器如果想主动说话，客户端也听在监听着。</li>
-</ul>
-<h5 id="实际方案">实际方案</h5>
-<p>Web Sockets 的确很棒，但是毕竟是新特性，总有些幺蛾子出现。</p>
-<p>所以实际项目中可以通过 <a href="http://socket.io" target="_blank" rel="external">socket.io</a> 来更好的使用 Web Socket 技术。<a href="http://haoduoshipin.com/v/99.html" target="_blank" rel="external">http://haoduoshipin.com/v/99.html</a> 用 <a href="http://socket.io" target="_blank" rel="external">socket.io</a> 搭建一个项目，演示了效果。</p>
-<h4 id="http2">http2</h4>
-<p>维基百科<a href="https://zh.wikipedia.org/wiki/HTTP/2" target="_blank" rel="external">这样说</a>。</p>
-<p>通俗上讲，1999年的http1.1版本后的首个更新在2015年5月开启了正式版的发布—http2。在保留与http1.1的完全语义兼容情况下，http2的目标包括异步连接复用，头压缩和请求反馈管线化。</p>
-<p>基本上，这篇 <a href="https://imququ.com/post/http2-resource.html" target="_blank" rel="external">https://imququ.com/post/http2-resource.html</a> 包含了详细的http2内容，入门进阶都可以在其中找到路线。</p>
-<h3 id="bye">bye</h3>
-<p>其实内容上讲，这篇博客算是入了门，入了http世界的大门。要学的还有很多。</p>
-<p>推荐网络课程 <a href="https://haoqicat.com/http-with-peter" target="_blank" rel="external">https://haoqicat.com/http-with-peter</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;算是聊一聊技术，顺便谈谈一个前端该知道的http故事。。。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="sixpence" scheme="http://zrdsj.cc/categories/sixpence/"/>
-    
-    
-      <category term="http" scheme="http://zrdsj.cc/tags/http/"/>
-    
-      <category term="前端" scheme="http://zrdsj.cc/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="https" scheme="http://zrdsj.cc/tags/https/"/>
-    
-      <category term="Ajax" scheme="http://zrdsj.cc/tags/Ajax/"/>
     
   </entry>
   
