@@ -185,8 +185,8 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-family: "Microsoft YaHei", Verdana, sans-serif;
+  font-size: 20px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 h1,
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Georgia, sans;
 }
 h2,
 h3,
@@ -226,51 +226,51 @@ h6 {
   margin: 20px 0 15px;
 }
 h1 {
-  font-size: 22px;
+  font-size: 28px;
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 h2 {
-  font-size: 20px;
+  font-size: 26px;
 }
 @media (max-width: 767px) {
   h2 {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 h3 {
-  font-size: 18px;
+  font-size: 24px;
 }
 @media (max-width: 767px) {
   h3 {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 h4 {
-  font-size: 16px;
+  font-size: 22px;
 }
 @media (max-width: 767px) {
   h4 {
-    font-size: 12px;
+    font-size: 18px;
   }
 }
 h5 {
-  font-size: 14px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   h5 {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 h6 {
-  font-size: 12px;
+  font-size: 18px;
 }
 @media (max-width: 767px) {
   h6 {
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 p {
@@ -496,10 +496,10 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 15px;
-  font-size: 13px;
+  font-size: 15px;
   color: #ccc;
   background: #2d2d2d;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 pre,
 code {
@@ -511,7 +511,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 15px;
 }
 pre code {
   padding: 0;
@@ -1017,7 +1017,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: 10px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1549,7 +1549,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ab8f52;
+  background: #faadc9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2410,7 +2410,7 @@ body {
   color: #555;
 }
 .sidebar a:hover {
-  color: #495a80;
+  color: #f39d01;
 }
 .links-of-author-item a:before {
   display: none;
