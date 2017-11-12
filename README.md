@@ -1,5 +1,5 @@
 # zrdsj.github.io
-some pages by JimmyJude---> http://zrdsj.cc
+some pages by jimmy_jude---> https://zrdsj.github.io
 
 ---------------------------分割线--------------------------------
 
