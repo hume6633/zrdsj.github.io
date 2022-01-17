@@ -11,4 +11,4 @@ some pages by myself---> https://zrdsj.github.io
 
 观察世界，认识自己
 
-以后的新博客，都在[这里](https://github.com/zrdsj/new-blog/issues)
+以后的新博客，都在[这里](https://github.com/zrdsj/zrdsj.github.io/issues)
